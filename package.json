@@ -1,0 +1,31 @@
+{
+  "name": "mywebbiz",
+  "version": "1.0.0",
+  "description": "business website for Claire Crawford Designs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Claire-Crawford/myWebBiz.git"
+  },
+  "keywords": [
+    "html5",
+    "css3",
+    "scss",
+    "javaScript",
+    "Bootstrap",
+    "VueJS",
+    "UX"
+  ],
+  "author": "Claire Crawford",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Claire-Crawford/myWebBiz/issues"
+  },
+  "homepage": "https://github.com/Claire-Crawford/myWebBiz#readme",
+  "devDependencies": {
+    "sass": "^1.26.12"
+  }
+}
