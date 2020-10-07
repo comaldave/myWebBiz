@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=2" />
+    <link rel="shortcut icon" type="image/png"
+        href="images/favicon_black_moon.png" />
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="images/site.webmanifest"> -->
+    <title>Claire Crawford Web Design</title>
+    <link href="style.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css">  -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src="scripts.js"></script>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+</head>
+
+
+
+<body>
+    <header>
+        <div id="nav" class="navbar">
+            <div id="nav_left">
+                <a href="index.html">HOME</a>
+                <a href="services.html">SERVICES</a>
+                <a href="portfolio.html">PORTFOLIO</a>
+            </div>
+
+            
+            <div id="nav_logo">
+
+                <a href="index.html" class="logo1">
+                    <img src="images/logo_revised_star.png"
+                        alt="Main logo" class="logo_Claire" />
+                </a>
+
+            </div>
+
+            <div id="nav_right">
+                <a href="blog.html">BLOG</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONNECT</a>
+            </div>
+        </div>
+    </header>
+
+
+    <img src="images/banner_collage_7_195.jpg" id="collage_banner"
+        alt="Collage of many small images" />
+
+    <div class="about_main_wrapper">
+
+        <div id="about_space_below_banner">
+            <!-- <h2>  IT'S YOUR TIME TO  <font face = "Smooth Stone" size = "7"> Shine </h2> </font>  -->
+            <!-- <h2> IT'S YOUR TIME TO </h2>
+                <img src="images/shine_sat_script.jpg" id="about_shine" alt="Shine" /> -->
+
+            <p>
+                DEAR UNIVERSE, I AM TOTALLY OPEN TO SOME <span
+                    style="font-family:Quentin; font-size:2em">Awesome</span>
+                <!-- <img src="images/Awesome_EADFBD.jpg" id="about_awesome" alt="Awesome"
+                    style="width:170px;"> --> COMING MY
+                WAY.
+
+            </p>
+
+            <div id="white_box">
+                <h2>I'm looking forward to getting to know you! </h2>
+            </div>
+        </div>
+
+        <div class="about_main_top">
+
+            <div id="about_info">
+                <img src="images/claire_about_crop.jpg" id="about_claire_img_2"
+                    alt="Claire Crawford" />
+
+                <p class="first_p_about_info"> a bit about me </p>
+
+                <p class="shorter_p_about_info">
+
+                    I'm Claire Crawford - FREESPIRITED DESIGNER AND SELF PROCLAIMED
+                    TECH-NERD. I craft
+                    unique, intuitive websites to empower women and help to bring
+                    their small-business dream to
+                    fruition.
+                </p>
+
+                <p class="shorter_p_about_info">
+                    I was somewhat of a late bloomer when it came to finding my
+                    calling. For many years my focus was on raising my children.
+                    I also ran a small, home-based business selling my art. It
+                    was during this time that I created my first website - not
+                    so much out of want than out of necessity (I commissioned a
+                    web designer on two occasions, with disappointing
+                    results). Thus began my love affair with web development.
+                    The pairing of artistic design with the challenging
+                    technical aspects of coding a webpage seemed to tick off all
+                    the major boxes for "dream job". I was still busy raising
+                    children so building a new career seemed an unrealistic
+                    goal.
+                </p>
+
+                <p class="shorter_p_about_info">
+                    Fast forward several years. Now, with children grown, I made
+                    the decision to go back to college. I'd rather eat a dirt
+                    sandwich than do that again (I'm laughing but, seriously,
+                    NO. I love to learn but too introverted for the college
+                    environment). However, I learned a ton, earned a degree in
+                    Computer Information/Web Development and even
+                    pulled off a 4.0 GPA ... #personalgoal
+                </p>
+
+                <p class="second_to_last_p_about_info">
+                    I've never been more certain that I'm doing what I'm meant
+                    to do. Crafting impactful websites for enterprising women
+                    isn't just outrageously enjoyable for me; It fulfills my
+                    heart's longing for a career that supports and empowers the
+                    dreams of others. What could be better than that, right?
+                </p>
+                <!-- 
+                <p>
+                    Whenever asked about future goals, my mind immediately goes
+                    to "empower women". I knew that, somehow, I wanted to be
+                    involved in helping other women reach their personal and
+                    professional goals - to be a supportive contributor to
+                    their story and a witness to phenomenal women finding
+                    their divine power, seeing their worth, believing in their
+                    ability to overcome, to grow, to SHINE. <img
+                    src="images/underline.jpg" id="underline_shine"
+                    alt="underline" />
+                </p> -->
+
+                <p class="wider_p_about_info">
+                    You've worked tirelessly, pouring your <img
+                        src="images/about_me_heart.jpg" id="mini_heart" alt="small
+                    heart shape" /> and soul into your business and craft.
+                    You're embracing vulnerability and bravely putting yourself
+                    out there to the world. In case you didn't know - that is
+                    serious BADASSARY! As a professional web
+                    designer/developer, I have the joy of partnering with you on
+                    this part of your journey (so exciting!!). Together, we will
+                    build
+                    a website that mirrors your vision, celebrates your passion
+                    and ultimately connects you with an audience that grows your
+                    business and - let's keep it real here - makes you money!
+                </p>
+
+                <p class="wider_p_about_info"> I've been where you are and I
+                    know this whole process can seem daunting. Relax. We got this.
+                </p>
+
+                <div class="claire_sig">
+                    <!-- <img src="images/signature_saturdayScript.png" id="signature"
+                        alt="Claire's signature" /> -->
+                    <p>Claire</p>
+                    <img src="images/signature_line_gold.jpg" id="sig_line"
+                        alt="decorative line under signature" />
+                </div>
+            </div>
+
+        </div>
+
+        <div id="the_one">
+            <h2> I'm feeling like you're the one.</h2>
+            <!-- <p>Let's do this!</p> -->
+            <img src="images/Lets_do_this_quentin.jpg" id="lets_do_this"
+                alt="Let's do this!" />
+            <div id="about_me_contact">
+                <a href="contact.html" class="button_about_claire">Tell me about your
+                    biz</a>
+            </div>
+        </div>
+
+        <hr class="about_me_above_fun_facts">
+
+        <div id="base_container_fun_facts">
+
+            <div id="fun_facts">
+
+                <img src="images/frida1.jpg" id="frida" alt="Image of Claire" />
+
+
+                <div class="slideshow-container">
+                    <h3>FUN FACTS</h3>
+
+                    <div class="mySlides">
+
+                        <p>I'm an Enneagram Type 5
+                            <!-- <a
+                            href="https://theenneagramatwork.com/type-5-observer"
+                            style="font-size: .7em; color: #0892A5 ;">source</a> -->
+
+                            and my personality type is
+                            INFJ which makes up only 2% of the population. "A
+                            creative nurturer with a strong sense of personal
+                            integrity and a drive to help others realize their
+                            potential. Creative and dedicated, INFJs have a talent
+                            for helping others with original solutions to their
+                            personal challenges."
+                            <a href="https://www.truity.com/personality-type/INFJ/careers"
+                                style="font-size: .7em; color:#0892A5 ;">source</a>
+                            </br>
+                            No wonder I love building websites for badass women!
+                            <br>
+                        </p>
+                    </div>
+
+                    <div class="mySlides">
+                        <p>I've been collecting heart shaped rocks for years.
+                            Many of them gifted to me by my children, making
+                            them all the more special. </p>
+                    </div>
+
+                    <!-- <div class="mySlides">
+                        <p>I am a Lord of the Rings fanatic - the film, the
+                        books, building my own hobbit hole. Well, not really. At least, not yet :) </p>
+                    </div> -->
+
+                    <div class="mySlides">
+                        <p>Though I've yet to visit, I have a beautifully bizarre
+                            soul-connection with
+                            Italy. I get all teary and weirdly nostalgic every time I
+                            see images of the country in print or film.
+                        </p>
+                    </div>
+
+                    <div class="mySlides">
+
+                        <p>I have 5 sons - Taylor, Keaton, Jack, Gage and Caden.
+
+                        </p>
+                    </div>
+
+
+                    <div class="mySlides">
+
+                        <p> Libraries and book stores make me swoon and I've
+                            been known to go on late night Ebay hunts for beautiful,
+                            vintage copies of classic novels.
+                        </p>
+                    </div>
+
+                    <div class="mySlides">
+
+                        <p> Favorites: <br>
+                            Movie - Chocolat </br>
+                            TV - The Office </br>
+                            Drink - Italian Margaritas! </br>
+                            Food - Watermelon with fresh mint and squeeze of
+                            lime. Yum! <br>
+                            Music - So many! But steady loves are Bob Dillion, Patti Griffin & David Gray
+                        </p>
+                    </div>
+
+                    <div class="mySlides">
+
+                        <p> I have an elderly Pug named Bella and 2
+                            rescued cats cat named Vesper and Raven
+                        </p>
+                    </div>
+
+                    <div class="mySlides">
+
+                        <p> When I'm not coding a webpage or playing
+                            around with new fonts and color schemes (fun stuff!),
+                            you can usually find me with a book in hand or binge
+                            watching episodes of The Office.
+                        </p>
+                    </div>
+
+                    <div class="mySlides">
+
+                        <p> I never identified with the name I was given at
+                            birth and efforts to make peace with it were futile. I
+                            had it legally changed to Claire. Being true to my
+                            authentic self - YES! I'll have more of that please.
+                        </p>
+                    </div>
+
+                    <div class="mySlides">
+
+                        <p> Additional loves: <br>
+                            Global travel, naturopathy, off-grid/sustainable living,
+                            Frida Kahlo, <b>really</b> good coffee, log cabins, 80's
+                            rock, time with family,
+                            flip-flops.
+                        </p>
+                    </div>
+
+                    <!-- <div class="mySlides">
+                        <p> If I could travel back in time for a week, I'd spend
+                        3 of those days at Woodstock. Pretty sure I was born
+                        20 years too late. 
+                         <span style='font-size:20px;'>&#9774;</span>
+                        </p>
+                    </div> -->
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                </div>
+
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                        if (n > slides.length) {
+                            slideIndex = 1
+                        }
+                        if (n < 1) {
+                            slideIndex = slides.length
+                        }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active",
+                                "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                    }
+                </script>
+                <!-- </div> -->
+            </div>
+
+        </div>
+
+
+
+        <div>
+            <img id="scroll" src="images/back_to_top_bird_med.png">
+        </div>
+
+        <footer>
+            <div id="footer_bottom">
+    
+    
+                <div id="footer_leftside">
+                    <div id="creative_solution_leftside_footer">
+                        <p>Creative solutions for the dreamers, shakers & trailblazers
+                        </p>
+                        <br>
+                    </div>
+                    <p> Handcrafted in Fayetteville, Arkansas </p>
+                    <p> Serving creatives globally </p>
+                </div>
+    
+                <!-- <div id="footer_info"> 
+                 <div id="footer_image_hands">
+                    <img src="images/hands_holding_stars.png" id="hand_holding_stars"
+                        alt="open hands holding stars" />
+                </div> 
+    
+               <div id="footer_beneath_hands">
+    
+                </div>
+                <p> Claire Crawford Designs</p>
+                <p> Serving creatives globally </p> 
+                <div id="footer_beneath_signature">
+                    <p> freelance web design and development </p>
+               </div>
+               <div id="footer_beneath_signature_2">
+                   <p> for the dreamers, shakers & trailblazers </p>
+               </div>  -->
+    
+                <div id="footer_content">
+    
+                    
+                    <div id="footer_logo">
+    
+                        <div id="footer_left">
+                            <a href="index.html">
+                                <img src="images/newest_logo_revised_quentin_gold_star_footer.jpg"
+                                    alt="Claire Crawford Designs" id="logo_in_footer" />
+                            </a>
+                        </div>
+    
+                        <div id="footer_middle">
+                            <p>Copyright &copy;2019 Claire Crawford Designs</p>
+                        </div>
+    
+                        <div id="footer_right">
+                            <p> <a href="privacy.html">Terms & Privacy</a></p>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+        </footer>
+
+</body>
+
+</html>

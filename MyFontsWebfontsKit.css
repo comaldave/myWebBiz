@@ -1,0 +1,34 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3780006, 2019-06-30T21:38:15-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: SaturdayScriptOblique by Nicky Laatz 
+ * URL: https://www.myfonts.com/fonts/nicky-laatz/saturday-script/oblique/
+ * 
+ * Webfont: SaturdayScript by Nicky Laatz 
+ * URL: https://www.myfonts.com/fonts/nicky-laatz/saturday-script/regular/
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3780006
+ * Licensed pageviews: 20,000
+ * Webfonts copyright: Copyright (c) 2016 by Nicky Laatz. All rights reserved.
+ * 
+ * © 2019 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/39ada6");
+
+  
+@font-face {font-family: 'SaturdayScriptOblique';src: url('webfonts/39ADA6_0_0.eot');src: url('webfonts/39ADA6_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/39ADA6_0_0.woff2') format('woff2'),url('webfonts/39ADA6_0_0.woff') format('woff'),url('webfonts/39ADA6_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'SaturdayScript';src: url('webfonts/39ADA6_1_0.eot');src: url('webfonts/39ADA6_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/39ADA6_1_0.woff2') format('woff2'),url('webfonts/39ADA6_1_0.woff') format('woff'),url('webfonts/39ADA6_1_0.ttf') format('truetype');}
+ 
