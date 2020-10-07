@@ -4,7 +4,8 @@
   "description": "business website for Claire Crawford Designs",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass scss/main.scss css/style.css -w"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,11 @@
   },
   "homepage": "https://github.com/Claire-Crawford/myWebBiz#readme",
   "devDependencies": {
+    "jest": "^26.5.2",
     "sass": "^1.26.12"
+  },
+  "dependencies": {
+    "bootstrap-vue": "^2.17.3",
+    "vue": "^2.6.12"
   }
 }
