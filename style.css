@@ -602,7 +602,7 @@ header.active {
 .wrapper {
   display: grid;
   position: relative;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 54% 46%;
   /* justify-content: center; */
   align-content: center;
   height: 970px;
@@ -627,7 +627,7 @@ header.active {
 
 #img_claire {
   position: absolute;
-  top: 106px;
+  top: 96px;
   left: 700px;
   width: 280px;
   padding: 16px;
@@ -656,7 +656,7 @@ header.active {
   width: 300px !important;
   height: 900px;
   margin-top: 630px;
-  margin-left: 50px;
+  margin-left: 54px;
   padding-bottom: 300px;
   float:left;
 
