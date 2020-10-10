@@ -66,6 +66,11 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+
+  /* added to prevent horizontal scroll bar */
+  /* need to fix this this and not use a hack.  Find the element that is overflowing */
+  overflow-x: hidden;  
+  overflow-y: scroll;
 }
 
 body::after {
@@ -134,6 +139,10 @@ header.active {
   -moz-transition: font-size .5s, height .5s; */
 }
 
+.navbar {
+  width: 100%; 
+  max-width: 100%;
+}
 
 .logo1 img {
   margin-top: 47px;
@@ -307,8 +316,8 @@ header.active {
   margin-right: auto;
   margin-left: auto;
   margin-top: 180px;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
   /* min-height: 100%; */
   /* max-height: 400px; */
   /* min-width: 1250px; */
@@ -606,9 +615,10 @@ header.active {
   /* justify-content: center; */
   align-content: center;
   height: 970px;
+  /* width: 100%; */
   background: url(images/torn_edge_bkgrd_1000.jpg);
   
-
+  /* size of background image is 1600 x 1000 px */
   /* background-size: 1600px 970px; */
   
 }
@@ -711,6 +721,12 @@ div#two {
   
 }
 
+div#do_this {
+  flex: 1;
+  margin-left: 30px;
+  margin-top: -20px;
+  width: 100px;
+}
 /* div#two p {
   width: 300px !important;
 } */
