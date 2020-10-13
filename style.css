@@ -289,56 +289,21 @@ header.active {
   transform: scaleX(1);
 }
 
+/* #home_img {
+ width: 100%;
+ height: auto;
 
-
-
-/* #logo.fade_in_logo:hover:before {
-  background: none;
-  visibility: hidden;
-}
-
-.logo1:hover:before {
-  background: none;
-  visibility: hidden;
-}
-
-.logo2:hover:before {
-  background: none;
-  visibility: hidden;
 } */
-
-#home_img {
-  text-align: center;
-}
 
 #moodboard {
   position: relative;
   margin-right: auto;
   margin-left: auto;
   margin-top: 180px;
-  /* top: 0;
-  left: 0; */
-  /* min-height: 100%; */
-  /* max-height: 400px; */
-  /* min-width: 1250px; */
-  /* Set up proportionate scaling */
   max-width: 100%;
   width: 100%;
   height: auto;
 }
-
-
-/* .moodboard_text {
-  position: absolute;
-  top: 354px;
-  left: 230px;
-  width: 230px;
-  animation-name: block1;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-} */
-
-
 
 
 #just_below_moodboard {
@@ -652,7 +617,8 @@ header.active {
   /* width: 400px;
   height: 500px; */
   width: 24%;
-  top: -116px;
+  height: auto;
+  top: -106px;
   left: 90px;
   opacity: 0.3;
 
@@ -698,13 +664,13 @@ div#one hr {
 div#one #first_p {
   font-size: 2em;
   margin-left: 34px;
-  margin-top: -20px;
+  margin-top: -50px;
   width: 100px;
   font-family: "Tenor Sans";
 
 }
 
-div#one #second_p {
+.intro_2 #second_p {
   font-family: Quentin;
   font-size: 2em;
   width: 100px;
@@ -736,7 +702,7 @@ div#three {
   flex: 1;
   width: 300px;
   margin-left: 0px;
-  margin-top: 0px;
+  margin-top: 30px;
 }
 
 div#three a {
@@ -768,9 +734,15 @@ div#two p {
   color: #363d3c;
 }
 
-div#two #last_p {
-  margin-left: 4px;
-  margin-top: -10px;
+#last_p {
+  margin-left: 12px;
+  margin-top: -20px;
+  text-decoration: none;
+  color: black;
+}
+
+#last_p:hover {
+  color: #16c0b7;
 }
 
 
@@ -1146,9 +1118,15 @@ img#lets_do_this {
 .button_about_claire:hover {
   /* border: 2px solid rgb(210, 198, 98); */
   /* background-color: white !important; */
-  color: black !important;
-  background: white ! important;
+  /* color: black !important; */
+  color: #16c0b7 !important;
+  /* color: white !important; */
+  /* background: white ! important; */
+  background: white !important;
+  /* background: #16c0b7 !important; */
+  /* #16c0b7! */
   border: 2px solid rgb(210, 185, 98); 
+  /* border: 2px solid #16c0b7; */
 }
 
 .button_about_claire a {
