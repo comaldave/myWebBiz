@@ -649,10 +649,11 @@ header.active {
 
 #zodiac_leo {
   position: absolute;
-  width: 430px;
-  height: 570px;
+  /* width: 400px;
+  height: 500px; */
+  width: 24%;
   top: -116px;
-  left: 120px;
+  left: 90px;
   opacity: 0.3;
 
 }
@@ -946,32 +947,27 @@ div#good_fit p {
 
 /* ABOUT ME PAGE STYLING */
 
-#collage_banner {
+
+#about_collage{
   margin-top: 180px;
+  max-width: 100%;
   width: 100%;
-  height: 225;
+  height:auto;
 }
 
-p {
-  width: 1000px;
-}
 
 #about_space_below_banner {
   display: flex;
   padding: 0;
-  margin: 0;
+  margin-top: -5px;
   flex-direction: column;
   height: 148px;
   justify-content: center;
   align-items: center;
-  /* background-color: #dfd6a7;  */
-  /* background-color: #e9e0b8; */
-  /* background-color: #F1E8B8; */
   background-color: #EADFBD;
+  background-color: #fbf9ee;
 
 }
-
-
 #about_space_below_banner > P {
   flex: 1;
   height: 50px;
@@ -992,15 +988,16 @@ img#about_awesome {
   margin-left: 2px;
 }
 
+.about_main_top p {
+  width: 1000px;
+}
 
-
-#white_box>h2 {
+.about_h2 {
   flex: 1;
-  color: white;
+  color: #16c0b7;
   font-family: Lora;
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 44px !important;
   font-size: 1.6em;
 
 }
@@ -1321,26 +1318,33 @@ img#frida {
 
 /* Styling Contact page */
 
-img#collage_banner_contact {
-  margin-top: 140px;
+
+
+#contact_collage {
+  margin-top: 180px;
+  max-width: 100%;
+  width: 100%;
+  margin-top: 142px;  /* WHY DO I HAVE TO INCLUDE THIS TO MAKE IT MATCH THE OTHERS!!!! */ 
+  /* height: auto; */
 }
 
 #contact_space_below_banner {
   display: flex;
   padding: 0;
-  margin: 0;
+  margin-top: -5px;
   flex-direction: column;
   height: 148px;
   justify-content: center;
   align-items: center;
   background-color: #EADFBD;
+  background-color: #fbf9ee;
 }
 
-#contact_space_below_banner>P {
+#contact_space_below_banner P {
   flex: 1;
   height: 50px;
-  width: 400px;
-  margin-top: 40px;
+  width: 1200px;
+  margin-top: 34px;
   text-align: center;
   font-size: 24px;
   font-family: Lora;
@@ -1358,6 +1362,7 @@ img#contact_shine {
 #white_box > h2 {
   flex: 1;
   color: white;
+  color: #16c0b7;
   /* color: #0892A5; */
   font-family: Lora;
   text-align: center;
@@ -1552,11 +1557,12 @@ div#submit_contact {
   /* font-family: 'Ernestine Pro Light'; */
   font-family: Quentin;
   color: black;
+  color: #16c0b7;
   letter-spacing: -.009px;
   text-transform: none;
   font-size: 2.6em;
   padding: 10px 0 0 0;
-  margin: -10px 20px 0 0 ;
+  margin: -10px 10px 0 0 ;
   float: right;
 }
 
@@ -1564,7 +1570,7 @@ div#submit_contact {
 #submit_contact input[type=button]:hover {
   background: white !important;
   color: rgba(69,69,69,0.7) !important;
-  font-size: 2.7em;
+  font-size: 3em;
 }
 
 
@@ -1594,42 +1600,41 @@ div#submit_contact {
 /* Styling Portfolio Page */
 
 
+#portfolio_collage{
+  margin-top: 180px;
+  max-width: 100%;
+  width: 100%;
+  /* height:auto; */
+}
+
+
 #portfolio_space_below_banner {
   display: flex;
   padding: 0;
-  margin: 0;
+  margin-top: -5px;
   flex-direction: column;
   height: 148px;
   justify-content: center;
   align-items: center;
   /* background-color: #E3D888;  */
   /* background-color: #D8C99B;  */
-  background-color: #e9e0b8;
   background-color: #EADFBD;
+  background-color: #fbf9ee;
+
 }
 
 #portfolio_space_below_banner p {
   flex: 1;
   height: 50px;
   width: 1200px;
-  color: black;
   margin-top: 33px;
-  margin-bottom: 14px;
+  /* margin-bottom: 14px; */
   text-align: center;
   font-size: 24px;
   font-family: Lora;
-  /* margin-top: 40px; */
   z-index: 99;
+  color: black;
   letter-spacing: 1px;
-}
-
-
-img#portfolio_moon {
-  margin-bottom: -4px;
-}
-
-img#portfolio_star {
-  margin-bottom: -4px
 }
 
 #portfolio_stuff_here {
@@ -1638,6 +1643,18 @@ img#portfolio_star {
   background-color: white;
 }
 
+#white_box > h2 {
+  flex: 1;
+  color: white;
+  color: #16c0b7;
+  /* color: #0892A5; */
+  font-family: Lora;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 1.5em;
+
+}
 
 
 
@@ -1647,35 +1664,55 @@ img#portfolio_star {
   height: 1000px;
 }
 
+#service_collage {
+  margin-top: 180px;
+  max-width: 100%;
+  width: 100%;
+  height:auto;
+}
+
 #services_space_below_banner {
   display: flex;
   padding: 0;
-  margin: 0;
+  margin-top: -5px;
   flex-direction: column;
   height: 148px;
   justify-content: center;
   align-items: center;
-  /* background-color: #E3D888;  */
-  /* background-color: #D8C99B;  */
-  background-color: #e9e0b8;
+  background-color:#EADFBD;
+  background-color: #fbf9ee;
 }
 
 #services_space_below_banner p {
   flex: 1;
   height: 50px;
   width: 1200px;
-  color: black;
-  margin-top: 33px;
-  margin-bottom: 14px;
+  margin-top: 18px; 
   text-align: center;
   font-size: 24px;
   font-family: Lora;
-  /* margin-top: 40px; */
   z-index: 99;
+  color: black;
   letter-spacing: 1px;
 }
 
 
+img#gold_star {
+  margin-bottom: -10px;
+}
+
+#white_box > h2 {
+  flex: 1;
+  color: white;
+  color: #16c0b7;
+  /* color: #0892A5; */
+  font-family: Lora;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 1.5em;
+
+}
 
 #services_stuff_here {
   height: 800px;
@@ -1690,18 +1727,25 @@ img#portfolio_star {
 
 /* Styling Blog Page */
 
+#blog_collage {
+  margin-top: 180px;
+  max-width: 100%;
+  width: 100%;
+  height:auto;
+}
+
 
 #blog_space_below_banner {
   display: flex;
   padding: 0;
-  margin: 0;
+  margin-top: -5px;
   flex-direction: column;
   height: 148px;
   justify-content: center;
   align-items: center;
-  /* background-color: #dfd6a7;  */
   background-color: #e9e0b8;
-  /* background-color: #F1E8B8; */
+  background-color: #fbf9ee;
+
 }
 
 #blog_space_below_banner p {
@@ -1709,19 +1753,22 @@ img#portfolio_star {
   height: 50px;
   width: 1200px;
   color: black;
-  margin-top: 13px;
+  margin-top: 40px;
   margin-bottom: 14px;
   text-align: center;
   font-size: 24px;
   font-family: Lora;
-  /* margin-top: 40px; */
   z-index: 99;
   letter-spacing: 1px;
 }
 
-
-img#blog_fierce {
-  margin-bottom: -14px;
+.blog_h2 {
+  flex: 1;
+  color: #16c0b7;
+  font-family: Lora;
+  text-align: center;
+  margin-bottom: 44px !important;
+  font-size: 1.6em;
 }
 
 #blog_stuff_here {
