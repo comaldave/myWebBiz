@@ -42,7 +42,7 @@ footer,
 th {
   margin: 0;
   padding: 0;
-  
+
   text-decoration: none;
   list-style-type: none;
 
@@ -298,7 +298,7 @@ header.active {
   margin-left: auto;
   margin-top: 180px;
   max-width: 100%;
-  width: 100%; 
+  // width: 100%; 
   height: auto;
 }
 
@@ -578,7 +578,7 @@ header.active {
   align-content: center;
   height: 970px;
   /* width: 100%; */
-  background: url(images/torn_edge_bkgrd_1000.jpg);
+  background: url(../images/torn_edge_bkgrd_1000.jpg);
   
   /* size of background image is 1600 x 1000 px */
   /* background-size: 1600px 970px; */
@@ -1824,7 +1824,7 @@ footer {
 }
 
 #footer_bottom {
-  background: url(images/torn_edge_bkgrd_1000.jpg);
+  background: url(../images/torn_edge_bkgrd_1000.jpg);
   position: relative;
   height: 400px;
   width: 100%;
