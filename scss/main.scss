@@ -42,7 +42,7 @@ footer,
 th {
   margin: 0;
   padding: 0;
-
+  font-size: 16px;
   text-decoration: none;
   list-style-type: none;
 
@@ -72,6 +72,9 @@ body {
   /* need to fix this this and not use a hack.  Find the element that is overflowing */
   overflow-x: hidden;  
   overflow-y: scroll;
+
+  /* prevents scroll bounce */
+  overscroll-behavior: none;
 }
 
 body::after {
@@ -80,226 +83,54 @@ body::after {
   height: 50px;
 }
 
-header {
-  height: 150px;
-  margin: 0 auto;
-  position: fixed;
-  font-size: 0.9em;
-  top: 0;
-  width: 100%;
-  background: white;
-  z-index: 1000;
-  /* display: flex; 
-  justify-content:  center; */
 
-  transition: font-size .5s, height .5s, margin .5s;
-  -webkit-transition: font-size 1s, height 1s;
-  -moz-transition: font-size 1s, height 1s;
-
-}
-
-header.small {
-  height: 85px;
-  justify-content: center;
-  text-align: center;
-  background-color: white;
-  z-index: 999;
-}
-
-header.small #nav_left a {
-  font-size: .8em;
-}
-
-header.small #nav_right a {
-  font-size: .8em;
-}
-
-header.small #nav_left {
-  height: 85px;
-}
-
-header.small #nav_right {
-  height: 85px;
-}
-
-
-header.active {
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-}
-
-
-#nav {
-  display: flex;
-  letter-spacing: 1px;
-  justify-content: center;
-  text-align: center;
-  flex-direction: row;
-  height: 180px;
-  /* transition: font-size .5s, height .5s, margin .5s;
-  -webkit-transition: font-size .5s, height .5s;
-  -moz-transition: font-size .5s, height .5s; */
-}
-
-.navbar {
-  width: 100%; 
-  max-width: 100%;
-}
-
-.logo1 img {
-  margin-top: 47px;
-  margin-right: 40px;
-  margin-left: 40px;
-  width: 310px;
-  transition: width .6s;
-}
-
-
-.logo1.js-scrolling img {
-  margin-top: 12px;
-  margin-right: 65px;
-  margin-left: 65px;
-  width: 240px;
-  transition: width .6s;
-}
-
-#nav_logo {
-  position: relative;
-  height: 100px;
-
-}
+#main_menu.active {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); }
 
 
 
-#nav_logo :hover,active,visited{
+//  #menu a {
+//   -webkit-transform: translateZ(0);
+//   transform: translateZ(0);
+//   -webkit-backface-visibility: hidden;
+//   backface-visibility: hidden;
+//   -moz-osx-font-smoothing: grayscale;
+// }
 
-  text-decoration: none;
-  }
+// #menu a:before {
+//    content: "";
+//    position: absolute;
+//    width: 100%;
+//    height: 1px;
+//    bottom: 0;
+//    left: 0;
+//    background-color: rgb(211, 211, 211);
+//    visibility: hidden;
+//    -webkit-transform: scaleX(0);
+//    transform: scaleX(0);
+//    -webkit-transition: all 0.3s ease-in-out 0s;
+//    transition: all 0.3s ease-in-out 0s;
+// }
 
-
-/* .logo_star.js-scrolling {
-  top: 22px;
-  left: 260px;
-  /* margin-right: -10px; */
-/* margin-left: -18px; */
-/* left: 260px; */
-
-
-.logo_star {
-  width: 12px;
-  height: 12px;
-  top: 66px;
-  left: 294px;
-  position: absolute;
-  /* -moz-animation: blink normal 1.5s infinite ease-in-out; 
-    -webkit-animation: blink normal 1.5s infinite ease-in-out; 
-    -ms-animation: blink normal 1.5s infinite ease-in-out;
-    animation: blink normal 1.5s infinite ease-in-out; Opera and prob css3 final iteration */
-}
-
-/* @keyframes blink {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-} */
+//  #menu a:hover:before {
+//    visibility: visible;
+//    -webkit-transform: scaleX(1);
+//    transform: scaleX(1);
+//  }
 
 
-
-#nav_left {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-#nav_right {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-
-#nav_left > a {
-  flex: 0 0 auto;
-  text-decoration: none;
-  color: rgb(96, 96, 96);
-  color: #595457;
-  /* font-family: "Lora"; */
-  /* font-family: "Montserrat Regular";
-  font-family: 'Raleway'; */
-  /* font-family: 'Tenor Sans'; */
-  font-family: 'Ernestine Pro Light';
-  font-family: "tenor sans";
-  letter-spacing: 2px;
-  margin: 0 1.4em;
-  height: 20px;
-  font-size: .8em;
-  /* need this to correct issue with hover effect */
-}
-
-#nav_right > a {
-  flex: 0 0 auto;
-  text-decoration: none;
-  color: rgb(96, 96, 96);
-  font-family: 'Ernestine Pro Light';
-  font-family: "tenor sans";
-  letter-spacing: 2px;
-
-  margin: 0 1.4em;
-  height: 20px;
-  font-size: .8em;
-  /* need this to correct issue with hover effect */
-}
-
- .nav_underlined a:hover {
-  color: #d2b96e;
-}
-
- .nav_underlined a {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-}
-
- .nav_underlined a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  background-color: rgb(211, 211, 211);
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
- .nav_underlined a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
 
 
 
 #moodboard {
-  position: relative;
+  // position: relative;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 180px;
-  max-width: 100%;
+  margin-top: 220px;
   // width: 100%; 
-  height: auto;
+  max-width:100%;
+  display:block;
+  height:auto;
 }
 
 
@@ -332,43 +163,6 @@ header.active {
 
 }
 
-/* .first_div_below_moodboard img {
-  width: 320px;
-  text-align: center;
-  padding-top: 80px;
-  align-self: center;
-} */
-
-/* .moodboard_dreamer {
-  /* font-family: "Ernestine Pro Light"; */
-/* font-family: "Lora"; */
-/* font-family: "Montserrat Regular"; */
-/* font-family: "tenor sans";
-  color: #363d3c;
-  font-size: 1.7em;
-  letter-spacing: 1px; */
-/*position: absolute;
-  top: 290px;
-  left: 665px;
-  width: 188px;
-    /* text-align: center;
-  padding-top: 40px;
-  padding-bottom: 40px;  */
-/*animation-name: block2;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes block2 {
-  0% {
-    top: -300px;
-  }
-
-  100% {
-    top: 300;
-  }
-} */
-
 .moodboard_h2 {
   font-family: Quentin;
   color: #363d3c;
@@ -384,20 +178,6 @@ header.active {
   animation-fill-mode: forwards;
 }
 
-
-
-/* .moodboard_h2 {
-  font-family: Quentin;
-  color: #363d3c;
-  font-size: 3.3em;
-  font-style: bold;
-  letter-spacing: 1px;
-  /* width: 1040px; */
-  /* padding-top: 48px;
-  text-align: center;
-  animation-name: block2;
-  animation-duration: 2s;
-  animation-fill-mode: forwards; */
 
 
 @keyframes block2 {
@@ -429,40 +209,6 @@ header.active {
 
 
 
-/* .moodboard_h2 {
-  /* font-family: "Ernestine Pro Light"; */
-/* font-family: "Lora"; */
-/* font-family: "Montserrat Regular"; */
-/* font-family: "tenor sans";
-  font-family: Quentin;
-  color: #363d3c;
-  font-size: 3em;
-  font-style: bold;
-  letter-spacing: 1px;
-  position: absolute; 
-  text-align: center; 
-  left: 245px;  
-  width: 1040px;
-  text-align: center; 
-  padding-top: 40px;
-  animation-name: block1;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-
-
-@keyframes block1 {
-  0% {
-      top: 500px;
-  }
-  100% {
-      top: 0;
-  }
-} */
-
-
-
-
 #just_below_moodboard hr {
   border: .8px solid #d2b96e;
   background: #d2b96e;
@@ -472,66 +218,6 @@ header.active {
 
 }
 
-
-
-/* .hide_me {
-  opacity: 0;
-  display: flex;
-  +
-} */
-
-
-
-
-/*
-.fadeIn {
-
-  animation-name: fadeIn;
-  -webkit-animation-name: fadeIn;	
-
-  animation-duration: .5s;	
-  -webkit-animation-duration: .5s;
-
-  animation-timing-function: ease-in;	
-  -webkit-animation-timing-function: ease-in;		
-
-  animation-fill-mode:forwards;
-  -webkit-animation-fill-mode:forwards;
-
-  visibility: visible !important;	
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0.0;		
-  }
-
-  100% {
-    opacity: 1;	
-  }		
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0.0;		
-  }
-
-  100% {
-    opacity: 1;	display: flex;
-  align-items: center;
-  justify-content: center
-  }		
-} */
-
-
-/* image under moodboard statement with star */
-/* .crafting_under_moodboard {
-  width: 1200px;
-  text-align: center;
-  align-self: center;
-  margin-top: 0px;
-  padding: 0;
-} */
 
 .crafting {
   display: flex;

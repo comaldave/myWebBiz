@@ -40,39 +40,48 @@ $(document).ready(function() {
 
 /* logo effect */ 
 
-$(document).ready(function() {
-  $(document).scroll(function() {
-        if ($(document).scrollTop() >= 100) {
-          $('.logo1').addClass('js-scrolling');
-        } else {
-          $('.logo1').removeClass('js-scrolling');
-        }
-  });
-});
-
 // $(document).ready(function() {
 //   $(document).scroll(function() {
 //         if ($(document).scrollTop() >= 100) {
-//           $('.logo_star').addClass('js-scrolling');
+//           $('.logo1').addClass('js-scrolling');
 //         } else {
-//           $('.logo_star').removeClass('js-scrolling');
+//           $('.logo1').removeClass('js-scrolling');
 //         }
 //   });
 // });
 
 
+
+
+//  shadowing effect on bottom edge of header during scroll
+// $(window).scroll(function () {
+//   var scroll = $(window).scrollTop();
+//   if (scroll >= 100) {
+//     $("header").addClass("active");
+//     $('header').addClass('small');
+
+//   } else {
+//     $("header").removeClass("active");
+//     $('header').removeClass('small');
+//   }
+// });
+
+
+// trying this out on new navigation .. delete if doesn't work. 
 //  shadowing effect on bottom edge of header during scroll
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
   if (scroll >= 100) {
-    $("header").addClass("active");
-    $('header').addClass('small');
+    $("#main_menu").addClass("active");
+    $('#main_menu').addClass('small');
 
   } else {
-    $("header").removeClass("active");
-    $('header').removeClass('small');
+    $("#main_menu").removeClass("active");
+    $('#main_menu').removeClass('small');
   }
 });
+
+
 
 
 

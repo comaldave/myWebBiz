@@ -3,55 +3,95 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1/>
     <link rel="shortcut icon" type="image/png" href="images/favicon_black_moon.png" />
     <title>Claire Crawford Web Design</title>
     <link href="css/style.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="scripts.js"></script>
 
+<style>
+    /* body{font-family: "tenor sans", sans-serif;font-size: 12px;font-weight: 400; line-height: 1.5em;} */
+            .inner_main_menu {margin: 0 auto; width: 1170px;}    
+            .inner_main_menu ul{margin: 0; list-style: none;text-align: right;}    
+            .inner_main_menu ul li{float: none; display: inline-block;position: relative}    
+            .inner_main_menu ul li:nth-child(1){float: left;}    
+            .inner_main_menu ul li:nth-child(2){float: left;}    
+            .inner_main_menu ul li:nth-child(3){float: left;}    
+            .inner_main_menu ul li a {color: #606060;font-family:"tenor sans";font-size: 0.8em; letter-spacing: 1px;
+                text-transform: uppercase;text-decoration: none; display: block; padding: 10px 26px;}    
+            /* .inner_main_menu ul li a:hover{text-decoration: underline;}   */
+            /* .inner_main_menu ul li:hover ul{left: 0px;}    */
+            /* .inner_main_menu ul li:hover ul li ul{top: 0; left: -999999px;}   */
+            /* .inner_main_menu ul li ul li:hover ul{top: 0; left: 200px;}   */
+            /* .slicknav_menu { */
+              /* background: rgba(0, 0, 0, 0) none repeat scroll 0 0; */
+              /* font-size: 16px; */
+              /* padding: 5px;
+              display: none;    
+              position: fixed;
+              right: 0;
+              width: 100%;
+              z-index: 99999;
+            } */
+            #menu {background-color: white; font-size: 12px;}
+            #logo_Claire {width: auto; height: auto; transition: 0.5s; margin-top: 0px; }
+            #main_menu{transition: 0.5s; width: 100%; position: fixed; overflow: hidden; background-color: white;  z-index: 9999; padding:80px 0;}
+            .logo_area {top: 62px; position: absolute; left: 50%; margin-left:-150px;  text-align: center; transition: .5s; width: 350px;}
+            @media only screen and (min-width: 200px) and (max-width: 767px) { 
+                .slicknav_menu{display: block;}
+                .inner_main_menu{display: none;}
+                .logo_area {height: auto;left: 0;margin-left: 0;position: relative;top: 0;width: 130px;}
+                .logo_area img{height: auto;width: 100%;}
+            }
+            </style>
 </head>
 
 <body>
-    <header>
-        <div id="nav" class="navbar">
-
-            <div id="nav_left" class="nav_underlined">
-                <a href="index.html">HOME</a>
-                <a href="services.html">SERVICES</a>
-                <a href="portfolio.html">PORTFOLIO</a>
-            </div>
-
-
-            <div id="nav_logo">
-
-                <a href="index.html" class="logo1">
-                    <img src="images/logo_revised_star.png" alt="Main logo" class="logo_Claire" />
-                </a>
-
-            </div>
-
-
-            <div id="nav_right" class="nav_underlined">
-                <a href="blog.html">BLOG</a>
-                <a href="about.html">ABOUT</a>
-                <a href="contact.html">CONNECT</a>
-            </div>
+    
+    <div id="main_menu">
+        <div class="logo_area">
+            <a href="index.html" id="logo"><img src="images/logoStarClaireFinal_350.png" id="logo_Claire"></a>
         </div>
+        <div class="inner_main_menu">
+            <ul id="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Connect</a></li>
+            </ul>
+        </div>
+    </div>
 
-    </header>
+    <script>
+        // When the user scrolls down 100px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+            document.getElementById("main_menu").style.padding = "30px 0px";
+            document.getElementById("logo_Claire").style.width = "280px";
+            document.getElementById("logo_Claire").style.marginTop = "-42px";
+          } else {
+            document.getElementById("main_menu").style.padding = "80px 0px";
+            document.getElementById("logo_Claire").style.width = "350px";
+            document.getElementById("logo_Claire").style.marginTop = "0px";
+          }
+        }
 
+
+
+        </script>
 
 
     <div id="main">
-
-        <div id="home_img" class="col-lg-12">
-            <img src="images/capstone_banner_gold_2560.jpg" class="img-fluid" id="moodboard"
-                alt="Collage of many small, colorful images of nature and inspirational women" />
-                <!-- <source srcset="images/capstone_banner_gold_2.png" media="(max-width: 600px)">
-                    <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
-                    <source srcset="flowers.jpg">
-                    <img src="img_smallflower.jpg" alt="Flowers"> -->
+        <div class="row">
+            <div id="home_img" class="container-fluid col-lg-12">
+                <img src="images/capstone_banner_gold_2560_revised.jpg" class="img-fluid" id="moodboard"
+                    alt="Collage of many small, colorful images of nature and inspirational women" />
+            </div>
         </div>
     </div>
 
@@ -262,6 +302,8 @@
             </div>
 
     </footer>
+
+   
 
 </body>
 
