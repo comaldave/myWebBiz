@@ -557,7 +557,7 @@ div#good_fit p {
 
 /* ABOUT ME PAGE STYLING */
 #about_collage {
-  margin-top: 180px;
+  margin-top: 220px;
   max-width: 100%;
   width: 100%;
   height: auto; }
@@ -573,7 +573,7 @@ div#good_fit p {
   background-color: #EADFBD;
   background-color: #fbf9ee; }
 
-#about_space_below_banner > P {
+#about_space_below_banner P {
   flex: 1;
   height: 50px;
   width: 1200px;
@@ -859,12 +859,11 @@ img#frida {
 
 /* Styling Contact page */
 #contact_collage {
-  margin-top: 180px;
+  margin-top: 220px;
   max-width: 100%;
   width: 100%;
-  margin-top: 142px;
-  /* WHY DO I HAVE TO INCLUDE THIS TO MAKE IT MATCH THE OTHERS!!!! */
-  /* height: auto; */ }
+  height: auto;
+  /* WHY DO I HAVE TO INCLUDE THIS TO MAKE IT MATCH THE OTHERS!!!! */ }
 
 #contact_space_below_banner {
   display: flex;
@@ -1082,7 +1081,7 @@ div#submit_contact {
 } */
 /* Styling Portfolio Page */
 #portfolio_collage {
-  margin-top: 180px;
+  margin-top: 220px;
   max-width: 100%;
   width: 100%;
   /* height:auto; */ }
@@ -1134,7 +1133,7 @@ div#submit_contact {
   height: 1000px; }
 
 #service_collage {
-  margin-top: 180px;
+  margin-top: 220px;
   max-width: 100%;
   width: 100%;
   height: auto; }
@@ -1183,7 +1182,7 @@ img#gold_star {
 
 /* Styling Blog Page */
 #blog_collage {
-  margin-top: 180px;
+  margin-top: 220px;
   max-width: 100%;
   width: 100%;
   height: auto; }
