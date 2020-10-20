@@ -70,7 +70,7 @@ body {
 
   /* added to prevent horizontal scroll bar */
   /* need to fix this this and not use a hack.  Find the element that is overflowing */
-  overflow-x: hidden;  
+  overflow-x: hidden;
   overflow-y: scroll;
 
   /* prevents scroll bounce */
@@ -84,39 +84,153 @@ body::after {
 }
 
 
+
+
+// shadow effect on header
 #main_menu.active {
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+
+// navigation links
+.inner_main_menu {
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.inner_main_menu ul {
+  margin: 0;
+  list-style: none;
+  text-align: right;
+}
+
+.inner_main_menu ul li {
+  float: none;
+  display: inline-block;
+  position: relative
+}
+
+.inner_main_menu ul li:nth-child(1) {
+  float: left;
+}
+
+.inner_main_menu ul li:nth-child(2) {
+  float: left;
+}
+
+.inner_main_menu ul li:nth-child(3) {
+  float: left;
+}
+
+.inner_main_menu ul li a {
+  color: #606060;
+  font-family: "tenor sans";
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  margin: 5px 20px 5px 20px
+}
+
+#menu {
+  background-color: white;
+  font-size: 12px;
+}
+
+#logo_Claire {
+  width: auto;
+  height: auto;
+  transition: 0.5s;
+  margin-top: 0px;
+}
+
+#main_menu {
+  transition: 0.5s;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  background-color: white;
+  z-index: 9999;
+  padding: 80px 0;
+}
+
+.logo_area {
+  top: 62px;
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  text-align: center;
+  transition: .5s;
+  width: 350px;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+  .slicknav_menu {
+    display: block;
+  }
+
+  .inner_main_menu {
+    display: none;
+  }
+
+  .logo_area {
+    height: auto;
+    left: 0;
+    margin-left: 0;
+    position: relative;
+    top: 0;
+    width: 130px;
+  }
+
+  .logo_area img {
+    height: auto;
+    width: 100%;
+  }
+}
 
 
 
-//  #menu a {
-//   -webkit-transform: translateZ(0);
-//   transform: translateZ(0);
-//   -webkit-backface-visibility: hidden;
-//   backface-visibility: hidden;
-//   -moz-osx-font-smoothing: grayscale;
-// }
 
-// #menu a:before {
-//    content: "";
-//    position: absolute;
-//    width: 100%;
-//    height: 1px;
-//    bottom: 0;
-//    left: 0;
-//    background-color: rgb(211, 211, 211);
-//    visibility: hidden;
-//    -webkit-transform: scaleX(0);
-//    transform: scaleX(0);
-//    -webkit-transition: all 0.3s ease-in-out 0s;
-//    transition: all 0.3s ease-in-out 0s;
-// }
 
-//  #menu a:hover:before {
-//    visibility: visible;
-//    -webkit-transform: scaleX(1);
-//    transform: scaleX(1);
-//  }
+
+
+
+
+
+
+
+
+// underline from center on navigation links 
+#menu a {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#menu a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(211, 211, 211);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#menu a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
 
 
 
@@ -128,9 +242,9 @@ body::after {
   margin-left: auto;
   margin-top: 220px;
   // width: 100%; 
-  max-width:100%;
-  display:block;
-  height:auto;
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
 
 
@@ -265,16 +379,16 @@ body::after {
   height: 970px;
   /* width: 100%; */
   background: url(../images/torn_edge_bkgrd_1000.jpg);
-  
+
   /* size of background image is 1600 x 1000 px */
   /* background-size: 1600px 970px; */
-  
+
 }
 
 
 #remote {
   /* margin-left: 220px; */
-  float:right;
+  float: right;
   width: 650px;
   margin-top: 605px;
   /* margin-right: -140px; */
@@ -318,7 +432,7 @@ body::after {
   margin-top: 630px;
   margin-left: 54px;
   padding-bottom: 300px;
-  float:left;
+  float: left;
 
 }
 
@@ -368,7 +482,7 @@ div#two {
   /* background-color: #fbf9ee; */
   vertical-align: middle;
   margin-left: 50px;
-  
+
 }
 
 div#do_this {
@@ -377,6 +491,7 @@ div#do_this {
   margin-top: -20px;
   width: 100px;
 }
+
 /* div#two p {
   width: 300px !important;
 } */
@@ -457,11 +572,11 @@ div#two p {
   visibility: hidden;
 }  */
 
- /* h3#more_about_me:hover {
+/* h3#more_about_me:hover {
   background-color: rgb(207, 100, 120);
 }  */
 
- /* #more_about_me>a:hover {
+/* #more_about_me>a:hover {
   color: rgb(255, 248, 214);
 }  */
 
@@ -603,11 +718,11 @@ div#good_fit p {
 /* ABOUT ME PAGE STYLING */
 
 
-#about_collage{
+#about_collage {
   margin-top: 180px;
   max-width: 100%;
   width: 100%;
-  height:auto;
+  height: auto;
 }
 
 
@@ -623,7 +738,8 @@ div#good_fit p {
   background-color: #fbf9ee;
 
 }
-#about_space_below_banner > P {
+
+#about_space_below_banner>P {
   flex: 1;
   height: 50px;
   width: 1200px;
@@ -753,7 +869,7 @@ p.wider_p_about_info {
   width: 100%;
 }
 
-#the_one > h2 {
+#the_one>h2 {
   height: 40px;
   width: 600px;
   text-align: center;
@@ -764,7 +880,7 @@ p.wider_p_about_info {
   padding-bottom: 6px;
 }
 
-#the_one > p {
+#the_one>p {
   font-family: Quentin;
   font-size: 3em;
   padding-top: 10px;
@@ -808,7 +924,7 @@ img#lets_do_this {
   background: white !important;
   /* background: #16c0b7 !important; */
   /* #16c0b7! */
-  border: 2px solid rgb(210, 185, 98); 
+  border: 2px solid rgb(210, 185, 98);
   /* border: 2px solid #16c0b7; */
 }
 
@@ -912,7 +1028,7 @@ img#frida {
 }
 
 
-.mySlides > p {
+.mySlides>p {
   /* margin: auto; */
   text-align: center;
   display: inline-block;
@@ -972,7 +1088,7 @@ img#frida {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(210, 185, 98,0.6);
+  background-color: rgba(210, 185, 98, 0.6);
   color: white;
 }
 
@@ -985,7 +1101,8 @@ img#frida {
   margin-top: 180px;
   max-width: 100%;
   width: 100%;
-  margin-top: 142px;  /* WHY DO I HAVE TO INCLUDE THIS TO MAKE IT MATCH THE OTHERS!!!! */ 
+  margin-top: 142px;
+  /* WHY DO I HAVE TO INCLUDE THIS TO MAKE IT MATCH THE OTHERS!!!! */
   /* height: auto; */
 }
 
@@ -1020,7 +1137,7 @@ img#contact_shine {
 }
 
 
-#white_box > h2 {
+#white_box>h2 {
   flex: 1;
   color: white;
   color: #16c0b7;
@@ -1071,7 +1188,7 @@ form#contact_us {
 }
 
 
-#email_me > p {
+#email_me>p {
   flex: 1;
   /* font-family: Lora; */
   /* font-family: 'Tenor Sans'; */
@@ -1100,7 +1217,7 @@ textarea {
 .group,
 .custom-select {
   /* display: inline-block; */
-  float:right;
+  float: right;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -1223,14 +1340,14 @@ div#submit_contact {
   text-transform: none;
   font-size: 2.6em;
   padding: 10px 0 0 0;
-  margin: -10px 10px 0 0 ;
+  margin: -10px 10px 0 0;
   float: right;
 }
 
 
 #submit_contact input[type=button]:hover {
   background: white !important;
-  color: rgba(69,69,69,0.7) !important;
+  color: rgba(69, 69, 69, 0.7) !important;
   font-size: 3em;
 }
 
@@ -1261,7 +1378,7 @@ div#submit_contact {
 /* Styling Portfolio Page */
 
 
-#portfolio_collage{
+#portfolio_collage {
   margin-top: 180px;
   max-width: 100%;
   width: 100%;
@@ -1304,7 +1421,7 @@ div#submit_contact {
   background-color: white;
 }
 
-#white_box > h2 {
+#white_box>h2 {
   flex: 1;
   color: white;
   color: #16c0b7;
@@ -1329,7 +1446,7 @@ div#submit_contact {
   margin-top: 180px;
   max-width: 100%;
   width: 100%;
-  height:auto;
+  height: auto;
 }
 
 #services_space_below_banner {
@@ -1340,7 +1457,7 @@ div#submit_contact {
   height: 148px;
   justify-content: center;
   align-items: center;
-  background-color:#EADFBD;
+  background-color: #EADFBD;
   background-color: #fbf9ee;
 }
 
@@ -1348,7 +1465,7 @@ div#submit_contact {
   flex: 1;
   height: 50px;
   width: 1200px;
-  margin-top: 18px; 
+  margin-top: 18px;
   text-align: center;
   font-size: 24px;
   font-family: Lora;
@@ -1362,7 +1479,7 @@ img#gold_star {
   margin-bottom: -10px;
 }
 
-#white_box > h2 {
+#white_box>h2 {
   flex: 1;
   color: white;
   color: #16c0b7;
@@ -1392,7 +1509,7 @@ img#gold_star {
   margin-top: 180px;
   max-width: 100%;
   width: 100%;
-  height:auto;
+  height: auto;
 }
 
 
@@ -1445,18 +1562,18 @@ img#gold_star {
 
 
 
- #footer_leftside {
+#footer_leftside {
   position: absolute;
   margin-left: 100px;
   margin-top: 170px;
 
-} 
+}
 
 #creative_solution_leftside_footer {
   font-family: "Emma Signature";
-  font-family:"Quentin";
+  font-family: "Quentin";
   font-size: 1.7em;
- 
+
 }
 
 /* #hand_holding_stars {
@@ -1475,7 +1592,7 @@ img#gold_star {
 } */
 
 /* #footer_beneath_hands { */
-  /* font-family: "Tenor Sans";
+/* font-family: "Tenor Sans";
   font-size: 2.5em;
   color: rgb(69,69,69); 
   
@@ -1504,7 +1621,7 @@ img#gold_star {
 
 
 footer {
-  width:100%;
+  width: 100%;
   /* position: relative; */
   height: 400px;
 }
@@ -1517,15 +1634,15 @@ footer {
 }
 
 
- #footer_content {
-  display: flex;                 
-  flex-direction: row;     
-  position: absolute;  
-  bottom: 0;    
-  flex-wrap: nowrap;    
-  height: 40px;    
-  width: 100%;      
-  justify-content:space-around;
+#footer_content {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  flex-wrap: nowrap;
+  height: 40px;
+  width: 100%;
+  justify-content: space-around;
 
 }
 
@@ -1538,18 +1655,18 @@ footer {
 #footer_right {
   float: right;
   width: 300px;
- 
+
 }
 
 #footer_middle {
   display: inline-block;
   /* margin:0 auto; */
-  width:300px;
-   
-}  
+  width: 300px;
 
- #footer_logo {
-  width: auto; 
+}
+
+#footer_logo {
+  width: auto;
   margin: 0 auto;
 
 }

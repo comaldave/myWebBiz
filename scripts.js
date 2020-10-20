@@ -1,73 +1,57 @@
 // "use strict"
 
 
+/* FADE IN EFFECT ON ELEMENTS UNDER HOMEPAGE MOODBOARD */
 
 
+$(document).ready(function () {
 
-
-/* FADE IN EFFECT ON ELEMENTS UNDER HOMEPAGE MOODBOARD */ 
-
-
-$(document).ready(function() {
-    
   /* Every time the window is scrolled ... */
-  $(window).scroll( function(){
-  
-      /* Check the location of each desired element */
-      $('.hide_me').each( function(i){
-          
-          var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-          var bottom_of_window = $(window).scrollTop() + $(window).height();
-          
-          /* If the object is completely visible in the window, fade it in*/
-          if( bottom_of_window > bottom_of_object ){
-              
-              $(this).animate({'opacity':'1'},800);
-                  
-          }
-          
-      }); 
-  
+  $(window).scroll(function () {
+
+    /* Check the location of each desired element */
+    $('.hide_me').each(function (i) {
+
+      var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+      /* If the object is completely visible in the window, fade it in*/
+      if (bottom_of_window > bottom_of_object) {
+
+        $(this).animate({
+          'opacity': '1'
+        }, 800);
+
+      }
+
+    });
+
   });
-  
+
 });
 
 
 
+// When the user scrolls down 100px from the top of the document, resize the navbar's padding 
+window.onscroll = function () {
+  scrollFunction()
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+    document.getElementById("main_menu").style.padding = "30px 0px";
+    document.getElementById("logo_Claire").style.width = "280px";
+    document.getElementById("logo_Claire").style.marginTop = "-42px";
+  } else {
+    document.getElementById("main_menu").style.padding = "80px 0px";
+    document.getElementById("logo_Claire").style.width = "350px";
+    document.getElementById("logo_Claire").style.marginTop = "0px";
+  }
+}
 
 
 
 
-/* logo effect */ 
-
-// $(document).ready(function() {
-//   $(document).scroll(function() {
-//         if ($(document).scrollTop() >= 100) {
-//           $('.logo1').addClass('js-scrolling');
-//         } else {
-//           $('.logo1').removeClass('js-scrolling');
-//         }
-//   });
-// });
-
-
-
-
-//  shadowing effect on bottom edge of header during scroll
-// $(window).scroll(function () {
-//   var scroll = $(window).scrollTop();
-//   if (scroll >= 100) {
-//     $("header").addClass("active");
-//     $('header').addClass('small');
-
-//   } else {
-//     $("header").removeClass("active");
-//     $('header').removeClass('small');
-//   }
-// });
-
-
-// trying this out on new navigation .. delete if doesn't work. 
 //  shadowing effect on bottom edge of header during scroll
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
@@ -140,7 +124,7 @@ $(document).ready(function () {
 
 
 
-/* Set Date in input box on contact page */ 
+/* Set Date in input box on contact page */
 
 document.querySelector("#today").valueAsDate = new Date();
 
@@ -174,19 +158,3 @@ document.querySelector("#today").valueAsDate = new Date();
 //   slides[slideIndex-1].style.display = "block";  
 //   dots[slideIndex-1].className += " active";
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
