@@ -309,10 +309,9 @@ body::after {
   position: absolute;
   /* width: 400px;
   height: 500px; */
-  width: 24%;
-  height: auto;
-  top: -106px;
-  left: 90px;
+  width: 26%;
+  top: -136px;
+  left: 100px;
   opacity: 0.3; }
 
 .intro_2 {
@@ -606,6 +605,10 @@ img#about_awesome {
   height: 900px;
   text-align: center; }
 
+
+.about_main_wrapper {
+}
+
 #about_info {
   font-size: .95em;
   /* font-family: "Lora";
@@ -856,6 +859,9 @@ img#frida {
 .next:hover {
   background-color: rgba(210, 185, 98, 0.6);
   color: white; }
+
+
+
 
 /* Styling Contact page */
 #contact_collage {
