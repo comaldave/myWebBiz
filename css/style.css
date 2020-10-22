@@ -111,7 +111,7 @@ body::after {
   width: auto;
   height: auto;
   transition: 0.5s;
-  margin-top: 0px; }
+  margin-top: -5px; }
 
 #main_menu {
   transition: 0.5s;
@@ -1047,7 +1047,8 @@ div#submit_contact {
   text-align: center;
   align-items: center;
   justify-content: center;
-  background: transparent; }
+  background: transparent; 
+}
 
 #submit_contact input[type=button] {
   text-decoration: none;
@@ -1072,6 +1073,7 @@ div#submit_contact {
   background: white !important;
   color: rgba(69, 69, 69, 0.7) !important;
   font-size: 3em; }
+
 
 /* input[type=submit] {
   color: white;
