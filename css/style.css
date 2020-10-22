@@ -307,8 +307,7 @@ body::after {
 
 #zodiac_leo {
   position: absolute;
-  /* width: 400px;
-  height: 500px; */
+  height: auto;
   width: 26%;
   top: -136px;
   left: 100px;
@@ -605,10 +604,6 @@ img#about_awesome {
   height: 900px;
   text-align: center; }
 
-
-.about_main_wrapper {
-}
-
 #about_info {
   font-size: .95em;
   /* font-family: "Lora";
@@ -659,18 +654,15 @@ p.wider_p_about_info {
   margin-left: -54px;
   width: 50px; }
 
-.claire_sig  {
-  /* float: left; */
+.claire_sig {
   text-align: center;
   font-family: Quentin;
   margin-left: 170px;
-  margin-top: 30px; 
-  width: 200px;
-}
+  margin-top: 30px;
+  width: 200px; }
 
 .claire_sig p {
-  font-size: 2vw;
-}
+  font-size: 2.5vw; }
 
 #sig_line {
   margin-top: 10px;
@@ -866,16 +858,12 @@ img#frida {
   background-color: rgba(210, 185, 98, 0.6);
   color: white; }
 
-
-
-
 /* Styling Contact page */
 #contact_collage {
   margin-top: 220px;
   max-width: 100%;
   width: 100%;
-  height: auto;
-  /* WHY DO I HAVE TO INCLUDE THIS TO MAKE IT MATCH THE OTHERS!!!! */ }
+  height: auto; }
 
 #contact_space_below_banner {
   display: flex;
@@ -892,7 +880,7 @@ img#frida {
   flex: 1;
   height: 50px;
   width: 1200px;
-  margin-top: 34px;
+  margin-top: 33px;
   text-align: center;
   font-size: 24px;
   font-family: Lora;
@@ -1053,31 +1041,32 @@ div#submit_contact {
   text-align: center;
   align-items: center;
   justify-content: center;
-  background: transparent; 
-  height: 500px;
-}
+  background: transparent;
+  height: 500px; }
 
 #submit_contact input[type=button] {
   text-decoration: none;
   cursor: pointer;
+  /* padding: 12px 30px !important; */
+  /* background: rgb(69, 69, 69) !important; */
+  /* border: 2px solid rgb(69, 69, 69); */
   transition: 0.3s !important;
+  /* font-family: 'Tenor Sans'; */
+  /* font-family: 'Ernestine Pro Light'; */
   font-family: Quentin;
-  /* color: black; */
+  color: black;
   color: #16c0b7;
   letter-spacing: -.009px;
   text-transform: none;
-  font-size: 2vw;
-  padding:  10px 0;
+  font-size: 2.3em;
+  padding: 10px 0 0 0;
   margin: -10px 10px 0 0;
-  float: right; 
-}
+  float: right; }
 
 #submit_contact input[type=button]:hover {
   background: white !important;
   color: rgba(69, 69, 69, 0.7) !important;
-  font-size: 2.5vw; 
-}
-
+  font-size: 2.7em; }
 
 /* input[type=submit] {
   color: white;

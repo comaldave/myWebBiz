@@ -35,7 +35,7 @@
         </div>
     </div>
 
-<!-- Why does the col-md-12 need a negative margin to make it identical to other pages!!?  -->
+    <!-- Why does the col-md-12 need a negative margin to make it identical to other pages!!?  -->
     <div class="container">
         <div class="col-md-12" style="padding-left: 0px; padding-right: 0px; margin-top: -38px;">
             <img src="images/web_banner_2560x253_gold_canyon.jpg" id="contact_collage" class="img-fluid"
@@ -58,8 +58,6 @@
             <div class="contact_form">
 
                 <div id="email_me">
-                    <!-- <p>EMAIL: CLAIRECRAWFORDDESIGNS@GMAIL.COM </br>
-                        OR FILL OUT THE FORM BELOW </p> -->
                     <p> Ready to take your business to new heights? </br>
                         Just fill out the form below or
                         email hello@clairecrawforddesigns.com. </br> I do
@@ -76,14 +74,21 @@
 
                 <form id="contact_us" action="#">
                     <div class="group">
-                        <!-- <label for="fname">Full Name * </label> -->
-                        <input type="text" id="fname" name="firstname" placeholder="Full Name *" required>
+                        <input type="text" id="email" name="email" placeholder="Email Address *" required>
                     </div>
 
                     <div class="group">
-                        <!-- <label for="email">Email Address * </label> -->
-                        <input type="text" id="email" name="email" placeholder="Email Address *" required>
+                        <input type="text" id="fname" name="fullname" placeholder="Full Name *" required>
                     </div>
+
+                    <div class="group">
+                        <input type="text" id="budget" name="budget" placeholder="What is your budget*" required>
+                    </div>
+
+                    <div class="group">
+                        <input type="text" id="industry" name="industry" placeholder="What is your business industry? *" required>
+                    </div>
+
 
                     </br>
 
@@ -103,8 +108,7 @@
 
                     <div class="custom-select">
                         <select>
-                            <option style="color:#AC985B" value="0">How did you find
-                                me? *
+                            <option style="color:#AC985B" value="0">How did you find Claire Crawford Designs? *
                             </option>
                             <option value="1" class="other">
                                 Google</option>
@@ -117,6 +121,8 @@
                         </select>
                     </div>
                     </br>
+
+                    
 
                     <div class="group">
                         <!-- <label for="tell_me_biz">Tell me about your business (include web address if you have one) *</label> -->
@@ -166,9 +172,7 @@
                 <img src="images/hands_holding_stars.png" id="hand_holding_stars"
                     alt="open hands holding stars" />
             </div> 
-
            <div id="footer_beneath_hands">
-
             </div>
             <p> Claire Crawford Designs</p>
             <p> Serving creatives globally </p> 
