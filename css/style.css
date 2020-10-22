@@ -1048,31 +1048,29 @@ div#submit_contact {
   align-items: center;
   justify-content: center;
   background: transparent; 
+  height: 500px;
 }
 
 #submit_contact input[type=button] {
   text-decoration: none;
   cursor: pointer;
-  /* padding: 12px 30px !important; */
-  /* background: rgb(69, 69, 69) !important; */
-  /* border: 2px solid rgb(69, 69, 69); */
   transition: 0.3s !important;
-  /* font-family: 'Tenor Sans'; */
-  /* font-family: 'Ernestine Pro Light'; */
   font-family: Quentin;
-  color: black;
+  /* color: black; */
   color: #16c0b7;
   letter-spacing: -.009px;
   text-transform: none;
-  font-size: 2.6em;
-  padding: 10px 0 0 0;
+  font-size: 2vw;
+  padding:  10px 0;
   margin: -10px 10px 0 0;
-  float: right; }
+  float: right; 
+}
 
 #submit_contact input[type=button]:hover {
   background: white !important;
   color: rgba(69, 69, 69, 0.7) !important;
-  font-size: 3em; }
+  font-size: 2.5vw; 
+}
 
 
 /* input[type=submit] {
