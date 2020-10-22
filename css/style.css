@@ -659,17 +659,23 @@ p.wider_p_about_info {
   margin-left: -54px;
   width: 50px; }
 
-.claire_sig {
-  float: right;
+.claire_sig  {
+  /* float: left; */
+  text-align: center;
   font-family: Quentin;
-  font-size: 2.5em;
-  margin-right: -140px;
-  margin-top: 22px; }
+  margin-left: 170px;
+  margin-top: 30px; 
+  width: 200px;
+}
+
+.claire_sig p {
+  font-size: 2vw;
+}
 
 #sig_line {
-  margin-top: 8px;
+  margin-top: 10px;
   width: 150px;
-  margin-left: 15px; }
+  margin-left: 435px; }
 
 #the_one {
   display: flex;
