@@ -118,6 +118,7 @@ body::after {
 
 .inner_main_menu ul li a {
   color: #606060;
+  /* trying out new font color that is a bit darker */ 
   font-family: "tenor sans";
   font-size: 0.8em;
   letter-spacing: 1px;
@@ -125,6 +126,13 @@ body::after {
   text-decoration: none;
   display: block;
   margin: 5px 20px 5px 20px; }
+
+  .inner_main_menu ul li a:hover {
+    color: #AF8465;
+    color: #9c853e;
+    color: #d2b96d;
+    color: black;
+  }
 
 #menu {
   background-color: white;
@@ -154,14 +162,14 @@ body::after {
   transition: .5s;
   width: 350px; }
 
-@media only screen and (min-width: 200px) and (max-width: 767px) {
-  .slicknav_menu {
-    display: block;
-  }
+// @media only screen and (min-width: 200px) and (max-width: 767px) {
+//   .slicknav_menu {
+//     display: block;
+//   }
 
-  .inner_main_menu {
-    display: none;
-  }
+  // .inner_main_menu {
+  //   display: none;
+  // }
 
   .logo_area {
     height: auto;
@@ -197,6 +205,7 @@ body::after {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
+=
 }
 
 #menu a:before {
@@ -218,6 +227,7 @@ body::after {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+
 }
 
 

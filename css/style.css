@@ -95,6 +95,7 @@ body::after {
 
 .inner_main_menu ul li a {
   color: #606060;
+  /* trying out new font color that is a bit darker */
   font-family: "tenor sans";
   font-size: 0.8em;
   letter-spacing: 1px;
@@ -102,6 +103,12 @@ body::after {
   text-decoration: none;
   display: block;
   margin: 5px 20px 5px 20px; }
+
+.inner_main_menu ul li a:hover {
+  color: #AF8465;
+  color: #9c853e;
+  color: #d2b96d;
+  color: black; }
 
 #menu {
   background-color: white;
