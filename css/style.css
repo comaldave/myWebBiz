@@ -5664,7 +5664,7 @@ button.bg-dark:focus {
 .my-5 {
   margin-top: 3rem !important; }
 
-.mr-5,
+.mr-5, .portfolioCard,
 .mx-5 {
   margin-right: 3rem !important; }
 
@@ -9284,6 +9284,21 @@ input[type="color"].form-control:disabled {
 
 /* Define the colors used. */
 /* Layout rules divide the page into sections. Layouts hold one or more modules together. */
+.portfolioCard img {
+  max-width: 90vw; }
+  @media (min-width: 576px) {
+    .portfolioCard img {
+      max-width: 90vw; } }
+  @media (min-width: 768px) {
+    .portfolioCard img {
+      max-width: 45vw; } }
+  @media (min-width: 992px) {
+    .portfolioCard img {
+      max-width: 18vw; } }
+  @media (min-width: 1200px) {
+    .portfolioCard img {
+      max-width: 18vw; } }
+
 /* Modules are the reusable, modular parts of our design. They are the callouts, the sidebar sections, the product lists and so on. */
 /* Rules for Icon Modules. */
 body,
