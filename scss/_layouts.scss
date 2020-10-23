@@ -1,0 +1,9 @@
+// _layouts.scss by Claire Crawford
+
+/* Layout rules divide the page into sections. Layouts hold one or more modules together. */
+
+.portfolioCard {
+    @extend .card;
+    @extend .mb-4;
+    @extend .shadow-sm;
+}

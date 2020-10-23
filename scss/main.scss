@@ -1,56 +1,51 @@
+
+// main.scss by Claire Crawford (hidden comment) 
+/* css.style derived from main.scss by Claire Crawford */
 @charset "utf-8";
 
+@import "_base.scss";
+@import "_theme.scss";
+@import "_layouts.scss";
+@import "_modules.scss";
+@import "_icons.scss";
 
 
-/* ==============================
-   SETTING DEFAULT ELEMENT STYLES
-   ==============================
-*/
 
-@font-face {
-  font-family: 'Saturday Script';
-  src: url('myfont.woff2') format('woff2'),
-    url('myfont.woff') format('woff');
-}
+// aside,
+// body,
+// div,
+// dl,
+// dt,
+// dd,
+// em,
+// h1,
+// h2,
+// html,
+// img,
+// li,
+// main,
+// nav,
+// nav a,
+// ol,
+// p,
+// section,
+// ul,
+// table,
+// tr,
+// td,
+// footer,
+// th {
+//   margin: 0;
+//   padding: 0;
+//   font-size: 16px;
+//   text-decoration: none;
+//   list-style-type: none;
 
-/* #AC944B color I'm trying out as moodboard border*/
-/* #17779C color I'm using on blue font */
-
-aside,
-body,
-div,
-dl,
-dt,
-dd,
-em,
-h1,
-h2,
-html,
-img,
-li,
-main,
-nav,
-nav a,
-ol,
-p,
-section,
-ul,
-table,
-tr,
-td,
-footer,
-th {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  text-decoration: none;
-  list-style-type: none;
-
-  /* background: transparent;
-   -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-   box-sizing: border-box;   */
-}
+//   /* background: transparent;
+//    -webkit-box-sizing: border-box;
+//    -moz-box-sizing: border-box;
+//    box-sizing: border-box;   */
+// }
 
 
 body,
@@ -68,6 +63,7 @@ body {
   flex-direction: column;
   position: relative;
 
+
   /* added to prevent horizontal scroll bar */
   /* need to fix this this and not use a hack.  Find the element that is overflowing */
   overflow-x: hidden;
@@ -75,6 +71,7 @@ body {
 
   /* prevents scroll bounce */
   overscroll-behavior: none;
+
 }
 
 body::after {
@@ -117,7 +114,7 @@ body::after {
   float: left; }
 
 .inner_main_menu ul li a {
-  color: #606060;
+  color: $clrGray;
   /* trying out new font color that is a bit darker */ 
   font-family: "tenor sans";
   font-size: 0.8em;
@@ -128,10 +125,7 @@ body::after {
   margin: 5px 20px 5px 20px; }
 
   .inner_main_menu ul li a:hover {
-    color: #AF8465;
-    color: #9c853e;
-    color: #d2b96d;
-    color: black;
+    color: $clrHover;
   }
 
 #menu {
@@ -184,7 +178,7 @@ body::after {
     height: auto;
     width: 100%;
   }
-}
+
 
 
 
@@ -205,7 +199,7 @@ body::after {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
-=
+
 }
 
 #menu a:before {
@@ -323,8 +317,8 @@ body::after {
 
 
 #just_below_moodboard hr {
-  border: .8px solid #d2b96e;
-  background: #d2b96e;
+  border: .8px solid $clrMoodBorder;
+  background: $clrBkgdMoodboard;
   width: 880px;
   margin-top: 104px;
   margin-bottom: 0;
