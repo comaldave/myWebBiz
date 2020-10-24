@@ -84,151 +84,18 @@ body::after {
 
 
 // shadow effect on header
-#main_menu.active {
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-}
+
 
 
 // navigation links
-.inner_main_menu {
-  margin: 0 auto;
-  width: 1170px; }
-
-.inner_main_menu ul {
-  margin: 0;
-  list-style: none;
-  text-align: right; }
-
-.inner_main_menu ul li {
-  float: none;
-  display: inline-block;
-  position: relative; }
-
-.inner_main_menu ul li:nth-child(1) {
-  float: left; }
-
-.inner_main_menu ul li:nth-child(2) {
-  float: left; }
-
-.inner_main_menu ul li:nth-child(3) {
-  float: left; }
-
-.inner_main_menu ul li a {
-  color: $clrGray;
-  /* trying out new font color that is a bit darker */ 
-  font-family: "tenor sans";
-  font-size: 0.8em;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: block;
-  margin: 5px 20px 5px 20px; }
-
-  .inner_main_menu ul li a:hover {
-    color: $clrHover;
-    
-  }
-
-#menu {
-  background-color: white;
-  font-size: 12px; }
-
-#logo_Claire {
-  width: auto;
-  height: auto;
-  transition: 0.5s;
-  margin-top: -5px; }
-
-#main_menu {
-  transition: 0.5s;
-  width: 100%;
-  position: fixed;
-  overflow: hidden;
-  background-color: white;
-  z-index: 9999;
-  padding: 80px 0; }
-
-.logo_area {
-  top: 62px;
-  position: absolute;
-  left: 50%;
-  margin-left: -150px;
-  text-align: center;
-  transition: .5s;
-  width: 350px; }
-
-// @media only screen and (min-width: 200px) and (max-width: 767px) {
-//   .slicknav_menu {
-//     display: block;
-//   }
-
-  // .inner_main_menu {
-  //   display: none;
-  // }
-
-  .logo_area {
-    height: auto;
-    left: 0;
-    margin-left: 0;
-    position: relative;
-    top: 0;
-    width: 130px;
-  }
-
-  .logo_area img {
-    height: auto;
-    width: 100%;
-  }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 // underline from center on navigation links 
-#menu a {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-
-}
-
-#menu a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: rgb(211, 211, 211);
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-#menu a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-
-}
 
 
 
-
-
+// this is the content 
 
 #moodboard {
   // position: relative;
@@ -1542,6 +1409,7 @@ img#gold_star {
   text-align: center;
   margin-bottom: 44px !important;
   font-size: 1.6em;
+  
 }
 
 #blog_stuff_here {
@@ -1554,64 +1422,6 @@ img#gold_star {
 
 
 /* STYLING FOOTER */
-
-
-
-#footer_leftside {
-  position: absolute;
-  margin-left: 100px;
-  margin-top: 170px;
-
-}
-
-#creative_solution_leftside_footer {
-  font-family: "Emma Signature";
-  font-family: "Quentin";
-  font-size: 1.7em;
-
-}
-
-/* #hand_holding_stars {
-  width: 160px;
-  margin-top: 70px;
-  margin-bottom: 0;
-  opacity: 0.6;
-} */
-
-/* #footer_info {
-  width: 100%; 
-  text-align: center;
-  height: 350px;
-  position: relative;
-
-} */
-
-/* #footer_beneath_hands { */
-/* font-family: "Tenor Sans";
-  font-size: 2.5em;
-  color: rgb(69,69,69); 
-  
-
-} /*
-
-/* #footer_beneath_signature {
-  font-family: "Tenor sans";
-  font-size: 1.1em;
-  
-} */
-
-/* #footer_beneath_signature_2 {
-  font-family: Quentin;
-  font-size: 2em;
-  margin-top: -20px;
-} */
-
-/* #sig_footer_img {
-  text-align: center;
-  width: 220px;
-  margin-top: 10px;
-  float: left;
-} */
 
 
 
@@ -1629,77 +1439,8 @@ footer {
 }
 
 
-#footer_content {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  bottom: 0;
-  flex-wrap: nowrap;
-  height: 40px;
-  width: 100%;
-  justify-content: space-around;
-
-}
 
 
-#footer_left {
-  float: left;
-  width: 300px;
-}
-
-#footer_right {
-  float: right;
-  width: 300px;
-
-}
-
-#footer_middle {
-  display: inline-block;
-  /* margin:0 auto; */
-  width: 300px;
-
-}
-
-#footer_logo {
-  width: auto;
-  margin: 0 auto;
-
-}
-
-
-#logo_in_footer {
-  width: 200px;
-  margin-top: -14px;
-}
-
-/* #footer hr {
-  border: .1px solid #d2b96e;
-  background: #d2b96e;
-  width: 660px;
-  margin-bottom: 20px;
-
-} */
-
-
-#footer a:link {
-  color: rgb(99, 99, 99);
-  text-decoration: none;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-#footer a:visited {
-  color: rgb(99, 99, 99);
-}
-
-#footer a:hover {
-  text-decoration: none;
-  color: black;
-}
-
-#footer a:active {
-  color: #fff;
-}
 
 
 

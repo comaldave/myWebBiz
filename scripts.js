@@ -3,7 +3,6 @@
 
 /* FADE IN EFFECT ON ELEMENTS UNDER HOMEPAGE MOODBOARD */
 
-
 $(document).ready(function () {
 
   /* Every time the window is scrolled ... */
@@ -33,6 +32,7 @@ $(document).ready(function () {
 
 
 // When the user scrolls down 100px from the top of the document, resize the navbar's padding 
+
 window.onscroll = function () {
   scrollFunction()
 };
@@ -69,7 +69,7 @@ $(window).scroll(function () {
 
 
 
-// back to top bird effect
+// back to top icon effect
 $(document).ready(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 600) {

@@ -6,12 +6,42 @@
     @extend .card;
     @extend .mb-4;
     @extend .shadow-sm;
-    @extend .mr-5;
+    @extend .mx-auto;
+    @extend .mt-5;
     img {
         @include media-breakpoint-up(xs) {max-width: 90vw;}
         @include media-breakpoint-up(sm) {max-width: 90vw;}
         @include media-breakpoint-up(md) {max-width: 45vw;}
         @include media-breakpoint-up(lg) {max-width: 18vw;}
         @include media-breakpoint-up(xl) {max-width: 18vw;}
+
+    }
+    h3, h4 {
+        @extend .text-center;
+    }
+    h4 {
+        @extend .text-muted;
+    }
+    aside {
+        @extend .card-footer; 
+        @extend .list-group; 
+        @extend .list-group-horizontal; 
+        a {
+            @extend .list-group-item;
+            @extend .text-decoration-none;
+            font-family: Quentin;
+            font-size: 1rem;
+            font-weight: bold;
+            @extend .border-light;
+            @extend .bg-transparent;
+            @extend .rounded;
+            hover {
+                @extend .bg-transparent;
+                color: hotpink !important; 
+                
+            }
+        }
+    
     }
 }
+
