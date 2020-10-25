@@ -1,54 +1,80 @@
  <template> 
- <footer>
-        <div id="footer_bottom">
+ <div>
+        <div class="container-fluid text-center text-md-left">
 
+            <!-- Grid row -->
+            <div class="row">
 
-            <div id="footer_leftside">
-                <div id="creative_solution_leftside_footer">
-                    <p>Creative solutions for the dreamers, shakers &
-                        trailblazers
-                    </p>
-                    <br>
-                </div>
-                <p> Handcrafted in Fayetteville, Arkansas </p>
-                <p> Serving creatives globally </p>
+                <!-- Grid column -->
+                <section class="col-md-6 mt-md-0 mt-3">
+                    <!-- Content -->
+                    <h5 class="text-uppercase">Creative solutions for the dreamers, shakers &
+                        trailblazers</h5>
+                    <p>Handcrafted in Fayetteville, Arkansas</p>
+                    <p>Serving creatives globally</p>
+                </section>
+                <!-- Grid column -->
+
+                <!-- <hr class="clearfix w-100 d-md-none pb-3"> -->
+
+                <!-- Grid column -->
+                <nav class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Design Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="services.html">Services</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Connect</a>
+                        </li>
+                    </ul>
+
+                </nav>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <nav class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Legal Stuff</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="privacy.html">Privacy Notice</a>
+                        </li>
+                        <li>
+                            <a href="terms.html">Terms</a>
+                        </li>
+                        <li>
+                            <a href="disclaimer.html">Disclaimer</a>
+                        </li>
+                        <li>
+                            <a href="attributions.html">Attributions</a>
+                        </li>
+                    </ul>
+
+                </nav>
+                <!-- Grid column -->
+
             </div>
+            <!-- Grid row -->
 
-            <div id="footer_info">
-                <!-- <div id="footer_image_hands">
-                <img src="images/hands_holding_stars.png" id="hand_holding_stars"
-                    alt="open hands holding stars" />
-            </div>  -->
+        </div>
+        <!-- Footer Links -->
 
-                <div id="footer_content">
-
-                    <div id="footer_logo">
-
-                        <div id="footer_left">
-                            <a href="index.html">
-                                <img src="images/newest_logo_revised_quentin_gold_star_footer.jpg"
-                                 alt="Claire Crawford Designs" id="logo_in_footer" />
-                            </a>
-                        </div>
-
-                        <div id="footer_middle">
-                            <p>Copyright &copy;2019 Claire Crawford Designs</p>
-                        </div>
-
-                        <div id="footer_right">
-                            <p> <a href="privacy.html">Privacy Notice</a></p>
-                        </div>
-                        <div id="footer_right">
-                            <p> <a href="disclaimer.html">Disclaimer</a></p>
-                        </div>
-                        <div id="footer_right">
-                            <p> <a href="terms.html">Terms</a></p>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-
-    </footer>
-    </template>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            <p>Copyright &copy;2020 Claire Crawford Designs</p>
+        </div>
+</div>
+        <!-- Copyright -->
+</template>

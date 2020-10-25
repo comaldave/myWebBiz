@@ -3,39 +3,39 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1/>
-    <link rel="shortcut icon" type="image/png" href="images/favicon_gold.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" href="images/favicon_black_moon.png" />
     <title>Claire Crawford Web Design</title>
     <link href="css/style.css" rel="stylesheet" />
-    <!-- <link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css">  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="scripts.js"></script>
+
+    <!-- Load polyfills to support older browsers --> 
+    <script src="//polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div id="main_menu">
-        <div class="logo_area">
-            <a href="index.html" id="logo"><img src="images/logoStarClaireFinal_350.png" id="logo_Claire"></a>
+    <header>
+        <div id="main_menu">
+            <span class="logo_area">
+                <a href="index.html" id="logo"><img src="images/logoStarClaireFinal_350.png" id="logo_Claire"></a>
+            </span>
+            <nav class="inner_main_menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Connect</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="inner_main_menu">
-            <ul id="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Connect</a></li>
-            </ul>
-        </div>
+    </header>
     </div>
 
-    <div class="container">
-        <div class="col-md-12" style="padding-left: 0px; padding-right: 0px;">
-            <img src="images/web_banner_2560x253_gold_horses.jpg" id="portfolio_collage"
+    <img src="images/web_banner_2560x253_gold_horses.jpg" id="portfolio_collage"
                 alt="Collage of many small images" />
-        </div>
-    </div>
 
     <div class="about_main_wrapper">
         <div id="portfolio_space_below_banner">
@@ -193,71 +193,103 @@
                 </aside>
             </article>
         </div>
+    </div>
 
 
 
 
+        <footer class="myFooter">
+            <div class="container-fluid text-center text-md-left">
 
+                <!-- Grid row -->
+                <div class="row">
 
-        <footer>
-            <div id="footer_bottom">
+                    <!-- Grid column -->
+                    <section class="col-md-6 mt-md-0 mt-3">
+                        <!-- Content -->
+                        <h5 class="text-uppercase">Creative solutions for the dreamers, shakers &
+                            trailblazers</h5>
+                        <p>Handcrafted in Fayetteville, Arkansas</p>
+                        <p>Serving creatives globally</p>
+                    </section>
+                    <!-- Grid column -->
 
+                    <!-- <hr class="clearfix w-100 d-md-none pb-3"> -->
 
-                <div id="footer_leftside">
-                    <div id="creative_solution_leftside_footer">
-                        <p>Creative solutions for the dreamers, shakers & trailblazers
-                        </p>
-                        <br>
-                    </div>
-                    <p> Handcrafted in Fayetteville, Arkansas </p>
-                    <p> Serving creatives globally </p>
+                    <!-- Grid column -->
+                    <nav class="col-md-3 mb-md-0 mb-3">
+
+                        <!-- Links -->
+                        <h5 class="text-uppercase">Design Links</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="services.html">Services</a>
+                            </li>
+                            <li>
+                                <a href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Connect</a>
+                            </li>
+                        </ul>
+
+                    </nav>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <nav class="col-md-3 mb-md-0 mb-3">
+
+                        <!-- Links -->
+                        <h5 class="text-uppercase">Legal Stuff</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="privacy.html">Privacy Notice</a>
+                            </li>
+                            <li>
+                                <a href="terms.html">Terms</a>
+                            </li>
+                            <li>
+                                <a href="disclaimer.html">Disclaimer</a>
+                            </li>
+                            <li>
+                                <a href="attributions.html">Attributions</a>
+                            </li>
+                        </ul>
+
+                    </nav>
+                    <!-- Grid column -->
+
                 </div>
-
-                <!-- <div id="footer_info"> 
-             <div id="footer_image_hands">
-                <img src="images/hands_holding_stars.png" id="hand_holding_stars"
-                    alt="open hands holding stars" />
-            </div> 
-
-           <div id="footer_beneath_hands">
+                <!-- Grid row -->
 
             </div>
-            <p> Claire Crawford Designs</p>
-            <p> Serving creatives globally </p> 
-            <div id="footer_beneath_signature">
-                <p> freelance web design and development </p>
-           </div>
-           <div id="footer_beneath_signature_2">
-               <p> for the dreamers, shakers & trailblazers </p>
-           </div>  -->
+            <!-- Footer Links -->
 
-                <div id="footer_content">
-
-
-                    <div id="footer_logo">
-
-                        <div id="footer_left">
-                            <a href="index.html">
-                                <img src="images/newest_logo_revised_quentin_gold_star_footer.jpg"
-                                    alt="Claire Crawford Designs" id="logo_in_footer" />
-                            </a>
-                        </div>
-
-                        <div id="footer_middle">
-                            <p>Copyright &copy;2019 Claire Crawford Designs</p>
-                        </div>
-
-                        <div id="footer_right">
-                            <p> <a href="privacy.html">Terms & Privacy</a></p>
-                        </div>
-
-                    </div>
-                </div>
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">
+                <p>Copyright &copy;2020 Claire Crawford Designs</p>
             </div>
-
         </footer>
 
-    </div>
+            <!-- Development version -->
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <!-- Production version -->
+    <!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+
+    <!-- Add Vue and BootstrapVue scripts just before the closing </body> tag -->
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- production version, optimized for size and speed --> 
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
+
+    <!-- <script src="index.js"></script> -->
 
 </body>
 

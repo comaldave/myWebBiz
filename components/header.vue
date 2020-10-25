@@ -1,4 +1,4 @@
-<template>
+<template >
  <header>
         <div id="main_menu">
             <span class="logo_area">

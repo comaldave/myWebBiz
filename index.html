@@ -12,196 +12,191 @@
     <link href="css/style.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="scripts.js"></script>
+
+    <!-- Load polyfills to support older browsers -->
+    <script src="//polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
-
-    <div id="main_menu">
-        <div class="logo_area">
-            <a href="index.html" id="logo"><img src="images/logoStarClaireFinal_350.png" id="logo_Claire"></a>
+    <!-- <div id="wrapper"> -->
+    <header>
+        <div id="main_menu">
+            <span class="logo_area">
+                <a href="index.html" id="logo"><img src="images/logoStarClaireFinal_350.png" id="logo_Claire"></a>
+            </span>
+            <nav class="inner_main_menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Connect</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="inner_main_menu">
-            <ul id="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Connect</a></li>
-            </ul>
-        </div>
-    </div>
+    </header>
 
+    <!-- <main> -->
+    <aside>
+        <img src="images/capstone_banner_gold_2560x590_revised.jpg" class="img-fluid" id="moodboard"
+            alt="Collage of many small, colorful images of nature and inspirational women" />
 
-
-    <div id="main">
-        <div class="row">
-            <div id="home_img" class="container-fluid col-lg-12">
-                <img src="images/capstone_banner_gold_2560x590_revised.jpg" class="img-fluid" id="moodboard"
-                    alt="Collage of many small, colorful images of nature and inspirational women" />
+        <div id="just_below_moodboard">
+            <div class="first_div_below_moodboard">
+                <h2 class="moodboard_h2">
+                    A web design & development studio
+                </h2>
+                <hr>
             </div>
-        </div>
-    </div>
 
-
-    <div id="just_below_moodboard">
-
-        <div class="first_div_below_moodboard">
-
-            <h2 class="moodboard_h2">
-                A web design & development studio
-            </h2>
-            <hr>
-        </div>
-
-        <div class="craft_code_under_moodboard">
-            <div class="hide_me">
-                <div class="crafting">
-                    <p>
-                        Crafting a powerful, online experience through the fusion of
-                        intuitive design, strategic functioning and a bit of magic.
-                    </p>
-                </div>
-
+            <div class="craft_code_under_moodboard">
                 <div class="hide_me">
-                    <div class="code">
-                        <h3> translation: I have fun and you get a badass
-                            website!
-                        </h3>
+                    <div class="crafting">
+                        <p>
+                            Crafting a powerful, online experience through the fusion of
+                            intuitive design, strategic functioning and a bit of magic.
+                        </p>
+                    </div>
+
+                    <div class="hide_me">
+                        <div class="code">
+                            <h3> translation: I have fun and you get a badass
+                                website!
+                            </h3>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </aside>
+
+    <content>
+        <article id="home_page">
+            <wrapper>
+                <section class="container-fluid">
+                <div class="row justify-content-center">
+                    <!-- <div class="col-xs-2">
+                        <img src="images/zodiac_leo_resized.png" id="zodiac_leo" alt="image of zodiac sign, Leo" />
+                    </div> -->
+
+                    <!-- <div class="col-xs-2">
+                        <img src="images/me_bw.jpg" id="img_claire" alt="Image of Claire Crawford" />
+                    </div> -->
+
+
+                    <div class="col-md-4">
+                        <img src="images/website_laptop_6_flipped_650x650.jpg" id="remote" alt="open laptop on desk" />
+                    </div>
+
+
+                    <div class="col-md-3">
+                        <div id="one">
+                            <p id="first_p">Hey! </p>
+                            <p id="second_p">I'm Claire</p>
+                            <hr>
+                        </div>
+
+                        <div id="two">
+                            <p>
+                                As a dedicated designer-developer hybrid, my passion
+                                lies in
+                                <i><b>empowering women</i></b>
+                                with an <i>impactful</i> and <i>affordable </i>web
+                                presence. First impressions are <b>everything</b> in
+                                a
+                                world of fierce online competition. My mission:
+                                <i>making you stand out</i> in a sea of creatives
+                                while
+                                giving both you and the user an enjoyable experience.
+                            </p>
+                            <br>
+                            <p>
+                                I approach web design with a simple, clean aesthetic
+                                and
+                                then embellish with the essential
+                                details that reflect <b>YOU</b> and your
+                                vision</i> -
+                                crafting a
+                                website with clever, intentional
+                                design that is <i><b>uniquely yours.</i></b>
+                            </p>
+                            <br>
+                            <p>
+                                Whether you are just starting out or needing to
+                                refresh
+                                your existing site, I'm here to help take your
+                                business to the next level.
+                            </p>
+                            <br>
+
+                            <a href="contact.html" id="last_p" style="font-family:Quentin;font-size:2.2em">Let's
+                                make
+                                some
+                                magic!</a>
+                        </div>
+
+                        <div id="three">
+                            <a class="button ajax" href="about.html">More about
+                                me<span></span><span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </wrapper>
+        </article>
 
 
 
-        <div class="wrapper" class="col-lg-12" class="img-fluid">
-            <div class="intro_1">
+        <section>
+            <div id="img_text_good_fit">
+                <h2>
+                    We'd be a good fit if :
+                </h2>
+            </div>
 
-                <img src="images/website_laptop_6_flipped.jpg" id="remote" alt="open laptop on desk" />
+            <div id="good_fit">
 
-                <img src="images/zodiac_leo_resized.png" id="zodiac_leo" alt="image of zodiac sign, Leo" />
+                <img src="images/stars_6_zodiac.png" id="stars_zodiac" alt="stars" />
 
-                <div class="intro_claire_img">
-                    <img src="images/me_bw.jpg" id="img_claire" alt="Image of Claire Crawford" />
+                <div class="good_fit_hide_me">
+                    <p>
+                        You know exactly what you and your business stand for, but
+                        are
+                        lacking the design and tech
+                        skills needed to bring it to life.
+                    </p>
+                </div>
+                <div class="good_fit_hide_me">
+                    <p>
+                        You’re frustrated of having an DIY approach to your business and need a design
+                        professional,
+                        so that you can spend your precious time and energy on the right tasks.
+                    </p>
+                </div>
+                <div class="good_fit_hide_me">
+                    <p>
+                        You understand that proper design work is an investment that
+                        will
+                        take you and your business to
+                        the next level.
+                    </p>
                 </div>
 
             </div>
-
-            <div class="intro_2">
-
-                <div id="one">
-                    <p id="first_p">Hey! </p>
-                    <p id="second_p">I'm Claire</p>
-                    <hr>
-                </div>
-
-                <div id="two">
-
-                    <p>
-                        As a dedicated designer-developer hybrid, my passion
-                        lies in
-                        <i><b>empowering women</i></b>
-                        with an <i>impactful</i> and <i>affordable </i>web
-                        presence. First impressions are <b>everything</b> in
-                        a
-                        world of fierce online competition. My mission:
-                        <i>making you stand out</i> in a sea of creatives
-                        while
-                        giving both you and the user an enjoyable experience.
-                    </p>
-                    <br>
-                    <p>
-                        I approach web design with a simple, clean aesthetic
-                        and
-                        then embellish with the essential
-                        details that reflect <b>YOU</b> and your
-                        vision</i> -
-                        crafting a
-                        website with clever, intentional
-                        design that is <i><b>uniquely yours.</i></b>
-                    </p>
-                    <br>
-                    <p>
-                        Whether you are just starting out or needing to
-                        refresh
-                        your existing site, I'm here to help take your
-                        business to the next level.
-                    </p>
-                    <br>
-
-                    <p>
-                        <!-- <p> <a id="last_p" style="font-family:Quentin;font-size:2.1em">
-                            Let's make some magic! </a> -->
-                        <a href="contact.html" id="last_p" style="font-family:Quentin;font-size:2.2em">Let's make some
-                            magic!</a>
-                    </p>
+        </section>
+    </content>
 
 
-
-                </div>
-                <div id="three">
-                    <a class="button ajax" href="about.html">More about
-                        me<span></span><span></span>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-
-
-        <div id="img_text_good_fit">
-            <h2>
-                We'd be a good fit if :
-            </h2>
-        </div>
-    </div>
-
-
-    <div id="good_fit">
-
-        <img src="images/stars_6_zodiac.png" id="stars_zodiac" alt="stars" />
-
-        <div class="good_fit_hide_me">
-            <p>
-                You know exactly what you and your business stand for, but
-                are
-                lacking the design and tech
-                skills needed to bring it to life.
-            </p>
-        </div>
-        <div class="good_fit_hide_me">
-            <p>
-                You’re frustrated of having an DIY approach to your business
-                and
-                need a design professional, so
-                that you can spend your precious time and energy on the right
-                tasks.
-            </p>
-        </div>
-        <div class="good_fit_hide_me">
-            <p>
-                You understand that proper design work is an investment that
-                will
-                take you and your business to
-                the next level.
-            </p>
-        </div>
-
-    </div>
-
-
-
-
-    <div id="dummy_space"> </div>
-    </div>
-
-
+    <!-- <div id="dummy_space"> </div> -->
 
 
     <div>
         <img id="scroll" src="images/back_to_top_bird_med.png">
     </div>
+
 
     <footer class="myFooter">
         <div class="container-fluid text-center text-md-left">
@@ -216,7 +211,7 @@
                         trailblazers</h5>
                     <p>Handcrafted in Fayetteville, Arkansas</p>
                     <p>Serving creatives globally</p>
-                 </section>
+                </section>
                 <!-- Grid column -->
 
                 <!-- <hr class="clearfix w-100 d-md-none pb-3"> -->
@@ -253,7 +248,7 @@
 
                     <ul class="list-unstyled">
                         <li>
-                            <a href="privacy.html">Privacy Notice</a">
+                            <a href="privacy.html">Privacy Notice</a>
                         </li>
                         <li>
                             <a href="terms.html">Terms</a>
@@ -276,20 +271,25 @@
         <!-- Footer Links -->
 
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">
+        <div class="footer-copyright text-center py-3" id="copyright">
             <p>Copyright &copy;2020 Claire Crawford Designs</p>
         </div>
-        <!-- Copyright -->
-
-
     </footer>
 
+    <!-- Development version -->
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <!-- Production version -->
+    <!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
 
+    <!-- Add Vue and BootstrapVue scripts just before the closing </body> tag -->
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- production version, optimized for size and speed -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
 
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
 
-
+    <!-- <script src="index.js"></script> -->
 </body>
 
 </html>
-
-

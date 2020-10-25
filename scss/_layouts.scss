@@ -2,46 +2,33 @@
 
 /* Layout rules divide the page into sections. Layouts hold one or more modules together. */
 
-.portfolioCard {
-    @extend .card;
-    @extend .mb-4;
-    @extend .shadow-sm;
-    @extend .mx-auto;
-    @extend .mt-5;
-    img {
-        @include media-breakpoint-up(xs) {max-width: 90vw;}
-        @include media-breakpoint-up(sm) {max-width: 90vw;}
-        @include media-breakpoint-up(md) {max-width: 45vw;}
-        @include media-breakpoint-up(lg) {max-width: 18vw;}
-        @include media-breakpoint-up(xl) {max-width: 18vw;}
 
-    }
-    h3, h4 {
-        @extend .text-center;
-    }
-    h4 {
-        @extend .text-muted;
-    }
-    aside {
-        @extend .card-footer; 
-        @extend .list-group; 
-        @extend .list-group-horizontal; 
-        a {
-            @extend .list-group-item;
-            @extend .text-decoration-none;
-            font-family: Quentin;
-            font-size: 1rem;
-            font-weight: bold;
-            @extend .border-light;
-            @extend .bg-transparent;
-            @extend .rounded;
-            hover {
-                @extend .bg-transparent;
-                color: hotpink !important; 
-                
-            }
-        }
+// #home_page {
+//     background-color: red($color: #000000);
+
+//     .intro_1 {
+//         @extend .col-md;
+//     }
+
+//     .intro_2 {
+//         justify-content: center;
+//         align-content: center;
+//         width: 300px !important;
+//         height: 900px;
+//         margin-top: 630px;
+//         margin-left: 54px;
+//         padding-bottom: 300px;
+//         // float: left;
+//         @extend .col-md
+//     } 
     
-    }
-}
-
+//     #img_claire {
+//         position: absolute;
+//         //top: 96px;
+//         //left: 700px;
+//         width: 280px;
+//         padding: 16px;
+//         border: 3px solid #d2b96e;
+//         background-color: white;
+//     }
+// }

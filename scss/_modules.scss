@@ -4,18 +4,21 @@
 
 header {
     div {
+        top: 0;
+        left: 0;
+        z-index: 999;
+        height: 90px;
+        overflow: hidden;
         transition: 0.5s;
         width: 100%;
         position: fixed;
-        overflow: hidden;
         background-color: white;
-        z-index: 9999;
-        padding: 80px 0;
-        // margin-bottom: 40px;
+        padding: 60px 0;
         text-align: center;
         vertical-align: middle;
         height: 100px;
         line-height: 100px;
+        
         // transition: 0.5s;
 
 
@@ -35,7 +38,7 @@ header {
             img {
                 width: auto;
                 height: auto;
-                margin:0;
+                margin: 0;
                 margin-right: auto;
                 margin-left: auto;
                 transition: 0.5s;
@@ -144,23 +147,29 @@ header {
 
 
 
+
+
 .myFooter {
-    @extend .container;
+
+    // hiding this allows the footer to cover 100% of screen width - Saturday night
+    // @extend .container;
+
+
+
     // @extend .font-small;
     // @extend .blue;
     // @extend .pt-4;
 
-    // width: 100%;
-    /* position: relative; */
-    // height: 400px;
     background: url("../images/torn_edge_bkgrd_1000.jpg");
-    // background-repeat: no-repeat; 
-    // background-size: cover; 
-    // background-position: center;
-    position: relative;
+
+
+    // this allowed the myFooter class to acknowledge the height of 400px
+    position: absolute;
+
+
     height: 400px;
     width: 100%;
-    
+
 
     nav {
         @extend .col-md-2;
@@ -168,5 +177,19 @@ header {
         @extend .mb-3;
     }
 
-   
+    // this pushed text down into center of footer 
+    div {
+        margin-top: 150px;
+        margin-left: 80px;
+    }
+
+    // needed this to keep copyright line inside the footer 
+    #copyright {
+        float: left;
+        margin-left: 350px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        padding: 0;
+    }
+
 }

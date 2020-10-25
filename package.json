@@ -2,10 +2,13 @@
   "name": "mywebbiz",
   "version": "1.0.0",
   "description": "business website for Claire Crawford Designs",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass scss/main.scss css/style.css -w"
+    "sass": "node-sass scss/main.scss css/style.css -w",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
   "repository": {
     "type": "git",
@@ -27,14 +30,45 @@
   },
   "homepage": "https://github.com/Claire-Crawford/myWebBiz#readme",
   "devDependencies": {
-    "jest": "^26.5.2",
-    "sass": "^1.26.12"
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-config-prettier": "^6.14.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-vue": "^6.2.2",
+    "jest": "^26.6.1",
+    "prettier": "2.1.2",
+    "sass": "^1.27.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended",
+      "plugin:vue/vue3-recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
   },
   "dependencies": {
-    "bootstrap-vue": "^2.17.3",
+    "@popperjs/core": "^2.5.3",
+    "bootstrap-vue": "^2.18.1",
     "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
     "rfs": "^9.0.3",
     "vue": "^2.6.12"
-  }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }

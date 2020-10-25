@@ -2,7 +2,7 @@
 /* Base rules are the defaults. */
 /* responsive font size */
 /*!
- * Bootstrap v4.5.2 (https://getbootstrap.com/)
+ * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -182,7 +182,8 @@ caption {
   caption-side: bottom; }
 
 th {
-  text-align: inherit; }
+  text-align: inherit;
+  text-align: -webkit-match-parent; }
 
 label {
   display: inline-block;
@@ -468,7 +469,7 @@ pre {
   max-height: 340px;
   overflow-y: scroll; }
 
-.container, .myFooter,
+.container,
 .container-fluid,
 .container-sm,
 .container-md,
@@ -481,19 +482,19 @@ pre {
   margin-left: auto; }
 
 @media (min-width: 576px) {
-  .container, .myFooter, .container-sm {
+  .container, .container-sm {
     max-width: 540px; } }
 
 @media (min-width: 768px) {
-  .container, .myFooter, .container-sm, .container-md {
+  .container, .container-sm, .container-md {
     max-width: 720px; } }
 
 @media (min-width: 992px) {
-  .container, .myFooter, .container-sm, .container-md, .container-lg {
+  .container, .container-sm, .container-md, .container-lg {
     max-width: 960px; } }
 
 @media (min-width: 1200px) {
-  .container, .myFooter, .container-sm, .container-md, .container-lg, .container-xl {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
     max-width: 1140px; } }
 
 .row {
@@ -2673,7 +2674,8 @@ input[type="button"].btn-block {
   z-index: 1;
   display: block;
   min-height: 1.5rem;
-  padding-left: 1.5rem; }
+  padding-left: 1.5rem;
+  color-adjust: exact; }
 
 .custom-control-inline {
   display: inline-flex;
@@ -3067,7 +3069,7 @@ input[type="button"].btn-block {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem; }
-  .navbar .container, .navbar .myFooter,
+  .navbar .container,
   .navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl {
     display: flex;
     flex-wrap: wrap;
@@ -3128,7 +3130,7 @@ input[type="button"].btn-block {
   background-size: 100% 100%; }
 
 @media (max-width: 575.98px) {
-  .navbar-expand-sm > .container, .navbar-expand-sm > .myFooter,
+  .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container-sm, .navbar-expand-sm > .container-md, .navbar-expand-sm > .container-lg, .navbar-expand-sm > .container-xl {
     padding-right: 0;
     padding-left: 0; } }
@@ -3144,7 +3146,7 @@ input[type="button"].btn-block {
       .navbar-expand-sm .navbar-nav .nav-link {
         padding-right: 0.5rem;
         padding-left: 0.5rem; }
-    .navbar-expand-sm > .container, .navbar-expand-sm > .myFooter,
+    .navbar-expand-sm > .container,
     .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container-sm, .navbar-expand-sm > .container-md, .navbar-expand-sm > .container-lg, .navbar-expand-sm > .container-xl {
       flex-wrap: nowrap; }
     .navbar-expand-sm .navbar-collapse {
@@ -3154,7 +3156,7 @@ input[type="button"].btn-block {
       display: none; } }
 
 @media (max-width: 767.98px) {
-  .navbar-expand-md > .container, .navbar-expand-md > .myFooter,
+  .navbar-expand-md > .container,
   .navbar-expand-md > .container-fluid, .navbar-expand-md > .container-sm, .navbar-expand-md > .container-md, .navbar-expand-md > .container-lg, .navbar-expand-md > .container-xl {
     padding-right: 0;
     padding-left: 0; } }
@@ -3170,7 +3172,7 @@ input[type="button"].btn-block {
       .navbar-expand-md .navbar-nav .nav-link {
         padding-right: 0.5rem;
         padding-left: 0.5rem; }
-    .navbar-expand-md > .container, .navbar-expand-md > .myFooter,
+    .navbar-expand-md > .container,
     .navbar-expand-md > .container-fluid, .navbar-expand-md > .container-sm, .navbar-expand-md > .container-md, .navbar-expand-md > .container-lg, .navbar-expand-md > .container-xl {
       flex-wrap: nowrap; }
     .navbar-expand-md .navbar-collapse {
@@ -3180,7 +3182,7 @@ input[type="button"].btn-block {
       display: none; } }
 
 @media (max-width: 991.98px) {
-  .navbar-expand-lg > .container, .navbar-expand-lg > .myFooter,
+  .navbar-expand-lg > .container,
   .navbar-expand-lg > .container-fluid, .navbar-expand-lg > .container-sm, .navbar-expand-lg > .container-md, .navbar-expand-lg > .container-lg, .navbar-expand-lg > .container-xl {
     padding-right: 0;
     padding-left: 0; } }
@@ -3196,7 +3198,7 @@ input[type="button"].btn-block {
       .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 0.5rem;
         padding-left: 0.5rem; }
-    .navbar-expand-lg > .container, .navbar-expand-lg > .myFooter,
+    .navbar-expand-lg > .container,
     .navbar-expand-lg > .container-fluid, .navbar-expand-lg > .container-sm, .navbar-expand-lg > .container-md, .navbar-expand-lg > .container-lg, .navbar-expand-lg > .container-xl {
       flex-wrap: nowrap; }
     .navbar-expand-lg .navbar-collapse {
@@ -3206,7 +3208,7 @@ input[type="button"].btn-block {
       display: none; } }
 
 @media (max-width: 1199.98px) {
-  .navbar-expand-xl > .container, .navbar-expand-xl > .myFooter,
+  .navbar-expand-xl > .container,
   .navbar-expand-xl > .container-fluid, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-xl {
     padding-right: 0;
     padding-left: 0; } }
@@ -3222,7 +3224,7 @@ input[type="button"].btn-block {
       .navbar-expand-xl .navbar-nav .nav-link {
         padding-right: 0.5rem;
         padding-left: 0.5rem; }
-    .navbar-expand-xl > .container, .navbar-expand-xl > .myFooter,
+    .navbar-expand-xl > .container,
     .navbar-expand-xl > .container-fluid, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-xl {
       flex-wrap: nowrap; }
     .navbar-expand-xl .navbar-collapse {
@@ -3234,7 +3236,7 @@ input[type="button"].btn-block {
 .navbar-expand {
   flex-flow: row nowrap;
   justify-content: flex-start; }
-  .navbar-expand > .container, .navbar-expand > .myFooter,
+  .navbar-expand > .container,
   .navbar-expand > .container-fluid, .navbar-expand > .container-sm, .navbar-expand > .container-md, .navbar-expand > .container-lg, .navbar-expand > .container-xl {
     padding-right: 0;
     padding-left: 0; }
@@ -3245,7 +3247,7 @@ input[type="button"].btn-block {
     .navbar-expand .navbar-nav .nav-link {
       padding-right: 0.5rem;
       padding-left: 0.5rem; }
-  .navbar-expand > .container, .navbar-expand > .myFooter,
+  .navbar-expand > .container,
   .navbar-expand > .container-fluid, .navbar-expand > .container-sm, .navbar-expand > .container-md, .navbar-expand > .container-lg, .navbar-expand > .container-xl {
     flex-wrap: nowrap; }
   .navbar-expand .navbar-collapse {
@@ -3318,7 +3320,7 @@ input[type="button"].btn-block {
     .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
       color: #fff; }
 
-.card, .portfolioCard {
+.card, portfolioCard {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -3328,29 +3330,29 @@ input[type="button"].btn-block {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem; }
-  .card > hr, .portfolioCard > hr {
+  .card > hr, portfolioCard > hr {
     margin-right: 0;
     margin-left: 0; }
-  .card > .list-group, .portfolioCard > .list-group, .portfolioCard .card > aside, .portfolioCard > aside {
+  .card > .list-group, portfolioCard > .list-group, portfolioCard .card > aside, portfolioCard > aside {
     border-top: inherit;
     border-bottom: inherit; }
-    .card > .list-group:first-child, .portfolioCard > .list-group:first-child, .portfolioCard .card > aside:first-child, .portfolioCard > aside:first-child {
+    .card > .list-group:first-child, portfolioCard > .list-group:first-child, portfolioCard .card > aside:first-child, portfolioCard > aside:first-child {
       border-top-width: 0;
       border-top-left-radius: calc(0.25rem - 1px);
       border-top-right-radius: calc(0.25rem - 1px); }
-    .card > .list-group:last-child, .portfolioCard > .list-group:last-child, .portfolioCard .card > aside:last-child, .portfolioCard > aside:last-child {
+    .card > .list-group:last-child, portfolioCard > .list-group:last-child, portfolioCard .card > aside:last-child, portfolioCard > aside:last-child {
       border-bottom-width: 0;
       border-bottom-right-radius: calc(0.25rem - 1px);
       border-bottom-left-radius: calc(0.25rem - 1px); }
-  .card > .card-header + .list-group, .portfolioCard > .card-header + .list-group, .portfolioCard .card > .card-header + aside, .portfolioCard > .card-header + aside,
+  .card > .card-header + .list-group, portfolioCard > .card-header + .list-group, portfolioCard .card > .card-header + aside, portfolioCard > .card-header + aside,
   .card > .list-group + .card-footer,
-  .portfolioCard > .list-group + .card-footer,
-  .portfolioCard .card > aside + .card-footer,
-  .portfolioCard > aside + .card-footer,
-  .portfolioCard .card > .list-group + aside,
-  .portfolioCard > .list-group + aside,
-  .portfolioCard .card > aside + aside,
-  .portfolioCard > aside + aside {
+  portfolioCard > .list-group + .card-footer,
+  portfolioCard .card > aside + .card-footer,
+  portfolioCard > aside + .card-footer,
+  portfolioCard .card > .list-group + aside,
+  portfolioCard > .list-group + aside,
+  portfolioCard .card > aside + aside,
+  portfolioCard > aside + aside {
     border-top: 0; }
 
 .card-body {
@@ -3382,11 +3384,11 @@ input[type="button"].btn-block {
   .card-header:first-child {
     border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0; }
 
-.card-footer, .portfolioCard aside {
+.card-footer, portfolioCard aside {
   padding: 0.75rem 1.25rem;
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125); }
-  .card-footer:last-child, .portfolioCard aside:last-child {
+  .card-footer:last-child, portfolioCard aside:last-child {
     border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px); }
 
 .card-header-tabs {
@@ -3424,7 +3426,7 @@ input[type="button"].btn-block {
   border-bottom-right-radius: calc(0.25rem - 1px);
   border-bottom-left-radius: calc(0.25rem - 1px); }
 
-.card-deck .card, .card-deck .portfolioCard {
+.card-deck .card, .card-deck portfolioCard {
   margin-bottom: 15px; }
 
 @media (min-width: 576px) {
@@ -3433,55 +3435,55 @@ input[type="button"].btn-block {
     flex-flow: row wrap;
     margin-right: -15px;
     margin-left: -15px; }
-    .card-deck .card, .card-deck .portfolioCard {
+    .card-deck .card, .card-deck portfolioCard {
       flex: 1 0 0%;
       margin-right: 15px;
       margin-bottom: 0;
       margin-left: 15px; } }
 
-.card-group > .card, .card-group > .portfolioCard {
+.card-group > .card, .card-group > portfolioCard {
   margin-bottom: 15px; }
 
 @media (min-width: 576px) {
   .card-group {
     display: flex;
     flex-flow: row wrap; }
-    .card-group > .card, .card-group > .portfolioCard {
+    .card-group > .card, .card-group > portfolioCard {
       flex: 1 0 0%;
       margin-bottom: 0; }
-      .card-group > .card + .card, .card-group > .portfolioCard + .card, .card-group > .card + .portfolioCard, .card-group > .portfolioCard + .portfolioCard {
+      .card-group > .card + .card, .card-group > portfolioCard + .card, .card-group > .card + portfolioCard, .card-group > portfolioCard + portfolioCard {
         margin-left: 0;
         border-left: 0; }
-      .card-group > .card:not(:last-child), .card-group > .portfolioCard:not(:last-child) {
+      .card-group > .card:not(:last-child), .card-group > portfolioCard:not(:last-child) {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0; }
-        .card-group > .card:not(:last-child) .card-img-top, .card-group > .portfolioCard:not(:last-child) .card-img-top,
+        .card-group > .card:not(:last-child) .card-img-top, .card-group > portfolioCard:not(:last-child) .card-img-top,
         .card-group > .card:not(:last-child) .card-header,
-        .card-group > .portfolioCard:not(:last-child) .card-header {
+        .card-group > portfolioCard:not(:last-child) .card-header {
           border-top-right-radius: 0; }
-        .card-group > .card:not(:last-child) .card-img-bottom, .card-group > .portfolioCard:not(:last-child) .card-img-bottom,
+        .card-group > .card:not(:last-child) .card-img-bottom, .card-group > portfolioCard:not(:last-child) .card-img-bottom,
         .card-group > .card:not(:last-child) .card-footer,
-        .card-group > .portfolioCard:not(:last-child) .card-footer,
-        .card-group > .card:not(:last-child) .portfolioCard aside,
-        .portfolioCard .card-group > .card:not(:last-child) aside,
-        .card-group > .portfolioCard:not(:last-child) aside {
+        .card-group > portfolioCard:not(:last-child) .card-footer,
+        .card-group > .card:not(:last-child) portfolioCard aside,
+        portfolioCard .card-group > .card:not(:last-child) aside,
+        .card-group > portfolioCard:not(:last-child) aside {
           border-bottom-right-radius: 0; }
-      .card-group > .card:not(:first-child), .card-group > .portfolioCard:not(:first-child) {
+      .card-group > .card:not(:first-child), .card-group > portfolioCard:not(:first-child) {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0; }
-        .card-group > .card:not(:first-child) .card-img-top, .card-group > .portfolioCard:not(:first-child) .card-img-top,
+        .card-group > .card:not(:first-child) .card-img-top, .card-group > portfolioCard:not(:first-child) .card-img-top,
         .card-group > .card:not(:first-child) .card-header,
-        .card-group > .portfolioCard:not(:first-child) .card-header {
+        .card-group > portfolioCard:not(:first-child) .card-header {
           border-top-left-radius: 0; }
-        .card-group > .card:not(:first-child) .card-img-bottom, .card-group > .portfolioCard:not(:first-child) .card-img-bottom,
+        .card-group > .card:not(:first-child) .card-img-bottom, .card-group > portfolioCard:not(:first-child) .card-img-bottom,
         .card-group > .card:not(:first-child) .card-footer,
-        .card-group > .portfolioCard:not(:first-child) .card-footer,
-        .card-group > .card:not(:first-child) .portfolioCard aside,
-        .portfolioCard .card-group > .card:not(:first-child) aside,
-        .card-group > .portfolioCard:not(:first-child) aside {
+        .card-group > portfolioCard:not(:first-child) .card-footer,
+        .card-group > .card:not(:first-child) portfolioCard aside,
+        portfolioCard .card-group > .card:not(:first-child) aside,
+        .card-group > portfolioCard:not(:first-child) aside {
           border-bottom-left-radius: 0; } }
 
-.card-columns .card, .card-columns .portfolioCard {
+.card-columns .card, .card-columns portfolioCard {
   margin-bottom: 0.75rem; }
 
 @media (min-width: 576px) {
@@ -3490,22 +3492,22 @@ input[type="button"].btn-block {
     column-gap: 1.25rem;
     orphans: 1;
     widows: 1; }
-    .card-columns .card, .card-columns .portfolioCard {
+    .card-columns .card, .card-columns portfolioCard {
       display: inline-block;
       width: 100%; } }
 
 .accordion {
   overflow-anchor: none; }
-  .accordion > .card, .accordion > .portfolioCard {
+  .accordion > .card, .accordion > portfolioCard {
     overflow: hidden; }
-    .accordion > .card:not(:last-of-type), .accordion > .portfolioCard:not(:last-of-type) {
+    .accordion > .card:not(:last-of-type), .accordion > portfolioCard:not(:last-of-type) {
       border-bottom: 0;
       border-bottom-right-radius: 0;
       border-bottom-left-radius: 0; }
-    .accordion > .card:not(:first-of-type), .accordion > .portfolioCard:not(:first-of-type) {
+    .accordion > .card:not(:first-of-type), .accordion > portfolioCard:not(:first-of-type) {
       border-top-left-radius: 0;
       border-top-right-radius: 0; }
-    .accordion > .card > .card-header, .accordion > .portfolioCard > .card-header {
+    .accordion > .card > .card-header, .accordion > portfolioCard > .card-header {
       border-radius: 0;
       margin-bottom: -1px; }
 
@@ -3749,6 +3751,7 @@ input[type="button"].btn-block {
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 2;
     padding: 0.75rem 1.25rem;
     color: inherit; }
 
@@ -3870,7 +3873,7 @@ input[type="button"].btn-block {
 .media-body {
   flex: 1; }
 
-.list-group, .portfolioCard aside {
+.list-group, portfolioCard aside {
   display: flex;
   flex-direction: column;
   padding-left: 0;
@@ -3890,127 +3893,127 @@ input[type="button"].btn-block {
     color: #212529;
     background-color: #e9ecef; }
 
-.list-group-item, .portfolioCard aside a {
+.list-group-item, portfolioCard aside a {
   position: relative;
   display: block;
   padding: 0.75rem 1.25rem;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.125); }
-  .list-group-item:first-child, .portfolioCard aside a:first-child {
+  .list-group-item:first-child, portfolioCard aside a:first-child {
     border-top-left-radius: inherit;
     border-top-right-radius: inherit; }
-  .list-group-item:last-child, .portfolioCard aside a:last-child {
+  .list-group-item:last-child, portfolioCard aside a:last-child {
     border-bottom-right-radius: inherit;
     border-bottom-left-radius: inherit; }
-  .list-group-item.disabled, .portfolioCard aside a.disabled, .list-group-item:disabled, .portfolioCard aside a:disabled {
+  .list-group-item.disabled, portfolioCard aside a.disabled, .list-group-item:disabled, portfolioCard aside a:disabled {
     color: #6c757d;
     pointer-events: none;
     background-color: #fff; }
-  .list-group-item.active, .portfolioCard aside a.active {
+  .list-group-item.active, portfolioCard aside a.active {
     z-index: 2;
     color: #fff;
     background-color: #007bff;
     border-color: #007bff; }
-  .list-group-item + .list-group-item, .portfolioCard aside a + .list-group-item, .portfolioCard aside .list-group-item + a, .portfolioCard aside a + a {
+  .list-group-item + .list-group-item, portfolioCard aside a + .list-group-item, portfolioCard aside .list-group-item + a, portfolioCard aside a + a {
     border-top-width: 0; }
-    .list-group-item + .list-group-item.active, .portfolioCard aside a + .list-group-item.active, .portfolioCard aside .list-group-item + a.active, .portfolioCard aside a + a.active {
+    .list-group-item + .list-group-item.active, portfolioCard aside a + .list-group-item.active, portfolioCard aside .list-group-item + a.active, portfolioCard aside a + a.active {
       margin-top: -1px;
       border-top-width: 1px; }
 
-.list-group-horizontal, .portfolioCard aside {
+.list-group-horizontal, portfolioCard aside {
   flex-direction: row; }
-  .list-group-horizontal > .list-group-item:first-child, .portfolioCard aside > .list-group-item:first-child, .portfolioCard aside .list-group-horizontal > a:first-child, .portfolioCard aside > a:first-child {
+  .list-group-horizontal > .list-group-item:first-child, portfolioCard aside > .list-group-item:first-child, portfolioCard aside .list-group-horizontal > a:first-child, portfolioCard aside > a:first-child {
     border-bottom-left-radius: 0.25rem;
     border-top-right-radius: 0; }
-  .list-group-horizontal > .list-group-item:last-child, .portfolioCard aside > .list-group-item:last-child, .portfolioCard aside .list-group-horizontal > a:last-child, .portfolioCard aside > a:last-child {
+  .list-group-horizontal > .list-group-item:last-child, portfolioCard aside > .list-group-item:last-child, portfolioCard aside .list-group-horizontal > a:last-child, portfolioCard aside > a:last-child {
     border-top-right-radius: 0.25rem;
     border-bottom-left-radius: 0; }
-  .list-group-horizontal > .list-group-item.active, .portfolioCard aside > .list-group-item.active, .portfolioCard aside .list-group-horizontal > a.active, .portfolioCard aside > a.active {
+  .list-group-horizontal > .list-group-item.active, portfolioCard aside > .list-group-item.active, portfolioCard aside .list-group-horizontal > a.active, portfolioCard aside > a.active {
     margin-top: 0; }
-  .list-group-horizontal > .list-group-item + .list-group-item, .portfolioCard aside > .list-group-item + .list-group-item, .portfolioCard aside .list-group-horizontal > a + .list-group-item, .portfolioCard aside > a + .list-group-item, .portfolioCard aside .list-group-horizontal > .list-group-item + a, .portfolioCard aside > .list-group-item + a, .portfolioCard aside .list-group-horizontal > a + a, .portfolioCard aside > a + a {
+  .list-group-horizontal > .list-group-item + .list-group-item, portfolioCard aside > .list-group-item + .list-group-item, portfolioCard aside .list-group-horizontal > a + .list-group-item, portfolioCard aside > a + .list-group-item, portfolioCard aside .list-group-horizontal > .list-group-item + a, portfolioCard aside > .list-group-item + a, portfolioCard aside .list-group-horizontal > a + a, portfolioCard aside > a + a {
     border-top-width: 1px;
     border-left-width: 0; }
-    .list-group-horizontal > .list-group-item + .list-group-item.active, .portfolioCard aside > .list-group-item + .list-group-item.active, .portfolioCard aside .list-group-horizontal > a + .list-group-item.active, .portfolioCard aside > a + .list-group-item.active, .portfolioCard aside .list-group-horizontal > .list-group-item + a.active, .portfolioCard aside > .list-group-item + a.active, .portfolioCard aside .list-group-horizontal > a + a.active, .portfolioCard aside > a + a.active {
+    .list-group-horizontal > .list-group-item + .list-group-item.active, portfolioCard aside > .list-group-item + .list-group-item.active, portfolioCard aside .list-group-horizontal > a + .list-group-item.active, portfolioCard aside > a + .list-group-item.active, portfolioCard aside .list-group-horizontal > .list-group-item + a.active, portfolioCard aside > .list-group-item + a.active, portfolioCard aside .list-group-horizontal > a + a.active, portfolioCard aside > a + a.active {
       margin-left: -1px;
       border-left-width: 1px; }
 
 @media (min-width: 576px) {
   .list-group-horizontal-sm {
     flex-direction: row; }
-    .list-group-horizontal-sm > .list-group-item:first-child, .portfolioCard aside .list-group-horizontal-sm > a:first-child {
+    .list-group-horizontal-sm > .list-group-item:first-child, portfolioCard aside .list-group-horizontal-sm > a:first-child {
       border-bottom-left-radius: 0.25rem;
       border-top-right-radius: 0; }
-    .list-group-horizontal-sm > .list-group-item:last-child, .portfolioCard aside .list-group-horizontal-sm > a:last-child {
+    .list-group-horizontal-sm > .list-group-item:last-child, portfolioCard aside .list-group-horizontal-sm > a:last-child {
       border-top-right-radius: 0.25rem;
       border-bottom-left-radius: 0; }
-    .list-group-horizontal-sm > .list-group-item.active, .portfolioCard aside .list-group-horizontal-sm > a.active {
+    .list-group-horizontal-sm > .list-group-item.active, portfolioCard aside .list-group-horizontal-sm > a.active {
       margin-top: 0; }
-    .list-group-horizontal-sm > .list-group-item + .list-group-item, .portfolioCard aside .list-group-horizontal-sm > a + .list-group-item, .portfolioCard aside .list-group-horizontal-sm > .list-group-item + a, .portfolioCard aside .list-group-horizontal-sm > a + a {
+    .list-group-horizontal-sm > .list-group-item + .list-group-item, portfolioCard aside .list-group-horizontal-sm > a + .list-group-item, portfolioCard aside .list-group-horizontal-sm > .list-group-item + a, portfolioCard aside .list-group-horizontal-sm > a + a {
       border-top-width: 1px;
       border-left-width: 0; }
-      .list-group-horizontal-sm > .list-group-item + .list-group-item.active, .portfolioCard aside .list-group-horizontal-sm > a + .list-group-item.active, .portfolioCard aside .list-group-horizontal-sm > .list-group-item + a.active, .portfolioCard aside .list-group-horizontal-sm > a + a.active {
+      .list-group-horizontal-sm > .list-group-item + .list-group-item.active, portfolioCard aside .list-group-horizontal-sm > a + .list-group-item.active, portfolioCard aside .list-group-horizontal-sm > .list-group-item + a.active, portfolioCard aside .list-group-horizontal-sm > a + a.active {
         margin-left: -1px;
         border-left-width: 1px; } }
 
 @media (min-width: 768px) {
   .list-group-horizontal-md {
     flex-direction: row; }
-    .list-group-horizontal-md > .list-group-item:first-child, .portfolioCard aside .list-group-horizontal-md > a:first-child {
+    .list-group-horizontal-md > .list-group-item:first-child, portfolioCard aside .list-group-horizontal-md > a:first-child {
       border-bottom-left-radius: 0.25rem;
       border-top-right-radius: 0; }
-    .list-group-horizontal-md > .list-group-item:last-child, .portfolioCard aside .list-group-horizontal-md > a:last-child {
+    .list-group-horizontal-md > .list-group-item:last-child, portfolioCard aside .list-group-horizontal-md > a:last-child {
       border-top-right-radius: 0.25rem;
       border-bottom-left-radius: 0; }
-    .list-group-horizontal-md > .list-group-item.active, .portfolioCard aside .list-group-horizontal-md > a.active {
+    .list-group-horizontal-md > .list-group-item.active, portfolioCard aside .list-group-horizontal-md > a.active {
       margin-top: 0; }
-    .list-group-horizontal-md > .list-group-item + .list-group-item, .portfolioCard aside .list-group-horizontal-md > a + .list-group-item, .portfolioCard aside .list-group-horizontal-md > .list-group-item + a, .portfolioCard aside .list-group-horizontal-md > a + a {
+    .list-group-horizontal-md > .list-group-item + .list-group-item, portfolioCard aside .list-group-horizontal-md > a + .list-group-item, portfolioCard aside .list-group-horizontal-md > .list-group-item + a, portfolioCard aside .list-group-horizontal-md > a + a {
       border-top-width: 1px;
       border-left-width: 0; }
-      .list-group-horizontal-md > .list-group-item + .list-group-item.active, .portfolioCard aside .list-group-horizontal-md > a + .list-group-item.active, .portfolioCard aside .list-group-horizontal-md > .list-group-item + a.active, .portfolioCard aside .list-group-horizontal-md > a + a.active {
+      .list-group-horizontal-md > .list-group-item + .list-group-item.active, portfolioCard aside .list-group-horizontal-md > a + .list-group-item.active, portfolioCard aside .list-group-horizontal-md > .list-group-item + a.active, portfolioCard aside .list-group-horizontal-md > a + a.active {
         margin-left: -1px;
         border-left-width: 1px; } }
 
 @media (min-width: 992px) {
   .list-group-horizontal-lg {
     flex-direction: row; }
-    .list-group-horizontal-lg > .list-group-item:first-child, .portfolioCard aside .list-group-horizontal-lg > a:first-child {
+    .list-group-horizontal-lg > .list-group-item:first-child, portfolioCard aside .list-group-horizontal-lg > a:first-child {
       border-bottom-left-radius: 0.25rem;
       border-top-right-radius: 0; }
-    .list-group-horizontal-lg > .list-group-item:last-child, .portfolioCard aside .list-group-horizontal-lg > a:last-child {
+    .list-group-horizontal-lg > .list-group-item:last-child, portfolioCard aside .list-group-horizontal-lg > a:last-child {
       border-top-right-radius: 0.25rem;
       border-bottom-left-radius: 0; }
-    .list-group-horizontal-lg > .list-group-item.active, .portfolioCard aside .list-group-horizontal-lg > a.active {
+    .list-group-horizontal-lg > .list-group-item.active, portfolioCard aside .list-group-horizontal-lg > a.active {
       margin-top: 0; }
-    .list-group-horizontal-lg > .list-group-item + .list-group-item, .portfolioCard aside .list-group-horizontal-lg > a + .list-group-item, .portfolioCard aside .list-group-horizontal-lg > .list-group-item + a, .portfolioCard aside .list-group-horizontal-lg > a + a {
+    .list-group-horizontal-lg > .list-group-item + .list-group-item, portfolioCard aside .list-group-horizontal-lg > a + .list-group-item, portfolioCard aside .list-group-horizontal-lg > .list-group-item + a, portfolioCard aside .list-group-horizontal-lg > a + a {
       border-top-width: 1px;
       border-left-width: 0; }
-      .list-group-horizontal-lg > .list-group-item + .list-group-item.active, .portfolioCard aside .list-group-horizontal-lg > a + .list-group-item.active, .portfolioCard aside .list-group-horizontal-lg > .list-group-item + a.active, .portfolioCard aside .list-group-horizontal-lg > a + a.active {
+      .list-group-horizontal-lg > .list-group-item + .list-group-item.active, portfolioCard aside .list-group-horizontal-lg > a + .list-group-item.active, portfolioCard aside .list-group-horizontal-lg > .list-group-item + a.active, portfolioCard aside .list-group-horizontal-lg > a + a.active {
         margin-left: -1px;
         border-left-width: 1px; } }
 
 @media (min-width: 1200px) {
   .list-group-horizontal-xl {
     flex-direction: row; }
-    .list-group-horizontal-xl > .list-group-item:first-child, .portfolioCard aside .list-group-horizontal-xl > a:first-child {
+    .list-group-horizontal-xl > .list-group-item:first-child, portfolioCard aside .list-group-horizontal-xl > a:first-child {
       border-bottom-left-radius: 0.25rem;
       border-top-right-radius: 0; }
-    .list-group-horizontal-xl > .list-group-item:last-child, .portfolioCard aside .list-group-horizontal-xl > a:last-child {
+    .list-group-horizontal-xl > .list-group-item:last-child, portfolioCard aside .list-group-horizontal-xl > a:last-child {
       border-top-right-radius: 0.25rem;
       border-bottom-left-radius: 0; }
-    .list-group-horizontal-xl > .list-group-item.active, .portfolioCard aside .list-group-horizontal-xl > a.active {
+    .list-group-horizontal-xl > .list-group-item.active, portfolioCard aside .list-group-horizontal-xl > a.active {
       margin-top: 0; }
-    .list-group-horizontal-xl > .list-group-item + .list-group-item, .portfolioCard aside .list-group-horizontal-xl > a + .list-group-item, .portfolioCard aside .list-group-horizontal-xl > .list-group-item + a, .portfolioCard aside .list-group-horizontal-xl > a + a {
+    .list-group-horizontal-xl > .list-group-item + .list-group-item, portfolioCard aside .list-group-horizontal-xl > a + .list-group-item, portfolioCard aside .list-group-horizontal-xl > .list-group-item + a, portfolioCard aside .list-group-horizontal-xl > a + a {
       border-top-width: 1px;
       border-left-width: 0; }
-      .list-group-horizontal-xl > .list-group-item + .list-group-item.active, .portfolioCard aside .list-group-horizontal-xl > a + .list-group-item.active, .portfolioCard aside .list-group-horizontal-xl > .list-group-item + a.active, .portfolioCard aside .list-group-horizontal-xl > a + a.active {
+      .list-group-horizontal-xl > .list-group-item + .list-group-item.active, portfolioCard aside .list-group-horizontal-xl > a + .list-group-item.active, portfolioCard aside .list-group-horizontal-xl > .list-group-item + a.active, portfolioCard aside .list-group-horizontal-xl > a + a.active {
         margin-left: -1px;
         border-left-width: 1px; } }
 
 .list-group-flush {
   border-radius: 0; }
-  .list-group-flush > .list-group-item, .portfolioCard aside .list-group-flush > a {
+  .list-group-flush > .list-group-item, portfolioCard aside .list-group-flush > a {
     border-width: 0 0 1px; }
-    .list-group-flush > .list-group-item:last-child, .portfolioCard aside .list-group-flush > a:last-child {
+    .list-group-flush > .list-group-item:last-child, portfolioCard aside .list-group-flush > a:last-child {
       border-bottom-width: 0; }
 
 .list-group-item-primary {
@@ -4793,7 +4796,7 @@ button.bg-dark:focus {
 .bg-white {
   background-color: #fff !important; }
 
-.bg-transparent, .portfolioCard aside a, .portfolioCard aside a hover {
+.bg-transparent, portfolioCard aside a, portfolioCard aside a hover {
   background-color: transparent !important; }
 
 .border {
@@ -4844,7 +4847,7 @@ button.bg-dark:focus {
 .border-danger {
   border-color: #dc3545 !important; }
 
-.border-light, .portfolioCard aside a {
+.border-light, portfolioCard aside a {
   border-color: #f8f9fa !important; }
 
 .border-dark {
@@ -4856,7 +4859,7 @@ button.bg-dark:focus {
 .rounded-sm {
   border-radius: 0.2rem !important; }
 
-.rounded, .portfolioCard aside a {
+.rounded, portfolioCard aside a {
   border-radius: 0.25rem !important; }
 
 .rounded-top {
@@ -5545,7 +5548,7 @@ button.bg-dark:focus {
   clip: auto;
   white-space: normal; }
 
-.shadow-sm, .portfolioCard {
+.shadow-sm, portfolioCard {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; }
 
 .shadow {
@@ -5692,7 +5695,7 @@ button.bg-dark:focus {
 .mx-4 {
   margin-right: 1.5rem !important; }
 
-.mb-4, .portfolioCard,
+.mb-4, portfolioCard,
 .my-4 {
   margin-bottom: 1.5rem !important; }
 
@@ -5703,7 +5706,7 @@ button.bg-dark:focus {
 .m-5 {
   margin: 3rem !important; }
 
-.mt-5, .portfolioCard,
+.mt-5, portfolioCard,
 .my-5 {
   margin-top: 3rem !important; }
 
@@ -5937,7 +5940,7 @@ button.bg-dark:focus {
 
 .mr-auto,
 .mx-auto,
-.portfolioCard {
+portfolioCard {
   margin-right: auto !important; }
 
 .mb-auto,
@@ -5946,7 +5949,7 @@ button.bg-dark:focus {
 
 .ml-auto,
 .mx-auto,
-.portfolioCard {
+portfolioCard {
   margin-left: auto !important; }
 
 @media (min-width: 576px) {
@@ -6999,7 +7002,7 @@ button.bg-dark:focus {
 .text-right {
   text-align: right !important; }
 
-.text-center, .portfolioCard h3, .portfolioCard h4 {
+.text-center, portfolioCard h3, portfolioCard h4 {
   text-align: center !important; }
 
 @media (min-width: 576px) {
@@ -7115,7 +7118,7 @@ a.text-dark:hover, a.text-dark:focus {
 .text-body {
   color: #212529 !important; }
 
-.text-muted, .portfolioCard h4 {
+.text-muted, portfolioCard h4 {
   color: #6c757d !important; }
 
 .text-black-50 {
@@ -7131,12 +7134,12 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: transparent;
   border: 0; }
 
-.text-decoration-none, .portfolioCard aside a {
+.text-decoration-none, portfolioCard aside a {
   text-decoration: none !important; }
 
 .text-break {
   word-break: break-word !important;
-  overflow-wrap: break-word !important; }
+  word-wrap: break-word !important; }
 
 .text-reset {
   color: inherit !important; }
@@ -7180,7 +7183,7 @@ a.text-dark:hover, a.text-dark:focus {
     size: a3; }
   body {
     min-width: 992px !important; }
-  .container, .myFooter {
+  .container {
     min-width: 992px !important; }
   .navbar {
     display: none; }
@@ -8299,7 +8302,8 @@ input[type="color"].form-control:disabled {
   position: relative;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.12);
-  cursor: wait; }
+  cursor: wait;
+  mask-image: radial-gradient(white, black); }
   .b-skeleton::before {
     content: "\00a0"; }
 
@@ -9329,37 +9333,18 @@ input[type="color"].form-control:disabled {
 
 /* Define the colors used. */
 /* Layout rules divide the page into sections. Layouts hold one or more modules together. */
-.portfolioCard img {
-  max-width: 90vw; }
-  @media (min-width: 576px) {
-    .portfolioCard img {
-      max-width: 90vw; } }
-  @media (min-width: 768px) {
-    .portfolioCard img {
-      max-width: 45vw; } }
-  @media (min-width: 992px) {
-    .portfolioCard img {
-      max-width: 18vw; } }
-  @media (min-width: 1200px) {
-    .portfolioCard img {
-      max-width: 18vw; } }
-
-.portfolioCard aside a {
-  font-family: Quentin;
-  font-size: 1rem;
-  font-weight: bold; }
-  .portfolioCard aside a hover {
-    color: hotpink !important; }
-
 /* Modules are the reusable, modular parts of our design. They are the callouts, the sidebar sections, the product lists and so on. */
 header div {
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 90px;
+  overflow: hidden;
   transition: 0.5s;
   width: 100%;
   position: fixed;
-  overflow: hidden;
   background-color: white;
-  z-index: 9999;
-  padding: 80px 0;
+  padding: 60px 0;
   text-align: center;
   vertical-align: middle;
   height: 100px;
@@ -9442,26 +9427,54 @@ header nav {
       float: left; }
 
 .myFooter {
-  /* position: relative; */
   background: url("../images/torn_edge_bkgrd_1000.jpg");
-  position: relative;
+  position: absolute;
   height: 400px;
   width: 100%; }
+  .myFooter div {
+    margin-top: 150px;
+    margin-left: 80px; }
+  .myFooter #copyright {
+    float: left;
+    margin-left: 350px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding: 0; }
+
+/* Modules for Porfolio */
+portfolioCard img {
+  max-width: 90vw; }
+  @media (min-width: 576px) {
+    portfolioCard img {
+      max-width: 90vw; } }
+  @media (min-width: 768px) {
+    portfolioCard img {
+      max-width: 45vw; } }
+  @media (min-width: 992px) {
+    portfolioCard img {
+      max-width: 18vw; } }
+  @media (min-width: 1200px) {
+    portfolioCard img {
+      max-width: 18vw; } }
+
+portfolioCard aside a {
+  font-family: Quentin;
+  font-size: 1rem;
+  font-weight: bold; }
+  portfolioCard aside a hover {
+    color: hotpink !important; }
 
 /* Rules for Icon Modules. */
-body,
-html {
-  height: 100%; }
+html,
+body {
+  padding: 0;
+  height: 100%;
+  margin: 0; }
 
 body {
   margin: 0;
-  line-height: 1.2em;
-  font-family: Arial, Helvetica, sans-serif;
   min-height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
   /* added to prevent horizontal scroll bar */
   /* need to fix this this and not use a hack.  Find the element that is overflowing */
   overflow-x: hidden;
@@ -9477,7 +9490,7 @@ body::after {
 #moodboard {
   margin-right: auto;
   margin-left: auto;
-  margin-top: 300px;
+  margin-top: 230px;
   max-width: 100%;
   display: block;
   height: auto; }
@@ -9509,12 +9522,11 @@ body::after {
   font-family: Quentin;
   color: #363d3c;
   font-size: 3.4em;
-  font-style: bold;
+  font-weight: bold;
   letter-spacing: 1px;
   position: absolute;
   text-align: center;
-  /* top: 310px; */
-  padding-top: 52px;
+  padding-top: 30px;
   animation-name: block2;
   animation-duration: 2s;
   animation-fill-mode: forwards; }
@@ -9576,65 +9588,19 @@ body::after {
   text-align: center;
   letter-spacing: 1px; }
 
-.wrapper {
-  display: grid;
-  position: relative;
-  grid-template-columns: 54% 46%;
-  /* justify-content: center; */
-  align-content: center;
-  height: 970px;
-  /* width: 100%; */
+#home_page {
   background: url(../images/torn_edge_bkgrd_1000.jpg);
-  /* size of background image is 1600 x 1000 px */
-  /* background-size: 1600px 970px; */ }
+  height: 970px; }
 
 #remote {
   /* margin-left: 220px; */
-  float: right;
-  width: 650px;
-  margin-top: 605px;
+  width: auto;
   /* margin-right: -140px; */
-  height: auto;
-  position: relative; }
-
-#img_claire {
-  position: absolute;
-  top: 96px;
-  left: 700px;
-  width: 280px;
-  padding: 16px;
-  border: 3px solid #d2b96e;
-  background-color: white; }
-
-#zodiac_leo {
-  position: absolute;
-  height: auto;
-  width: 26%;
-  top: -136px;
-  left: 100px;
-  opacity: 0.3; }
-
-.intro_2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  width: 300px !important;
-  height: 900px;
-  margin-top: 630px;
-  margin-left: 54px;
-  padding-bottom: 300px;
-  float: left; }
+  height: auto; }
 
 div#one {
   /* flex: 1; */
   flex-direction: flex-start; }
-
-img#intro_2_claire {
-  width: 170px;
-  margin-left: 30px;
-  margin-top: -10px;
-  margin-bottom: 10px; }
 
 div#one hr {
   width: 80px;
@@ -9714,34 +9680,6 @@ div#two p {
 #last_p:hover {
   color: #16c0b7; }
 
-/* .intro_2 > div {
-  display: grid;
-  background-color: white;
-  padding: 30px;
-  font-size: .9em;
-  align-items: center;
-  justify-items: left;
-  line-height: 1.5em;
-  font-family: "Lora";
-  color: rgb(96, 96, 96);
-
-} */
-/* div.claire_sig {
-  display: block;
-  margin-right: 86%;
-  margin-left: 14%;
-  margin-bottom: 60px;
-  margin-top: -20px;
-} */
-/* #more_about_me>a:hover::before {
-  visibility: hidden;
-}  */
-/* h3#more_about_me:hover {
-  background-color: rgb(207, 100, 120);
-}  */
-/* #more_about_me>a:hover {
-  color: rgb(255, 248, 214);
-}  */
 div#good_fit {
   display: flex;
   position: relative;
@@ -9856,7 +9794,7 @@ div#good_fit p {
 
 /* ABOUT ME PAGE STYLING */
 #about_collage {
-  margin-top: 220px;
+  margin-top: 230px;
   max-width: 100%;
   width: 100%;
   height: auto; }
@@ -10161,7 +10099,7 @@ img#frida {
 
 /* Styling Contact page */
 #contact_collage {
-  margin-top: 220px;
+  margin-top: 230px;
   max-width: 100%;
   width: 100%;
   height: auto; }
@@ -10383,7 +10321,7 @@ div#submit_contact {
 } */
 /* Styling Portfolio Page */
 #portfolio_collage {
-  margin-top: 220px;
+  margin-top: 230px;
   max-width: 100%;
   width: 100%;
   /* height:auto; */ }
@@ -10435,7 +10373,7 @@ div#submit_contact {
   height: 1000px; }
 
 #service_collage {
-  margin-top: 220px;
+  margin-top: 230px;
   max-width: 100%;
   width: 100%;
   height: auto; }
@@ -10484,7 +10422,7 @@ img#gold_star {
 
 /* Styling Blog Page */
 #blog_collage {
-  margin-top: 220px;
+  margin-top: 230px;
   max-width: 100%;
   width: 100%;
   height: auto; }
@@ -10525,18 +10463,6 @@ img#gold_star {
   height: 800px;
   width: 100%;
   background-color: white; }
-
-/* STYLING FOOTER */
-footer {
-  width: 100%;
-  /* position: relative; */
-  height: 400px; }
-
-#footer_bottom {
-  background: url(../images/torn_edge_bkgrd_1000.jpg);
-  position: relative;
-  height: 400px;
-  width: 100%; }
 
 /* More About Me underline effect */
 *,
