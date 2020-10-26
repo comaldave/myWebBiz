@@ -3,12 +3,13 @@
 @charset "utf-8";
 
 @import "_base.scss";
-@import "_theme.scss";
-@import "_layouts.scss";
-@import "_modules.scss";
-@import "_portfolio.scss";
-@import "_icons.scss";
-@import "_layout_home.scss";
+@import "theme/_theme.scss";
+@import "layout/_header.scss";
+@import "layout/_footer.scss";
+@import "layout/_aside.scss";
+@import "module/_icons.scss";
+@import "page/_portfolio.scss";
+@import "page/_home.scss";
 
 
 // Adding Saturday night
@@ -63,137 +64,6 @@ body::after {
 
 // this is the content 
 
-#moodboard {
-  // position: relative;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 230px;
-  // width: 100%; 
-  max-width: 100%;
-  display: block;
-  height: auto;
-}
-
-
-#just_below_moodboard {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-}
-
-
-.and {
-  /* font-family: "Playfair Display"; */
-  font-size: 1.2em;
-}
-
-.first_div_below_moodboard {
-  position: relative;
-  padding-bottom: 20px;
-  /* margin: 0 auto; */
-  /* text-align: center; */
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.moodboard_h2 {
-  font-family: Quentin;
-  color: #363d3c;
-  font-size: 3.4em;
-  // font-style: bold;
-  font-weight: bold;
-  letter-spacing: 1px;
-  position: absolute;
-  text-align: center;
-  padding-top: 30px;
-  animation-name: block2;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-
-
-
-@keyframes block2 {
-  0% {
-    top: -600px;
-  }
-
-  100% {
-    top: 0px;
-  }
-}
-
-.craft_code_under_moodboard {
-  position: relative;
-  animation-name: block3;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes block3 {
-  from {
-    top: 500px;
-  }
-
-  to {
-    top: 1px;
-  }
-}
-
-
-
-#just_below_moodboard hr {
-  border: .8px solid $clrMoodBorder;
-  background: $clrBkgdMoodboard;
-  width: 880px;
-  margin-top: 104px;
-  margin-bottom: 0;
-
-}
-
-
-.crafting {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 0px;
-}
-
-#just_below_moodboard p {
-  /* font-family: "Ernestine Pro Light";
-  font-family: "Montserrat Light"; */
-  font-family: "Tenor sans";
-  /* color: #363d3c; */
-  color: #696969;
-  color: #808080;
-  color: rgba(0, 0, 0, .6);
-  /* font-weight: lighter;
-  letter-spacing: 2px; */
-  /* color: #AC985B; */
-  font-size: 1.6em;
-  width: 930px;
-  text-align: center;
-  line-height: 1.2;
-  margin-bottom: 0 !important;
-}
-
-#just_below_moodboard h3 {
-  font-family: "Montserrat Light";
-  color: #d2b96e;
-  font-size: .9em;
-  margin-top: 8px;
-  padding-bottom: 70px;
-  text-align: center;
-  letter-spacing: 1px;
-}
-
 
 
 
@@ -217,19 +87,19 @@ div#good_fit {
   opacity: 0.6;
 }
 
-div#good_fit>div {
-  background-color: white;
-  width: 300px;
-  height: 220px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  /* margin-top: -20px; */
-  margin-bottom: 60px;
+// div#good_fit>div {
+//   background-color: white;
+//   width: 300px;
+//   height: 220px;
+//   padding-top: 100px;
+//   padding-bottom: 100px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: flex-start;
+//   /* margin-top: -20px; */
+//   margin-bottom: 60px;
 
-}
+// }
 
 div#good_fit p {
   line-height: 1.5em;

@@ -47,6 +47,7 @@ function scrollFunction() {
     document.getElementById("logo_Claire").style.width = "350px";
     // document.getElementById("logo_Claire").style.marginTop = "0px";
   }
+  
 }
 
 
