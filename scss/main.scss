@@ -8,23 +8,26 @@
 @import "_modules.scss";
 @import "_portfolio.scss";
 @import "_icons.scss";
+@import "_layout_home.scss";
 
 
 // Adding Saturday night
-html,
-body {
-  padding: 0;
-  height: 100%;
-  margin: 0;
-}
+// html,
+// body {
+//   width: 100%;
+//   height: 100%;
+//   margin: 0px;
+//   padding: 0px;
+//   overflow-x: hidden; 
+// }
 
 //changes made saturday night 
-  body {
-    margin: 0;
-    // line-height: 1.2em;
-    min-height: 100%;
-    width: 100%;
-    // position: relative;
+body {
+  // margin: 0;
+  // line-height: 1.2em;
+  // min-height: 100%;
+  // width: 100%;
+  // position: relative;
 
   /* added to prevent horizontal scroll bar */
   /* need to fix this this and not use a hack.  Find the element that is overflowing */
@@ -32,7 +35,8 @@ body {
   overflow-y: scroll;
 
   /* prevents scroll bounce */
-  overscroll-behavior: none}
+  overscroll-behavior: none
+}
 
 
 // What does this do?  Saturday night 
@@ -192,141 +196,8 @@ body::after {
 
 
 
- #home_page {
-  // display: grid;
-  // position: relative;
-  // grid-template-columns: 54% 46%;
-  // justify-content: center; 
-  // align-content: center;
-  // width: 100%; 
-    // size of background image is 1600 x 1000 px 
-  // background-size: 1600px 970px; 
-
-  background: url(../images/torn_edge_bkgrd_1000.jpg);
-  height: 970px;
- }
 
 
-
-#remote {
-  /* margin-left: 220px; */
-  // float: right;
-  width: auto;
-  // margin-top: 605px;
-  /* margin-right: -140px; */
-  height: auto;
-  // position: relative;
-}
-
-// #zodiac_leo {
-//   position: absolute;
-//   height: auto;
-//   width: 26%;
-//   top: -136px;
-//   left: 100px;
-//   opacity: 0.3;
-
-
-div#one {
-  /* flex: 1; */
-  flex-direction: flex-start;
-
-}
-
-div#one hr {
-  width: 80px;
-  margin-left: 50px;
-  margin-top: 20px;
-  border: .8px solid #d2b96e;
-  background: #d2b96e;
-  margin-bottom: 20px;
-
-}
-
-div#one #first_p {
-  font-size: 2em;
-  margin-left: 34px;
-  margin-top: -50px;
-  width: 100px;
-  font-family: "Tenor Sans";
-
-}
-
-.intro_2 #second_p {
-  font-family: Quentin;
-  font-size: 2em;
-  width: 100px;
-  margin-left: 40px;
-  padding-top: 20px;
-  padding-bottom: 0px;
-}
-
-div#two {
-  flex: 1;
-  background-color: transparent;
-  /* background-color: #fbf9ee; */
-  vertical-align: middle;
-  margin-left: 50px;
-
-}
-
-div#do_this {
-  flex: 1;
-  margin-left: 30px;
-  margin-top: -20px;
-  width: 100px;
-}
-
-/* div#two p {
-  width: 300px !important;
-} */
-
-div#three {
-  flex: 1;
-  width: 300px;
-  margin-left: 0px;
-  margin-top: 30px;
-}
-
-div#three a {
-  margin-left: 140px;
-  margin-top: 0;
-  z-index: 1;
-}
-
-
-#two>div {
-  background-color: transparent;
-  width: 370px;
-  height: 400px;
-  margin-left: -10px;
-}
-
-div#two p {
-  padding-bottom: 14px;
-  line-height: 1.7;
-  font-size: .90em;
-  width: 370px;
-  text-align: justify;
-
-  /* font-family: "Montserrat Regular"; */
-  font-family: "Ernestine Pro Light";
-  /* font-family: 'Lora'; */
-  /* font-style: italic; */
-  /* font-family: 'Tenor Sans'; */
-  color: #363d3c;
-}
-
-#last_p {
-  margin-left: 12px;
-  margin-top: -20px;
-  text-decoration: none;
-  color: black;
-}
-
-#last_p:hover {
-  color: #16c0b7;
-}
 
 div#good_fit {
   display: flex;
@@ -593,7 +464,7 @@ p.wider_p_about_info {
   text-align: center;
   font-family: Quentin;
   margin-left: 170px;
-  margin-top: 30px; 
+  margin-top: 30px;
   width: 200px;
 }
 
@@ -604,7 +475,7 @@ p.wider_p_about_info {
 #sig_line {
   margin-top: 10px;
   width: 150px;
-  margin-left: 435px; 
+  margin-left: 435px;
 }
 
 #the_one {
@@ -853,7 +724,7 @@ img#frida {
   max-width: 100%;
   width: 100%;
   height: auto;
-  
+
 }
 
 #contact_space_below_banner {
@@ -1298,7 +1169,7 @@ img#gold_star {
   text-align: center;
   margin-bottom: 44px !important;
   font-size: 1.6em;
-  
+
 }
 
 #blog_stuff_here {

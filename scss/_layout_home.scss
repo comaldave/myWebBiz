@@ -1,0 +1,271 @@
+#home_page {
+    #sect_intro {
+        @extend .container-fluid;
+        background: url(../images/torn_edge_bkgrd_1000.jpg);
+        height: 1000px;
+
+
+        div {
+            @extend .row;
+            @extend .justify-content-center;
+            @extend .align-self-center;
+
+            #left_img {
+                @extend .col-md-4;
+                @extend .align-middle;
+                #remote {
+                    @include media-breakpoint-only(xs) {
+                        width: 97vw;
+                    }
+                
+                    @include media-breakpoint-only(sm) {
+                        width: 80vw;
+                    }
+                
+                    @include media-breakpoint-only(md) {
+                        width: 50vw;
+                    }
+                
+                    @include media-breakpoint-only(lg) {
+                        width: 50vw;
+                    }
+                
+                    @include media-breakpoint-only(xl) {
+                        width: 50vw;
+                    }
+                    height: auto;
+                }
+            }
+
+            #right_text {
+                @extend .col-md-3;
+                @extend .align-middle;
+
+                #one {
+                    #first_p {
+                        font-size: 2vw;
+                        margin-top: -50px;
+                        width: 20vw;
+                        font-family: "Tenor Sans";
+                    }
+
+                    #second_p {
+                        font-family: Quentin;
+                        font-size: 2vw;
+                        width: 20vw;
+                    }
+
+                    hr {
+                        width: 10vw;
+                        margin-left: 50px;
+                        margin-top: 20px;
+                        border: .8px solid #d2b96e;
+                        background: #d2b96e;
+                        margin-bottom: 20px;
+
+                    }
+
+
+
+                }
+
+                #two {
+                    flex: 1;
+                    background-color: transparent;
+                    /* background-color: #fbf9ee; */
+                    vertical-align: middle;
+                    margin-left: 50px;
+
+                    p {
+                        padding-bottom: 14px;
+                        line-height: 1.7;
+                        font-size: .85vw;
+                        width: 22vw;
+                        text-align: justify;
+
+                        font-family: "Ernestine Pro Light";
+                        /* font-family: 'Tenor Sans'; */
+                        color: #363d3c;
+                    }
+
+                    a {
+                        font-family: Quentin;
+                        font-size: 2vw;
+                        text-decoration: none;
+                        color: black;
+                    }
+
+                    a:hover {
+                        color: #16c0b7;
+                    }
+
+                }
+
+                #three {
+                    width: 16vw;
+
+                    a {
+                        z-index: 1;
+                    }
+                }
+
+            }
+        }
+    }
+
+
+    #sect_good-fit {}
+
+
+    // display: grid;
+    // position: relative;
+    // grid-template-columns: 54% 46%;
+    // justify-content: center; 
+    // align-content: center;
+    // width: 100%; 
+    // size of background image is 1600 x 1000 px 
+    // background-size: 1600px 970px; 
+}
+
+
+
+#remote {
+    /* margin-left: 220px; */
+    // float: right;
+
+    @include media-breakpoint-only(xs) {
+        width: 97vw;
+    }
+
+    @include media-breakpoint-only(sm) {
+        width: 80vw;
+    }
+
+    @include media-breakpoint-only(md) {
+        width: 50vw;
+    }
+
+    @include media-breakpoint-only(lg) {
+        width: 50vw;
+    }
+
+    @include media-breakpoint-only(xl) {
+        width: 50vw;
+    }
+
+    // add media break points here 
+    // margin-top: 605px;
+    /* margin-right: -140px; */
+    height: auto;
+    // position: relative;
+}
+
+// #zodiac_leo {
+//   position: absolute;
+//   height: auto;
+//   width: 26%;
+//   top: -136px;
+//   left: 100px;
+//   opacity: 0.3;
+
+
+// div#one {
+//     /* flex: 1; */
+//     flex-direction: flex-start;
+
+// 
+
+// div#one hr {
+//     width: 80px;
+//     margin-left: 50px;
+//     margin-top: 20px;
+//     border: .8px solid #d2b96e;
+//     background: #d2b96e;
+//     margin-bottom: 20px;
+
+// }
+
+// div#one #first_p {
+//     font-size: 2em;
+//     margin-left: 34px;
+//     margin-top: -50px;
+//     width: 100px;
+//     font-family: "Tenor Sans";
+
+// }
+
+// .intro_2 #second_p {
+//     font-family: Quentin;
+//     font-size: 2em;
+//     width: 100px;
+//     margin-left: 40px;
+//     padding-top: 20px;
+//     padding-bottom: 0px;
+// }
+
+// div#two {
+//     flex: 1;
+//     background-color: transparent;
+//     /* background-color: #fbf9ee; */
+//     vertical-align: middle;
+//     margin-left: 50px;
+
+// }
+
+div#do_this {
+    flex: 1;
+    margin-left: 30px;
+    margin-top: -20px;
+    width: 100px;
+}
+
+/* div#two p {
+    width: 300px !important;
+  } */
+
+// div#three {
+//     flex: 1;
+//     width: 300px;
+//     margin-left: 0px;
+//     margin-top: 30px;
+// }
+
+// div#three a {
+//     margin-left: 140px;
+//     margin-top: 0;
+//     z-index: 1;
+// }
+
+
+#two>div {
+    background-color: transparent;
+    width: 370px;
+    height: 400px;
+    margin-left: -10px;
+}
+
+// div#two p {
+//     padding-bottom: 14px;
+//     line-height: 1.7;
+//     font-size: .90em;
+//     width: 370px;
+//     text-align: justify;
+
+//     /* font-family: "Montserrat Regular"; */
+//     font-family: "Ernestine Pro Light";
+//     /* font-family: 'Lora'; */
+//     /* font-style: italic; */
+//     /* font-family: 'Tenor Sans'; */
+//     color: #363d3c;
+// }
+
+// #last_p {
+//     margin-left: 12px;
+//     margin-top: -20px;
+//     text-decoration: none;
+//     color: black;
+// }
+
+#last_p:hover {
+    color: #16c0b7;
+}
