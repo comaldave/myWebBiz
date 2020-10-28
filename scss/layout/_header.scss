@@ -1,8 +1,8 @@
-// layout/_header.scss by Claire Crawford
+//layout/_header.scss by Claire Crawford
 
 header {
-  div {
-    // top: 0;
+  #main_menu {
+    // top: 0; 
     // left: 0;
     z-index: 999;
     overflow: hidden;
@@ -10,10 +10,13 @@ header {
     width: 100%;
     position: fixed;
     background-color: white;
-    padding: 60px 0;
+    // padding: 60px 0; 
     text-align: center;
+
     vertical-align: middle;
+
     height: 100px;
+
     @include media-breakpoint-only(xs) {
       height: 1rem;
       margin-top: 32px;
@@ -33,6 +36,7 @@ header {
       width: 52rem;
       margin-top: 94px;
     }
+
     @include media-breakpoint-only(xl) {
       width: 56rem;
       margin-top: 104px;
@@ -40,35 +44,37 @@ header {
 
     line-height: 100px;
 
-    // transition: 0.5s;
-
-    span {
-      height: auto;
-      // text-align: center;
-      // width: 130px;
-      margin: 0;
-      position: absolute;
-      // transform: translate(0, -50%)
-      top: 50%;
-      left: 50%;
-      transition: 0.5s;
-      transform: translate(-50%, -50%);
+    .logo_area {
+      @include media-breakpoint-up(md) {
+        height: auto;
+        // text-align: center; 
+        // width: 130px; 
+        margin: 0;
+        position: absolute;
+        // transform: translate(0, -50%);
+        top: 50%;
+        left: 50%;
+        transition: 0.5s;
+        transform: translate(-50%, -50%);
+      }
 
       img {
-        width: auto;
-        height: auto;
-        margin: 0;
-        margin-right: auto;
-        margin-left: auto;
-        transition: 0.5s;
-        margin-bottom: -15px;
-        // margin-bottom: -36px;
-        // vertical-align: middle;
-        // margin-top: -5px;
-        // position: fixed;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%, -50%);
+        @include media-breakpoint-up(md) {
+          width: auto;
+          height: auto;
+          margin: 0;
+          margin-right: auto;
+          margin-left: auto;
+          transition: 0.5s;
+          margin-bottom: -15px;
+          //margin-bottom: -36px; 
+          // vertical-align: middle; 
+          // margin-top: -5px; 
+          //position: fixed; 
+          // top: 50%; 
+          // left: 50%; 
+          transform: translate(-50%, -50%);
+        }
       }
     }
   }
@@ -78,80 +84,81 @@ header {
   }
 
   nav {
+    @extend .navbar;
+    @extend .navbar-light;
+    @extend .text-info;
+    // @extend .lighten-4; 
+    @extend .mb-4;
     margin: 0 auto;
     width: 1170px;
 
     a {
       -webkit-transform: translateZ(0);
-      transform: translateZ(0);
+      transform:
+        translateZ(0);
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
       -moz-osx-font-smoothing: grayscale;
+      color: $clrGray;
+      /* trying out a new font color that is a bit darker */
+      font-family: "tenor sans";
+      font-size: 1em;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      display: block;
+      margin: 5px 20px 5px 20px;
+      height: 60px;
+
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color:
+          rgb(211, 211, 211);
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform:
+          scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+      }
+
+      &:hover:before {
+        visibility: visible;
+        -webkit-transform:
+          scaleX(1);
+        transform: scaleX(1);
+      }
+
+
+      &:hover {
+        color: $clrHover;
+        text-decoration:
+          none;
+      }
+    }
+  }
+
+  .split_nav {
+    margin: 0;
+    list-style: none;
+    text-align: right;
+    background-color: white;
+    font-size: 12px;
+    padding: 0;
+
+    li {
+      float: none;
+      display: inline-block;
+      position: relative;
     }
 
-    a:before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      bottom: 0;
-      left: 0;
-      background-color: rgb(211, 211, 211);
-      visibility: hidden;
-      -webkit-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transition: all 0.3s ease-in-out 0s;
-      transition: all 0.3s ease-in-out 0s;
-    }
-
-    a:hover:before {
-      visibility: visible;
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
-    }
-
-    ul {
-      margin: 0;
-      list-style: none;
-      text-align: right;
-      background-color: white;
-      font-size: 12px;
-      padding: 0;
-
-      li {
-        float: none;
-        display: inline-block;
-        position: relative;
-
-        a {
-          color: $clrGray;
-          /* trying out new font color that is a bit darker */
-          font-family: "tenor sans";
-          font-size: 1em;
-          letter-spacing: 1px;
-          text-transform: uppercase;
-          display: block;
-          margin: 5px 20px 5px 20px;
-          height: 60px;
-        }
-
-        a:hover {
-          color: $clrHover;
-          text-decoration: none;
-        }
-      }
-
-      li:nth-child(1) {
-        float: left;
-      }
-
-      li:nth-child(2) {
-        float: left;
-      }
-
-      li:nth-child(3) {
-        float: left;
-      }
+    .split_left {
+      float: left;
     }
   }
 }

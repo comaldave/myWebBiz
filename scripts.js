@@ -33,22 +33,22 @@ $(document).ready(function () {
 
 // When the user scrolls down 100px from the top of the document, resize the navbar's padding 
 
-window.onscroll = function () {
-  scrollFunction()
-};
+// window.onscroll = function () {
+//   scrollFunction()
+// };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
-    document.getElementById("main_menu").style.padding = "0px";
-    document.getElementById("logo_Claire").style.width = "280px";
-    // document.getElementById("logo_Claire").style.marginTop = "0px";
-  } else {
-    document.getElementById("main_menu").style.padding = "60px 0px";
-    document.getElementById("logo_Claire").style.width = "350px";
-    // document.getElementById("logo_Claire").style.marginTop = "0px";
-  }
+// function scrollFunction() {
+//   if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+//     document.getElementById("main_menu").style.padding = "0px";
+//     document.getElementById("logo_Claire").style.width = "280px";
+//     // document.getElementById("logo_Claire").style.marginTop = "0px";
+//   } else {
+//     document.getElementById("main_menu").style.padding = "60px 0px";
+//     document.getElementById("logo_Claire").style.width = "350px";
+//     // document.getElementById("logo_Claire").style.marginTop = "0px";
+//   }
   
-}
+// }
 
 
 

@@ -5,11 +5,21 @@
 @import "_base.scss";
 @import "theme/_theme.scss";
 @import "layout/_header.scss";
+
+
 @import "layout/_footer.scss";
+
+
 @import "layout/_aside.scss";
-@import "module/_icons.scss";
+@import "module/_legal.scss";
+
+
 @import "page/_portfolio.scss";
 @import "page/_home.scss";
+
+
+
+
 
 
 // Adding Saturday night
@@ -36,7 +46,7 @@ body {
   overflow-y: scroll;
 
   /* prevents scroll bounce */
-  overscroll-behavior: none
+  overscroll-behavior: none;
 }
 
 
@@ -1057,11 +1067,7 @@ img#gold_star {
   box-sizing: inherit;
 }
 
-.button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
+.button_underline {
   font-size: 0.7rem;
   font-family: Lora;
   position: relative;
@@ -1082,248 +1088,248 @@ input[type="button"] {
   margin-left: 600px; */
   padding: 0.875em 1.428571429em;
   letter-spacing: 0.2em;
-}
 
-.button span,
-button span,
-input[type="submit"] span,
-input[type="reset"] span,
-input[type="button"] span {
-  display: block;
-  position: absolute;
-  transition: all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
-  width: 100%;
-  top: 0;
-  left: 0;
-}
+  .button span,
+  button span,
+  input[type="submit"] span,
+  input[type="reset"] span,
+  input[type="button"] span {
+    display: block;
+    position: absolute;
+    transition: all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
 
-.button span:first-child,
-button span:first-child,
-input[type="submit"] span:first-child,
-input[type="reset"] span:first-child,
-input[type="button"] span:first-child {
-  height: 100%;
-}
+  .button span:first-child,
+  button span:first-child,
+  input[type="submit"] span:first-child,
+  input[type="reset"] span:first-child,
+  input[type="button"] span:first-child {
+    height: 100%;
+  }
 
-.button span::before,
-.button span::after,
-button span::before,
-button span::after,
-input[type="submit"] span::before,
-input[type="submit"] span::after,
-input[type="reset"] span::before,
-input[type="reset"] span::after,
-input[type="button"] span::before,
-input[type="button"] span::after {
-  content: "";
-  display: block;
-  position: absolute;
-  /* background: #DAA25A; */
-  /* background: rgb(207, 188, 100); */
-  background: white;
-  transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
-}
+  .button span::before,
+  .button span::after,
+  button span::before,
+  button span::after,
+  input[type="submit"] span::before,
+  input[type="submit"] span::after,
+  input[type="reset"] span::before,
+  input[type="reset"] span::after,
+  input[type="button"] span::before,
+  input[type="button"] span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    /* background: #DAA25A; */
+    /* background: rgb(207, 188, 100); */
+    background: white;
+    transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  }
 
-.button span:first-child::before,
-.button span:first-child::after,
-button span:first-child::before,
-button span:first-child::after,
-input[type="submit"] span:first-child::before,
-input[type="submit"] span:first-child::after,
-input[type="reset"] span:first-child::before,
-input[type="reset"] span:first-child::after,
-input[type="button"] span:first-child::before,
-input[type="button"] span:first-child::after {
-  width: 1.5px;
-  /* ** */
-  height: 100%;
-  bottom: 0;
-  transform: scale3d(1, 0, 1);
-  transform-origin: bottom center;
-  transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.2s,
-    background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
-}
+  .button span:first-child::before,
+  .button span:first-child::after,
+  button span:first-child::before,
+  button span:first-child::after,
+  input[type="submit"] span:first-child::before,
+  input[type="submit"] span:first-child::after,
+  input[type="reset"] span:first-child::before,
+  input[type="reset"] span:first-child::after,
+  input[type="button"] span:first-child::before,
+  input[type="button"] span:first-child::after {
+    width: 1.5px;
+    /* ** */
+    height: 100%;
+    bottom: 0;
+    transform: scale3d(1, 0, 1);
+    transform-origin: bottom center;
+    transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.2s,
+      background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+  }
 
-.button span:first-child::before,
-button span:first-child::before,
-input[type="submit"] span:first-child::before,
-input[type="reset"] span:first-child::before,
-input[type="button"] span:first-child::before {
-  left: 0;
-}
+  .button span:first-child::before,
+  button span:first-child::before,
+  input[type="submit"] span:first-child::before,
+  input[type="reset"] span:first-child::before,
+  input[type="button"] span:first-child::before {
+    left: 0;
+  }
 
-.button span:first-child::after,
-button span:first-child::after,
-input[type="submit"] span:first-child::after,
-input[type="reset"] span:first-child::after,
-input[type="button"] span:first-child::after {
-  right: 0;
-}
+  .button span:first-child::after,
+  button span:first-child::after,
+  input[type="submit"] span:first-child::after,
+  input[type="reset"] span:first-child::after,
+  input[type="button"] span:first-child::after {
+    right: 0;
+  }
 
-.button span:last-child,
-button span:last-child,
-input[type="submit"] span:last-child,
-input[type="reset"] span:last-child,
-input[type="button"] span:last-child {
-  width: 100%;
-  height: 1px;
-}
+  .button span:last-child,
+  button span:last-child,
+  input[type="submit"] span:last-child,
+  input[type="reset"] span:last-child,
+  input[type="button"] span:last-child {
+    width: 100%;
+    height: 1px;
+  }
 
-.button span:last-child::before,
-.button span:last-child::after,
-button span:last-child::before,
-button span:last-child::after,
-input[type="submit"] span:last-child::before,
-input[type="submit"] span:last-child::after,
-input[type="reset"] span:last-child::before,
-input[type="reset"] span:last-child::after,
-input[type="button"] span:last-child::before,
-input[type="button"] span:last-child::after {
-  height: 1px;
-  width: 100%;
-  bottom: 0;
-  transform: scale3d(0, 1, 1);
-  transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s,
-    background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
-}
+  .button span:last-child::before,
+  .button span:last-child::after,
+  button span:last-child::before,
+  button span:last-child::after,
+  input[type="submit"] span:last-child::before,
+  input[type="submit"] span:last-child::after,
+  input[type="reset"] span:last-child::before,
+  input[type="reset"] span:last-child::after,
+  input[type="button"] span:last-child::before,
+  input[type="button"] span:last-child::after {
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s,
+      background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+  }
 
-.button span:last-child::before,
-button span:last-child::before,
-input[type="submit"] span:last-child::before,
-input[type="reset"] span:last-child::before,
-input[type="button"] span:last-child::before {
-  left: 0;
-  transform-origin: bottom left;
-}
+  .button span:last-child::before,
+  button span:last-child::before,
+  input[type="submit"] span:last-child::before,
+  input[type="reset"] span:last-child::before,
+  input[type="button"] span:last-child::before {
+    left: 0;
+    transform-origin: bottom left;
+  }
 
-.button span:last-child::after,
-button span:last-child::after,
-input[type="submit"] span:last-child::after,
-input[type="reset"] span:last-child::after,
-input[type="button"] span:last-child::after {
-  right: 0;
-  transform-origin: bottom right;
-}
+  .button span:last-child::after,
+  button span:last-child::after,
+  input[type="submit"] span:last-child::after,
+  input[type="reset"] span:last-child::after,
+  input[type="button"] span:last-child::after {
+    right: 0;
+    transform-origin: bottom right;
+  }
 
-.button::after,
-button::after,
-input[type="submit"]::after,
-input[type="reset"]::after,
-input[type="button"]::after {
-  content: "";
-  width: 80%;
-  left: 50%;
-  height: 1.5px;
-  /* ** */
-  bottom: 0;
-  transform: translatex(-50%);
-  transition: width 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.4s,
-    background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
-  display: block;
-  position: absolute;
-  background: white;
-}
+  .button::after,
+  button::after,
+  input[type="submit"]::after,
+  input[type="reset"]::after,
+  input[type="button"]::after {
+    content: "";
+    width: 80%;
+    left: 50%;
+    height: 1.5px;
+    /* ** */
+    bottom: 0;
+    transform: translatex(-50%);
+    transition: width 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.4s,
+      background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+    display: block;
+    position: absolute;
+    background: white;
+  }
 
-.button:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="button"]:hover {
-  opacity: 1;
-  outline: 0;
-  color: black !important;
+  .button:hover,
+  button:hover,
+  input[type="submit"]:hover,
+  input[type="button"]:hover {
+    opacity: 1;
+    outline: 0;
+    color: black !important;
 
-  text-decoration: none;
-  transition: color 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
-}
+    text-decoration: none;
+    transition: color 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+  }
 
-.button:hover span:first-child::before,
-.button:hover span:first-child::after,
-button:hover span:first-child::before,
-button:hover span:first-child::after,
-input[type="submit"]:hover span:first-child::before,
-input[type="submit"]:hover span:first-child::after,
-input[type="reset"]:hover span:first-child::before,
-input[type="reset"]:hover span:first-child::after,
-input[type="button"]:hover span:first-child::before,
-input[type="button"]:hover span:first-child::after {
-  transform: scale3d(1, 1, 1);
-  background: #d2b96e !important;
-
-
-
-  transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.2s,
-    background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
-}
-
-.button:hover span:first-child::before,
-.button:hover span:first-child::after,
-button:hover span:first-child::before,
-button:hover span:first-child::after,
-input[type="submit"]:hover span:first-child::before,
-input[type="submit"]:hover span:first-child::after,
-input[type="reset"]:hover span:first-child::before,
-input[type="reset"]:hover span:first-child::after,
-input[type="button"]:hover span:first-child::before,
-input[type="button"]:hover span:first-child::after {
-  transform: scale3d(1, 1, 1);
-  background: #d2b96e !important;
+  .button:hover span:first-child::before,
+  .button:hover span:first-child::after,
+  button:hover span:first-child::before,
+  button:hover span:first-child::after,
+  input[type="submit"]:hover span:first-child::before,
+  input[type="submit"]:hover span:first-child::after,
+  input[type="reset"]:hover span:first-child::before,
+  input[type="reset"]:hover span:first-child::after,
+  input[type="button"]:hover span:first-child::before,
+  input[type="button"]:hover span:first-child::after {
+    transform: scale3d(1, 1, 1);
+    background: #d2b96e !important;
 
 
 
+    transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.2s,
+      background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+  }
 
-  transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.2s,
-    background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
-}
-
-.button:hover span:last-child::before,
-.button:hover span:last-child::after,
-button:hover span:last-child::before,
-button:hover span:last-child::after,
-input[type="submit"]:hover span:last-child::before,
-input[type="submit"]:hover span:last-child::after,
-input[type="reset"]:hover span:last-child::before,
-input[type="reset"]:hover span:last-child::after,
-input[type="button"]:hover span:last-child::before,
-input[type="button"]:hover span:last-child::after {
-  transform: scale3d(1, 1, 1);
-  background: #d2b96e !important;
+  .button:hover span:first-child::before,
+  .button:hover span:first-child::after,
+  button:hover span:first-child::before,
+  button:hover span:first-child::after,
+  input[type="submit"]:hover span:first-child::before,
+  input[type="submit"]:hover span:first-child::after,
+  input[type="reset"]:hover span:first-child::before,
+  input[type="reset"]:hover span:first-child::after,
+  input[type="button"]:hover span:first-child::before,
+  input[type="button"]:hover span:first-child::after {
+    transform: scale3d(1, 1, 1);
+    background: #d2b96e !important;
 
 
 
 
-  transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.4s,
-    background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
-}
+    transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.2s,
+      background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+  }
 
-.button:hover span:last-child::before,
-.button:hover span:last-child::after,
-button:hover span:last-child::before,
-button:hover span:last-child::after,
-input[type="submit"]:hover span:last-child::before,
-input[type="submit"]:hover span:last-child::after,
-input[type="reset"]:hover span:last-child::before,
-input[type="reset"]:hover span:last-child::after,
-input[type="button"]:hover span:last-child::before,
-input[type="button"]:hover span:last-child::after {
-  transform: scale3d(1, 1, 1);
-  background: #d2b96e !important;
-
-
-
-  transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.4s,
-    background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
-}
-
-.button:hover::after,
-button:hover::after,
-input[type="submit"]:hover::after,
-input[type="reset"]:hover::after,
-input[type="button"]:hover::after {
-  width: 100%;
-  background: #d2b96e !important;
+  .button:hover span:last-child::before,
+  .button:hover span:last-child::after,
+  button:hover span:last-child::before,
+  button:hover span:last-child::after,
+  input[type="submit"]:hover span:last-child::before,
+  input[type="submit"]:hover span:last-child::after,
+  input[type="reset"]:hover span:last-child::before,
+  input[type="reset"]:hover span:last-child::after,
+  input[type="button"]:hover span:last-child::before,
+  input[type="button"]:hover span:last-child::after {
+    transform: scale3d(1, 1, 1);
+    background: #d2b96e !important;
 
 
 
-  transition: width 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s,
-    background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+
+    transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.4s,
+      background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+  }
+
+  .button:hover span:last-child::before,
+  .button:hover span:last-child::after,
+  button:hover span:last-child::before,
+  button:hover span:last-child::after,
+  input[type="submit"]:hover span:last-child::before,
+  input[type="submit"]:hover span:last-child::after,
+  input[type="reset"]:hover span:last-child::before,
+  input[type="reset"]:hover span:last-child::after,
+  input[type="button"]:hover span:last-child::before,
+  input[type="button"]:hover span:last-child::after {
+    transform: scale3d(1, 1, 1);
+    background: #d2b96e !important;
+
+
+
+    transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.4s,
+      background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+  }
+
+  .button:hover::after,
+  button:hover::after,
+  input[type="submit"]:hover::after,
+  input[type="reset"]:hover::after,
+  input[type="button"]:hover::after {
+    width: 100%;
+    background: #d2b96e !important;
+
+
+
+    transition: width 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s,
+      background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+  }
 }

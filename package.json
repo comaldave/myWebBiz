@@ -8,7 +8,8 @@
     "sass": "node-sass scss/main.scss css/style.css -w",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "touch": "touch scss/main.scss"
   },
   "repository": {
     "type": "git",
@@ -62,7 +63,10 @@
     "@popperjs/core": "^2.5.3",
     "bootstrap-vue": "^2.18.1",
     "chokidar": "^3.4.3",
+    "eslint-loader": "^4.0.2",
+    "eslint-webpack-plugin": "^2.1.0",
     "jquery": "^3.5.1",
+    "node-gyp": "^7.1.2",
     "node-sass": "^4.14.1",
     "rfs": "^9.0.3",
     "vue": "^2.6.12"

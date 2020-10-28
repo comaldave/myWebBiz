@@ -14,7 +14,7 @@
                 @extend .row;
                 margin: 0;
 
-                #left_img {
+                &:first-child {
                     @extend .col-md-6;
                     height: 650px;
                     @extend .align-self-start;
@@ -43,7 +43,7 @@
                     }
                 }
 
-                #right_text {
+                &:last-child {
                     @extend .col-md-4;
                     @extend .align-self-end;
 

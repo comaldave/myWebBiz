@@ -1,26 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-<!-- padding: 10px 26px;  -->
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" type="image/png" href="images/favicon_black_moon.png" />
     <title>Claire Crawford Web Design</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon_black_moon.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/style.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="scripts.js"></script>
-
     <!-- Load polyfills to support older browsers -->
     <script src="//polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver" crossorigin="anonymous">
     </script>
+    <script src="scripts.js"></script>
+
+
+
 </head>
 
 <body>
     <!-- <div id="wrapper"> -->
-    <header>
+    <header id="appHeader">
+        <template>
+            <b-navbar toggleable="md" type="warning" variant="light" id="main_menu">
+                <b-navbar-toggle target="navbar-toggle-collapse">
+                    <template #default="{ expanded }">
+                        <b-icon v-if="expanded" icon="chevron-bar-up"></b-icon>
+                        <b-icon v-else icon="chevron-bar-down"></b-icon>
+                    </template>
+                </b-navbar-toggle>
+
+                <b-navbar-brand class="logo_area" href="https://www.ClaireCrawfordDesigns.com/">
+                    <img src="images/logoStarClaireFinal_350.png" id="logo_Claire">
+                </b-navbar-brand>
+
+                <b-collapse class="inner_main_menu" id="navbar-toggle-collapse" is-nav >
+                    <b-navbar-nav class="ml-auto split_nav">
+                        <b-nav-item class="split_left" href="index.html">Home</b-nav-item>
+                        <b-nav-item class="split_left" href="portfolio.html">Portfolio</b-nav-item>
+                        <b-nav-item class="split_left" href="services.html">Services</b-nav-item>
+                        <b-nav-item href="blog.html">Blog</b-nav-item>
+                        <b-nav-item href="about.html">About</b-nav-item>
+                        <b-nav-item href="contact.html">Connect</b-nav-item>
+                </b-collapse>
+            </b-navbar>
+        </template>
+
+
         <div id="main_menu">
             <span class="logo_area">
                 <a href="index.html" id="logo"><img src="images/logoStarClaireFinal_350.png" id="logo_Claire"></a>
@@ -38,7 +64,6 @@
         </div>
     </header>
 
-    <!-- <main> -->
     <aside>
         <picture>
             <source media="max-width: 575.98px" srcset="images/responsive_capstone_banner_gold_576x134.jpg">
@@ -93,13 +118,13 @@
                     </div> -->
 
 
-                        <div id="left_img">
+                        <div>
                             <img src="images/website_laptop_6_flipped_650x650.jpg" id="remote"
                                 alt="open laptop on desk" />
                         </div>
 
 
-                        <div id="right_text">
+                        <div>
                             <div id="one">
                                 <p id="first_p">Hey! </p>
                                 <p id="second_p">I'm Claire</p>
@@ -146,7 +171,7 @@
                             </div>
 
                             <div id="three">
-                                <a class="button ajax" href="about.html">More about
+                                <a class="button ajax button_underline" href="about.html">More about
                                     me<span></span><span></span>
                                 </a>
                             </div>
@@ -296,8 +321,16 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
 
     <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
+    <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue-icons.min.js"></script>
+    <script src="./src/main.js"></script>
 
     <!-- <script src="index.js"></script> -->
+    <script>
+    </script>
 </body>
 
 </html>
+
+
+
+

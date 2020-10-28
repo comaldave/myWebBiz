@@ -5,9 +5,11 @@ Vue.config.productionTip = false
 
 new Vue({
     el: '#vueLayout',
-    data: {
+    data: function() {
+return {
         message: "Small footer"
-    },
+    };
+},
     template: '<myFooter/>',
     compoents: { myFooter }
 }) 

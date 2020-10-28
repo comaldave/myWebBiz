@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Claire Crawford Web Design</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon_black_moon.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+
+    <!-- Load polyfills to support older browsers -->
+    <script src="//polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver" crossorigin="anonymous">
+    </script>
+    </head>
+
+
+
+
+<body>
+    <div id="appHeader">
+        <h1>
+            {{message}}
+        </h1>
+        <template>
+            <b-navbar toggleable type="dark" variant="dark">
+                <b-navbar-brand href="#">Claire Crawford Designs</b-navbar-brand>
+    
+                <b-navbar-toggle target="navbar-toggle-collapse">
+                    <template #default="{ expanded }">
+                        <b-icon v-if="expanded" icon="chevron-bar-up"></b-icon>
+                        <b-icon v-else icon="chevron-bar-down"></b-icon>
+                    </template>
+                </b-navbar-toggle>
+    
+                <b-collapse id="navbar-toggle-collapse" is-nav>
+                    <b-navbar-nav class="ml-auto">
+                        <b-nav-item href="index.html">Home</b-nav-item>
+                        <b-nav-item href="portfolio.html">Portfolio</b-nav-item>
+                        <b-nav-item href="services.html">Services</b-nav-item>
+                        <b-nav-item href="blog.html">Blog</b-nav-item>
+                        <b-nav-item href="about.html">About</b-nav-item>
+                        <b-nav-item href="contact.html">Connect</b-nav-item>
+                </b-collapse>
+            </b-navbar>
+        </template>
+    </div>
+
+    <!-- Development version -->
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <!-- Production version -->
+    <!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+
+    <!-- Add Vue and BootstrapVue scripts just before the closing </body> tag -->
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- production version, optimized for size and speed -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
+
+
+
+    <script>
+        var appHeader = new Vue({
+            el: '#appHeader',
+            data: {
+                message: 'Can you read me?'
+            }
+        })
+    </script>
+</body>
