@@ -19,10 +19,9 @@
 </head>
 
 <body>
-    <!-- <div id="wrapper"> -->
     <header id="appHeader">
         <template>
-            <b-navbar toggleable="md" type="warning" variant="light" id="main_menu">
+            <b-navbar fluid toggleable="md" type="warning" variant="light" id="main_menu">
                 <b-navbar-toggle target="navbar-toggle-collapse">
                     <template #default="{ expanded }">
                         <b-icon v-if="expanded" icon="chevron-bar-up"></b-icon>
@@ -35,33 +34,16 @@
                 </b-navbar-brand>
 
                 <b-collapse class="inner_main_menu" id="navbar-toggle-collapse" is-nav >
-                    <b-navbar-nav class="ml-auto split_nav">
-                        <b-nav-item class="split_left" href="index.html">Home</b-nav-item>
-                        <b-nav-item class="split_left" href="portfolio.html">Portfolio</b-nav-item>
-                        <b-nav-item class="split_left" href="services.html">Services</b-nav-item>
+                    <b-navbar-nav class="ml-auto">
+                        <b-nav-item href="index.html">Home</b-nav-item>
+                        <b-nav-item href="portfolio.html">Portfolio</b-nav-item>
+                        <b-nav-item href="services.html">Services</b-nav-item>
                         <b-nav-item href="blog.html">Blog</b-nav-item>
                         <b-nav-item href="about.html">About</b-nav-item>
                         <b-nav-item href="contact.html">Connect</b-nav-item>
                 </b-collapse>
             </b-navbar>
         </template>
-
-
-        <div id="main_menu">
-            <span class="logo_area">
-                <a href="index.html" id="logo"><img src="images/logoStarClaireFinal_350.png" id="logo_Claire"></a>
-            </span>
-            <nav class="inner_main_menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Connect</a></li>
-                </ul>
-            </nav>
-        </div>
     </header>
 
     <aside>
