@@ -42,6 +42,8 @@
     "jest": "^26.6.1",
     "prettier": "2.1.2",
     "sass": "^1.27.0",
+    "sass-loader": "10.0.4",
+    "vue-cli-plugin-mdb": "~2.1.0",
     "vue-template-compiler": "^2.6.12"
   },
   "eslintConfig": {
@@ -68,6 +70,7 @@
     "jquery": "^3.5.1",
     "node-gyp": "^7.1.2",
     "node-sass": "^4.14.1",
+    "mdbvue": "6.7.1",
     "rfs": "^9.0.3",
     "vue": "^2.6.12"
   },
