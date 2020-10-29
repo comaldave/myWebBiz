@@ -21,7 +21,7 @@
 <body>
     <header id="appHeader">
         <template>
-            <b-navbar fluid toggleable="md" type="warning" variant="light" id="main_menu">
+            <b-navbar fluid toggleable="sm" type="warning" variant="light" id="main_menu">
                 <b-navbar-toggle target="navbar-toggle-collapse">
                     <template #default="{ expanded }">
                         <b-icon v-if="expanded" icon="chevron-bar-up"></b-icon>
@@ -29,15 +29,18 @@
                     </template>
                 </b-navbar-toggle>
 
-                <b-navbar-brand class="logo_area" href="https://www.ClaireCrawfordDesigns.com/">
-                    <img src="images/logoStarClaireFinal_350.png" id="logo_Claire">
-                </b-navbar-brand>
 
-                <b-collapse class="inner_main_menu" id="navbar-toggle-collapse" is-nav >
-                    <b-navbar-nav class="ml-auto">
+                <b-collapse class="inner_main_menu" id="navbar-toggle-collapse" is-nav>
+                    <b-navbar-nav>
                         <b-nav-item href="index.html">Home</b-nav-item>
                         <b-nav-item href="portfolio.html">Portfolio</b-nav-item>
                         <b-nav-item href="services.html">Services</b-nav-item>
+
+                        <b-navbar-brand class="logo_area" href="https://www.ClaireCrawfordDesigns.com/" >
+                            <b-img src="images/logoStarClaireFinal_350.png" id="logo_Claire" fluid>
+                        </b-navbar-brand>
+
+                        <!-- <b-nav-item class="header_space" href="#"></b-nav-item> -->
                         <b-nav-item href="blog.html">Blog</b-nav-item>
                         <b-nav-item href="about.html">About</b-nav-item>
                         <b-nav-item href="contact.html">Connect</b-nav-item>
@@ -312,7 +315,3 @@
 </body>
 
 </html>
-
-
-
-

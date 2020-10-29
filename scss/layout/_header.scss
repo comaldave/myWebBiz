@@ -3,6 +3,10 @@
 header {
   #main_menu {
     @extend .justify-content-start;
+    @extend .flex-sm-column;
+    @extend .flex-md-grow-0;
+    @extend .w-100;
+    
     // top: 0; 
     // left: 0;
     /*top: 0;*/
@@ -22,13 +26,12 @@ header {
     }
 
     @include media-breakpoint-only(sm) {
-      width: 34rem;
-      margin-top: 74px;
+      margin-top: 0;
+      
     }
 
     @include media-breakpoint-only(md) {
       width: 42rem;
-      margin-top: 86px;
     }
 
     @include media-breakpoint-only(lg) {
@@ -51,24 +54,23 @@ header {
       @extend .align-self-center;
       
       @include media-breakpoint-down(xs) {
-        
         width: 220px;
         margin-top: 10px;
         margin-left: 8px;
-
       }
       @include media-breakpoint-up(sm) {
         // height: auto;
         // text-align: center; 
         // width: 130px; 
-        margin: 0;
+        // margin: 0;
         // position: absolute;
         // transform: translate(0, -50%);
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: auto;
-        transition: 0.5s;
+        // top: 50%;
+        // left: 50%;
+        //transform: translate(-50%, 0%);
+        // width: auto;
+       transition: 0.5s;
+       padding : 0;
         // margin-top: 0px;
 
       }
@@ -76,16 +78,19 @@ header {
       img {
         @include media-breakpoint-down(xs) {
           width: 200px;
+         
           // margin-left: -10px;
         
           // margin-right: 220px;
         }
         @include media-breakpoint-up(sm) {
-          width: auto;
-          height: auto;
-          margin-right: auto;
-          margin-left: auto;
-          transition: 0.5s;
+          width: 190px;
+          // padding-left: 14px;
+          // width: auto;
+          // height: auto;
+          // margin-right: auto;
+          // margin-left: auto;
+          // transition: 0.5s;
           // margin-bottom: -15px;
           //margin-bottom: -36px; 
           // vertical-align: middle; 
@@ -93,14 +98,33 @@ header {
           //position: fixed; 
           // top: 50%; 
           // left: 50%; 
-          transform: translate(-50%, -50%);
+          //transform: translate(-50%, -50%);
+          
         }
       }
     }
-
     .inner_main_menu {
-      //margin: 0 auto;
-      // width: 1170px;
+      @extend .w-100;
+
+      ul {
+        @extend .d-sm-flex;
+        @extend .justify-content-sm-between;
+        @extend .w-100;
+        max-width: 100%;
+        
+        .header_space {
+          width: 360px;
+        }
+
+        // li {
+        //   width: 20%;
+        // }
+
+        a {
+          width: 20%;
+        
+        }
+      }
     }
 
   }
@@ -109,7 +133,8 @@ header {
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   }
 
-   nav {
+  nav {
+   @extend .ml-auto;
   //   @extend .navbar;
   //   @extend .navbar-light;
   //   @extend .text-info;

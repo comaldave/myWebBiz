@@ -6377,7 +6377,7 @@ button.bg-dark:focus {
     display: table-cell !important;
   }
 
-  .d-sm-flex {
+  .d-sm-flex, header #main_menu .inner_main_menu ul {
     display: flex !important;
   }
 
@@ -6715,7 +6715,7 @@ button.bg-dark:focus {
     flex-direction: row !important;
   }
 
-  .flex-sm-column {
+  .flex-sm-column, header #main_menu {
     flex-direction: column !important;
   }
 
@@ -6771,7 +6771,7 @@ button.bg-dark:focus {
     justify-content: center !important;
   }
 
-  .justify-content-sm-between {
+  .justify-content-sm-between, header #main_menu .inner_main_menu ul {
     justify-content: space-between !important;
   }
 
@@ -6880,7 +6880,7 @@ button.bg-dark:focus {
     flex: 1 1 auto !important;
   }
 
-  .flex-md-grow-0 {
+  .flex-md-grow-0, header #main_menu {
     flex-grow: 0 !important;
   }
 
@@ -7435,7 +7435,7 @@ button.bg-dark:focus {
   width: 75% !important;
 }
 
-.w-100 {
+.w-100, header #main_menu .inner_main_menu ul, header #main_menu .inner_main_menu, header #main_menu {
   width: 100% !important;
 }
 
@@ -7915,7 +7915,7 @@ portfolioCard {
   margin-bottom: auto !important;
 }
 
-.ml-auto,
+.ml-auto, header nav,
 .mx-auto,
 portfolioCard {
   margin-left: auto !important;
@@ -12628,14 +12628,12 @@ header #main_menu {
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
   header #main_menu {
-    width: 34rem;
-    margin-top: 74px;
+    margin-top: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   header #main_menu {
     width: 42rem;
-    margin-top: 86px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -12662,12 +12660,8 @@ header #main_menu:active {
 }
 @media (min-width: 576px) {
   header #main_menu .logo_area {
-    margin: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: auto;
     transition: 0.5s;
+    padding: 0;
   }
 }
 @media (max-width: 575.98px) {
@@ -12677,13 +12671,17 @@ header #main_menu:active {
 }
 @media (min-width: 576px) {
   header #main_menu .logo_area img {
-    width: auto;
-    height: auto;
-    margin-right: auto;
-    margin-left: auto;
-    transition: 0.5s;
-    transform: translate(-50%, -50%);
+    width: 190px;
   }
+}
+header #main_menu .inner_main_menu ul {
+  max-width: 100%;
+}
+header #main_menu .inner_main_menu ul .header_space {
+  width: 360px;
+}
+header #main_menu .inner_main_menu ul a {
+  width: 20%;
 }
 header div.active {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
