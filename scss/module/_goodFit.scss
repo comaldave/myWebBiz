@@ -1,0 +1,113 @@
+// 'module/_goodFit.scss' by Claire Crawford
+
+/* Module goodFit works with JavaScript function */
+
+div#good_fit {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  height: auto;
+}
+
+#stars_zodiac {
+  position: absolute;
+  width: 390px;
+  top: -190px;
+  right: 80px;
+  opacity: 0.6;
+}
+
+// div#good_fit>div {
+//   background-color: white;
+//   width: 300px;
+//   height: 220px;
+//   padding-top: 100px;
+//   padding-bottom: 100px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: flex-start;
+//   /* margin-top: -20px; */
+//   margin-bottom: 60px;
+
+// }
+
+div#good_fit p {
+  line-height: 1.5em;
+  font-size: 1em;
+  /* font-family: "Montserrat Regular"; */
+  /* font-family: 'Tenor Sans'; */
+  font-family: 'Ernestine Pro Light';
+  border: 4px solid rgba(207, 188, 100, 0.4);
+  padding: 30px;
+  text-align: center;
+  color: #363d3c;
+}
+
+/* div.good_fit_hide_me p {
+  line-height: 1.3em;
+  font-size: 1.2em;
+  font-family: Tenar Sans;
+  margin-top: 30px;
+  padding: 30px;
+  text-align: center;
+  color: #363d3c;
+} */
+
+.good_fit_hide_me {
+  opacity: 0;
+
+}
+
+/* #h2_good_fit > img {
+  width: 300px;
+  padding-top: 20px;
+} */
+
+
+#img_text_good_fit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  width: 100%;
+  height: auto;
+
+}
+
+#img_text_good_fit h2 {
+  font-family: Quentin;
+  font-size: 2.2em;
+  margin-top: 20px;
+  color: #363d3c;
+}
+
+/* 
+#img_text_good_fit img {
+  /* font-size: 2.2em;
+  font-family: "Smooth Stone"; */
+/* margin-top: 36px;
+  margin-bottom: 50px;
+  width: 340px; 
+} */
+
+/* img#good_fit_if {
+  width: 300px;
+} */
+
+/* #dummy_space {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: nowrap; */
+/* align-items: center; */
+/* justify-content: center; */
+/* justify-content: space-evenly; */
+/* background-color: white; */
+/* background-image: url("images/starry_night_background.jpg"); */
+/* height: 500px;
+  width: 100%;
+} */
+

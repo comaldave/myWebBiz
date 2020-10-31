@@ -40,13 +40,14 @@ window.onscroll = function () {
 function scrollFunction() {
   if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
     document.getElementById("main_menu").style.padding = "0px";
-    document.getElementById("logo_Claire").style.width = "280px";
+    document.getElementById("logo_Claire2").style.width = "120px";
     // document.getElementById("logo_Claire").style.marginTop = "0px";
   } else {
     document.getElementById("main_menu").style.padding = "60px 0px";
-    document.getElementById("logo_Claire").style.width = "350px";
+    document.getElementById("logo_Claire2").style.width = "180px";
     // document.getElementById("logo_Claire").style.marginTop = "0px";
   }
+  
 }
 
 

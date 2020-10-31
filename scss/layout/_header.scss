@@ -1,0 +1,175 @@
+//layout/_header.scss by Claire Crawford
+
+header {
+  @extend .sticky-top;
+
+  #main_menu {
+    @extend .justify-content-start;
+    @extend .flex-sm-column;
+    @extend .flex-md-grow-0;
+    @extend .w-100;
+    @extend .align-items-start;
+    // top: 0; 
+    // left: 0;
+    /*top: 0;*/
+    /*z-index: 999;*/
+    /*overflow: hidden;*/
+    /*transition: 0.5s;*/
+    /*position: fixed;*/
+    /*text-align: center;*/
+    //background-color: white;
+    /* padding: 60px 0;*/
+    /*vertical-align: middle;*/
+
+    // height: 300px;
+
+    @include media-breakpoint-only(xs) {
+      padding: 0 8px;
+    }
+
+    @include media-breakpoint-only(sm) {
+      margin-top: 0;
+    }
+
+    @include media-breakpoint-only(md) {
+      width: 42rem;
+      height: 170px;
+    }
+
+    @include media-breakpoint-only(lg) {
+      width: 52rem;
+      margin-top: 94px;
+    }
+
+    @include media-breakpoint-only(xl) {
+      width: 56rem;
+      margin-top: 104px;
+    }
+
+    &:active {
+      box-shadow: 0 0 6px rgba(15, 6, 6, 0.2);
+    }
+
+    .logo_area {
+      @extend .align-self-center;
+      @extend .d-block;
+      @extend .d-sm-none;
+
+      @include media-breakpoint-down(xs) {
+        width: 220px;
+        margin-top: 10px;
+        margin-left: 8px;
+      }
+
+      @include media-breakpoint-up(sm) {
+        // transform: translate(0, -50%);
+        // top: 50%;
+        // left: 50%;
+        //transform: translate(-50%, 0%);
+        transition: 0.5s;
+        padding: 0;
+        // margin-top: 0px;
+      }
+
+      img {
+        @include media-breakpoint-down(xs) {
+          width: 200px;
+        }
+
+        @include media-breakpoint-up(sm) {
+          width: 180px;
+          transition: 0.5s;
+          // transform: translate(-50%, -50%);
+
+        }
+      }
+    }
+
+    .logo_area2 {
+      padding-top: 0 !important;
+    }
+
+    .inner_main_menu {
+      @extend .w-100;
+
+      ul {
+        @extend .d-sm-flex;
+        @extend .justify-content-sm-between;
+        @extend .w-100;
+        max-width: 100%;
+
+        // .header_space {
+        //   width: 360px;
+        // }
+
+        // li {
+        //   width: 20%;
+        // }
+
+        a {
+          width: 20%;
+          padding-top: 20px;
+          // -webkit-transform: translateZ(0);
+          // transform:
+          //   translateZ(0);
+          // -webkit-backface-visibility: hidden;
+          // backface-visibility: hidden;
+          // -moz-osx-font-smoothing: grayscale;
+          // color: $clrGray;
+          // /* trying out a new font color that is a bit darker */
+          // font-family: "tenor sans";
+          // font-size: 1em;
+          // letter-spacing: 1px;
+          // text-transform: uppercase;
+          // display: block;
+          // margin: 5px 20px 5px 20px;
+          // height: 60px;
+          color: #606060;
+          // font-family: "tenor sans";
+          // font-size: 0.8em;
+          // letter-spacing: 1px;
+          // text-transform: uppercase;
+          // text-decoration: none;
+          // display: block;
+          // margin: 5px 20px 5px 20põ
+
+
+          &:before {
+            // content: "";
+            // position: absolute;
+            // width: 100%;
+            // height: 2px;
+            // bottom: 0;
+            // left: 0;
+            // background-color:
+            //   rgb(211, 211, 211);
+            // visibility: hidden;
+            // -webkit-transform: scaleX(0);
+            // transform:
+            //   scaleX(0);
+            // -webkit-transition: all 0.3s ease-in-out 0s;
+            // transition: all 0.3s ease-in-out 0s;
+          }
+
+          &:hover:before {
+            // visibility: visible;
+            // -webkit-transform:
+            //   scaleX(1);
+            // transform: scaleX(1);
+          }
+
+
+          &:hover {
+            // color: $clrHover;
+            // text-decoration:
+            //   none;
+          }
+        }
+      }
+    }
+  }
+
+  div.active {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  }
+}

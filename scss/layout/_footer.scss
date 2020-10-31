@@ -1,0 +1,46 @@
+//layout/_footer.scss by Claire Crawford
+
+.myFooter {
+
+    // hiding this allows the footer to cover 100% of screen width - Saturday night
+    // @extend .container;
+
+
+
+    // @extend .font-small;
+    // @extend .blue;
+    // @extend .pt-4;
+
+    background: url("../images/torn_edge_bkgrd_1000.jpg");
+
+
+    // this allowed the myFooter class to acknowledge the height of 400px
+    position: absolute;
+
+
+    height: 400px;
+    width: 100%;
+
+
+    nav {
+        @extend .col-md-2;
+        @extend .mb-md-0;
+        @extend .mb-3;
+    }
+
+    // this pushed text down into center of footer 
+    div {
+        margin-top: 150px;
+        margin-left: 80px;
+    }
+
+    // needed this to keep copyright line inside the footer 
+    #copyright {
+        float: left;
+        margin-left: 350px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        padding: 0;
+    }
+
+}

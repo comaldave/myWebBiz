@@ -1,0 +1,52 @@
+//_legal.css created by Claire Crawford
+
+/*Formatted legal text.*/
+
+.module_legal {
+    @extend .container;
+
+    article {
+        @extend .row;
+        @extend .d-flex;
+        @extend .justify-content-center;
+        max-width: 64rem;
+        padding: 0 2rem 0 2rem;
+
+        div {
+            @extend .col-md-6;
+
+            h1 {
+                padding-top: 3rem;
+            }
+            h2 {
+                padding-top: 2rem;
+            }
+            h3 {
+                padding-top: 1rem;
+            }
+            p:first-of-type {
+                @extend .lead;
+            }
+        }  
+
+        ol {
+
+            @extend .col-md-6;
+
+            li {
+                font-weight: bold;
+
+                &:before {
+                    position: absolute;
+                    left: -25px;
+                    content: "§";
+                }
+
+                p {
+                    font-weight: normal;
+                }
+            }
+
+        }
+    }
+}

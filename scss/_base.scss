@@ -4,5 +4,11 @@
 @import "../node_modules/rfs/scss"; /* responsive font size */ 
 // Disable RFS by setting $enable-responsive-font-sizes to false
 $enable-responsive-font-sizes: true !default;
-@import 'node_modules/bootstrap/scss/bootstrap.scss';
-@import 'node_modules/bootstrap-vue/src/index.scss';
+
+// Define your bootstrap variable overides here
+$gray-100: #fff !default;
+
+// Include Bootstrap and BootstrapVue index and icons SCSS files
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../node_modules/bootstrap-vue/src/index.scss';
+@import '../node_modules/bootstrap-vue/src/icons.scss';
