@@ -1,14 +1,20 @@
 // _base.scss by Claire Crawford
 
 /* Base rules are the defaults. */
-@import "../node_modules/rfs/scss"; /* responsive font size */ 
+
+// Responsive Font Sizes
+@import "../node_modules/rfs/scss";
 // Disable RFS by setting $enable-responsive-font-sizes to false
 $enable-responsive-font-sizes: true !default;
 
+// Import Bootstrap functions and variables
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
 // Define your bootstrap variable overides here
-$gray-100: #fff !default;
+@import "theme/_index.scss";
 
 // Include Bootstrap and BootstrapVue index and icons SCSS files
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
-@import '../node_modules/bootstrap-vue/src/index.scss';
-@import '../node_modules/bootstrap-vue/src/icons.scss';
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap-vue/src/index.scss";
+@import "../node_modules/bootstrap-vue/src/icons.scss";

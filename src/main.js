@@ -1,8 +1,7 @@
-// 'source/main.js' by Claire Crawford
+// 'src/main.js' by Claire Crawford
 
-var appHeader = new Vue({
-    el: '#appHeader',
-    data: {
-        message: 'Can you read me?'
-    }
-})
+import Vue from "vue";
+import BootstrapVue from "bootstrap-vue";
+
+Vue.use(BootstrapVue);
+Vue.config.productionTip = false;

@@ -2,47 +2,45 @@
   "name": "mywebbiz",
   "version": "1.0.0",
   "description": "business website for Claire Crawford Designs",
-  "main": "index.js",
+  "author": "Claire Crawford",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass scss/main.scss css/style.css --watch",
-    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
+    "sass": "sass scss/main.scss css/style.css --watch",
+    "serve": "vue-cli-service serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "touch": "touch scss/main.scss"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Claire-Crawford/myWebBiz.git"
+  "main": "index.js",
+  "dependencies": {
+    "@popperjs/core": "^2.5.3",
+    "axios": "^0.21.0",
+    "bootstrap-vue": "^2.18.1",
+    "chokidar": "^3.4.3",
+    "eslint-loader": "^4.0.2",
+    "eslint-webpack-plugin": "^2.1.0",
+    "joi": "^17.3.0",
+    "jquery": "^3.5.1",
+    "mdbvue": "6.7.1",
+    "node-gyp": "^7.1.2",
+    "node-sass": "^4.14.1",
+    "rfs": "^9.0.3",
+    "vue": "^2.6.12"
   },
-  "keywords": [
-    "html5",
-    "css3",
-    "scss",
-    "javaScript",
-    "Bootstrap",
-    "VueJS",
-    "UX"
-  ],
-  "author": "Claire Crawford",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Claire-Crawford/myWebBiz/issues"
-  },
-  "homepage": "https://github.com/Claire-Crawford/myWebBiz#readme",
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.8",
     "@vue/cli-plugin-eslint": "~4.5.8",
     "@vue/cli-service": "~4.5.8",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.12.0",
     "eslint-config-prettier": "^6.14.0",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-vue": "^7.1.0",
+    "eslint": "^7.12.0",
     "jest": "^26.6.1",
+    "node-sass": "^4.9.0",
     "prettier": "2.1.2",
-    "sass": "^1.27.0",
     "sass-loader": "10.0.4",
+    "sass": "^1.27.0",
     "vue-cli-plugin-mdb": "~2.1.0",
     "vue-template-compiler": "^2.6.12"
   },
@@ -61,22 +59,27 @@
     },
     "rules": {}
   },
-  "dependencies": {
-    "@popperjs/core": "^2.5.3",
-    "bootstrap-vue": "^2.18.1",
-    "chokidar": "^3.4.3",
-    "eslint-loader": "^4.0.2",
-    "eslint-webpack-plugin": "^2.1.0",
-    "jquery": "^3.5.1",
-    "node-gyp": "^7.1.2",
-    "node-sass": "^4.14.1",
-    "mdbvue": "6.7.1",
-    "rfs": "^9.0.3",
-    "vue": "^2.6.12"
-  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/Claire-Crawford/myWebBiz/issues"
+  },
+  "homepage": "https://github.com/Claire-Crawford/myWebBiz#readme",
+  "keywords": [
+    "Bootstrap 5",
+    "CSS3",
+    "HTML5",
+    "JavaScript",
+    "SCSS",
+    "UX",
+    "VueJS"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Claire-Crawford/myWebBiz.git"
+  }
 }

@@ -13,9 +13,6 @@
     <script src="//polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver" crossorigin="anonymous">
     </script>
     <script src="scripts.js"></script>
-
-
-
 </head>
 
 <body>
@@ -26,10 +23,10 @@
                     <template #default="{ expanded }">
                         <b-icon v-if="expanded" icon="chevron-bar-up"></b-icon>
                         <b-icon v-else icon="chevron-bar-down"></b-icon>
-
                     </template>
                 </b-navbar-toggle>
                 <b-navbar-brand class="logo_area" href="https://www.ClaireCrawfordDesigns.com/">
+                    <p>{{ message }}</p>
                     <b-img src="images/logoStarClaireFinal_350.png" id="logo_Claire" fluid>
                 </b-navbar-brand>
 
@@ -61,6 +58,7 @@
             <img src="images/capstone_banner_gold_2560x590_revised.jpg"
                 alt="Collage of many small, colorful images of nature and inspirational women" />
         </picture>
+
         <div id="just_below_moodboard">
             <div>
                 <h2>
@@ -89,7 +87,6 @@
             </div>
         </div>
     </aside>
-
 
     <content>
         <article id="home_page">
@@ -167,8 +164,6 @@
                 </div>
             </section>
 
-
-
             <section id="sect_good_fit">
                 <div id="img_text_good_fit">
                     <h2>
@@ -203,27 +198,21 @@
                             the next level.
                         </p>
                     </div>
-
                 </div>
             </section>
         </article>
     </content>
 
-
     <!-- <div id="dummy_space"> </div> -->
-
 
     <div>
         <img id="scroll" src="images/back_to_top_bird_med.png">
     </div>
 
-
     <footer class="myFooter">
         <div class="container-fluid text-center text-md-left">
-
             <!-- Grid row -->
             <div class="row">
-
                 <!-- Grid column -->
                 <section class="col-md-6 mt-md-0 mt-3">
                     <!-- Content -->
@@ -238,7 +227,6 @@
 
                 <!-- Grid column -->
                 <nav class="col-md-3 mb-md-0 mb-3">
-
                     <!-- Links -->
                     <h5 class="text-uppercase">Design Links</h5>
 
@@ -256,7 +244,6 @@
                             <a href="contact.html">Connect</a>
                         </li>
                     </ul>
-
                 </nav>
                 <!-- Grid column -->
 
@@ -283,10 +270,8 @@
 
                 </nav>
                 <!-- Grid column -->
-
             </div>
             <!-- Grid row -->
-
         </div>
         <!-- Footer Links -->
 
@@ -313,6 +298,14 @@
 
     <!-- <script src="index.js"></script> -->
     <script>
+        var appHeader = new Vue({
+            el: "#appHeader",
+            data: function () {
+                return {
+                message: "Can you read me?",
+                };
+            },
+           });
     </script>
 </body>
 
